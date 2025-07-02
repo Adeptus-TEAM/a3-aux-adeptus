@@ -69,6 +69,10 @@ Pour garantir la qualité et la cohérence du code, veuillez suivre les [coding 
 
 ## 📜 Licence
 
+<a href="https://www.bohemia.net/community/licenses/arma-public-license-share-alike">
+  <img src="https://www.bohemia.net/assets/img/licenses/APL-SA.png" alt="licence">
+</a>
+
 Le code source et les ressources **originales** de ce projet sont disponibles sous licence [APL-SA](https://www.bohemia.net/community/licenses/arma-public-license-share-alike).  
 Veuillez noter que **les éléments inspirés de franchises existantes ne sont pas couverts par cette licence**.
 <br/>
