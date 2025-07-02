@@ -51,6 +51,7 @@ Pour garantir la qualité et la cohérence du code, veuillez suivre les [coding 
     <img src="https://www.adeptusrepublica.fr/content/static/logo.png" width=256px/><br/>
     <img src="https://contrib.rocks/image?repo=Adeptus-TEAM/a3-aux-adeptus"/>
 </div>
+<div align="center">
   </a>
   <p>Nous remercions tous nos Visual Editors et Technicians pour leur travail sur ce mod.</p>
 </div>
