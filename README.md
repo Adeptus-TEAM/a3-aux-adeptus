@@ -56,7 +56,7 @@ Pour garantir la qualité et la cohérence du code, veuillez suivre les [coding 
 </div>
 
 ## 📜 Licence
-Le code source et les ressources **originales** de ce projet sont disponibles sous licence [MIT](https://opensource.org/licenses/MIT).  
+Le code source et les ressources **originales** de ce projet sont disponibles sous licence [APL-SA](https://www.bohemia.net/community/licenses/arma-public-license-share-alike).  
 Veuillez noter que **les éléments inspirés de franchises existantes ne sont pas couverts par cette licence**.
 <br/>
 > [!CAUTION]
