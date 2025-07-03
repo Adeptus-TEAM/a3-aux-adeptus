@@ -40,6 +40,7 @@ a3-aux-adeptus/
 │  ├─ zeus_*/                   # Sub-addon | ar_zeus_*               | Configurations de modules 3den et Zeus (e.g. laat/i drop, garage, etc.)
 │  ├─ misc/                     # Addon     | ar_misc
 │  ├─ misc_*/                   # Sub-addon | ar_misc_*               | Autres configurations
+│  ├─ inidbi                    # Addon     | ar_inidbi               | Configuration de inidbi
 │  └─ cba_settings_userconfig/  # Fichier de configuration de CBA (Community Base Addons)
 ├─ include/                   # Fichiers nécessaires pour le mod (e.g. CBA)
 ├─ logo_ca.paa                # Logo du mod
