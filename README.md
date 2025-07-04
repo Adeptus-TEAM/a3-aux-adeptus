@@ -41,7 +41,7 @@ a3-aux-adeptus/
 │  ├─ misc/                     # Addon     | ar_misc
 │  ├─ misc_*/                   # Sub-addon | ar_misc_*               | Autres configurations
 │  ├─ inidbi/                   # Addon     | ar_inidbi               | Configuration de inidbi
-│  └─ cba_settings_userconfig/  # Fichier de configuration de CBA (Community Base Addons)
+│  └─ cba_settings/             # Addon     | ar_cba_settings         | Fichier de configuration de CBA (Community Base Addons) / inA3PATH = cba_settings_userconfig\
 ├─ include/                   # Fichiers nécessaires pour le mod (e.g. CBA)
 ├─ logo_ca.paa                # Logo du mod
 ├─ meta.cpp                   # Fichier de métadonnées du mod
