@@ -39,6 +39,7 @@ a3-aux-adeptus/
 │  ├─ objects_misc/             # Sub-addon | ar_objects_misc         | Configurations des objets divers (e.g. bench, etc.)
 │  ├─ vehicles/                 # Addon     | ar_vehicles
 │  ├─ vehicles_*/               # Sub-addon | ar_vehicles_*           | Configurations de véhicules spécifiques (e.g. bison, laat/i, etc.)
+│  ├─ weapons/                  # Addon     | ar_weapons
 │  ├─ weapons_*/                # Sub-addon | ar_weapons_*            | Configurations d'armes spécifiques (e.g. rifles, launchers, etc.)
 │  ├─ zeus/                     # Addon     | ar_zeus
 │  └─ zeus_*/                   # Sub-addon | ar_zeus_*               | Configurations de modules 3den et Zeus (e.g. laat/i drop, garage, etc.)
