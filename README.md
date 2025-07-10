@@ -25,6 +25,7 @@ a3-aux-adeptus/
 │  ├─ characters_uniforms/      # Sub-addon | ar_characters_uniforms  | Configurations des uniformes
 │  ├─ characters_units/         # Sub-addon | ar_characters_units     | Configurations des unités et groupes
 │  ├─ characters_vests/         # Sub-addon | ar_characters_vests     | Configurations des vestes
+│  ├─ compositions/             # Addon     | ar_compositions         | Compositions 3den
 │  ├─ dialogs/                  # Addon     | ar_dialogs
 │  ├─ dialogs_*/                # Sub-addon | ar_dialogs_*            | Configurations de dialogues spécifiques (e.g. main menu, etc.)
 │  ├─ inidbi/                   # Addon     | ar_inidbi               | Configuration de inidbi
