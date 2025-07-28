@@ -14,26 +14,23 @@
 
 ```plaintext
 a3-aux-adeptus/
+├─ .adc/                      # Fichiers de configuration des interfaces
 ├─ .hemtt/                    # Fichiers de configuration pour Hemtt
 ├─ .vscode/                   # Fichiers de configuration pour Visual Studio Code
 ├─ addons/                    # Dossier principal des addons
 │  ├─ cba_settings/             # Addon     | ar_cba_settings         | Fichier de configuration de CBA (Community Base Addons) / inA3PATH = cba_settings_userconfig\
 │  ├─ characters/               # Addon     | ar_characters
-│  ├─ characters_backpacks/     # Sub-addon | ar_characters_backpacks | Configurations des sacs à dos
-│  ├─ characters_helmets/       # Sub-addon | ar_characters_helmets   | Configurations des casques
-│  ├─ characters_nvgs/          # Sub-addon | ar_characters_nvgs      | Configurations des accessoires (NVGs)
-│  ├─ characters_uniforms/      # Sub-addon | ar_characters_uniforms  | Configurations des uniformes
+│  ├─ characters_*/             # Sub-addon | ar_characters_*         | Configurations des équipements
 │  ├─ characters_units/         # Sub-addon | ar_characters_units     | Configurations des unités et groupes
-│  ├─ characters_vests/         # Sub-addon | ar_characters_vests     | Configurations des vestes
 │  ├─ compositions/             # Addon     | ar_compositions         | Compositions 3den
 │  ├─ dialogs/                  # Addon     | ar_dialogs
 │  ├─ dialogs_*/                # Sub-addon | ar_dialogs_*            | Configurations de dialogues spécifiques (e.g. main menu, etc.)
 │  ├─ inidbi/                   # Addon     | ar_inidbi               | Configuration de inidbi
 │  ├─ main/                     # Addon     | ar_main                 | Fichiers principaux du mod
-│  ├─ migration/                # Addon     | ar_migration            | Scripts de migration (To be removed in the future)
 │  ├─ misc/                     # Addon     | ar_misc
 │  ├─ misc_*/                   # Sub-addon | ar_misc_*               | Autres configurations
 │  ├─ missions/                 # Addon     | ar_missions             | Scripts et configurations des missions
+│  ├─ missions_builder/         # Sub-Addon | ar_missions_builder     | Scripts et configurations pour créer des missions
 │  ├─ objects/                  # Addon     | ar_objects
 │  ├─ objects_*/                # Sub-addon | ar_objects_*            | Configurations d'objet spécifiques (e.g. paths, supply crates, etc.)
 │  ├─ objects_editor/           # Sub-addon | ar_objects_editor       | Configurations des objets pour l'éditeur (useful for mission makers)
@@ -45,6 +42,7 @@ a3-aux-adeptus/
 │  ├─ zeus/                     # Addon     | ar_zeus
 │  └─ zeus_*/                   # Sub-addon | ar_zeus_*               | Configurations de modules 3den et Zeus (e.g. laat/i drop, garage, etc.)
 ├─ include/                   # Fichiers nécessaires pour le mod (e.g. CBA)
+├─ *.dll                      # Dll du mod pour des actions spécifiques
 ├─ logo_ca.paa                # Logo du mod
 ├─ meta.cpp                   # Fichier de métadonnées du mod
 ├─ mod.cpp                    # Fichier de configuration du mod
