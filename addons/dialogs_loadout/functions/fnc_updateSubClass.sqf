@@ -55,10 +55,10 @@ private _subClassList = "true" configClasses (configFile >> "CfgLoadouts" >> _cl
 					_listSubClass lbAdd ([configFile >> "CfgLoadouts" >> _classSel >> "loadoutsInfo" >> _subClassName] call BIS_fnc_displayName);
 				};
 				case 1: {
-					_listSubClass lbAdd ([configFile >> "CfgLoadouts" >> _classSel >> "loadoutsInfo" >> _subClassName] call BIS_fnc_displayName + " (P1)");
+					_listSubClass lbAdd (FORMAT_2("%1 %2",[configFile >> "CfgLoadouts" >> _classSel >> "loadoutsInfo" >> _subClassName] call BIS_fnc_displayName,"(P1)"));
 				};
 				case 2: {
-					_listSubClass lbAdd ([configFile >> "CfgLoadouts" >> _classSel >> "loadoutsInfo" >> _subClassName] call BIS_fnc_displayName + " (P2)");
+					_listSubClass lbAdd (FORMAT_2("%1 %2",[configFile >> "CfgLoadouts" >> _classSel >> "loadoutsInfo" >> _subClassName] call BIS_fnc_displayName,"(P2)"));
 				};
 			};
 			_listSubClass lbSetPicture [_forEachIndex, getText (configFile >> "CfgLoadouts" >> _classSel >> "loadoutsInfo" >> _subClassName >> "icon")];
