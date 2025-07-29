@@ -1,0 +1,14 @@
+PREP(consciousPlayerTasks);
+PREP(initCheckVersion);
+PREP(initFortify);
+PREP(initMedicalTask);
+PREP(initRespawn);
+PREP(initRespawnDelay);
+PREP(initUnderfire);
+PREP(initWelcome);
+PREP(onRespawn);
+PREP(playRespawnAnimation);
+PREP(setClonePhase);
+PREP(setServerName);
+PREP(setUnitTrait);
+PREP(unconsciousPlayerTasks);

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Missions">
+    <Package name="Functions">
+        <Container name="CheckVersion">
+            <Key ID="str_ar_missions_missingdescriptionext_description">
+                <English>This mission is missing an essential file: description.ext.&lt;br/&gt;&lt;br/&gt;Please generate it.</English>
+                <French>Cette mission nécessite un fichier essentiel : description.ext.&lt;br/&gt;&lt;br/&gt;Veuillez le générer.</French>
+            </Key>
+            <Key ID="str_ar_missions_missingdescriptionext_title">
+                <English>Missing description.ext!</English>
+                <French>Fichier description.ext manquant!</French>
+            </Key>
+            <Key ID="str_ar_missions_modversionincompatible">
+                <English>The mod version on the server (%1) is incompatible with the mission (%2).</English>
+                <French>La version du mod sur le serveur (%1) est incompatible avec la mission (%2).</French>
+            </Key>
+            <Key ID="str_ar_missions_modversionincompatible_description">
+                <English>The version of your mod is incompatible with your mission.</English>
+                <French>La version de votre mod est incompatible avec votre mission.</French>
+            </Key>
+            <Key ID="str_ar_missions_modversionincompatible_title">
+                <English>Mod Version Incompatible!</English>
+                <French>Version du Mod Incompatible!</French>
+            </Key>
+            <Key ID="str_ar_missions_modversionmatch">
+                <English>Client mod version (%1) matches server version (%2).</English>
+                <French>La version du mod sur le client (%1) correspond à la version du serveur (%2).</French>
+            </Key>
+            <Key ID="str_ar_missions_modversionmismatch">
+                <English>The mod version on the client (%1) does not match the server version (%2). Please ensure both are using the same version.</English>
+                <French>La version du mod sur le client (%1) ne correspond pas à la version du serveur (%2). Veuillez vous assurer que les deux utilisent la même version.</French>
+            </Key>
+            <Key ID="str_ar_missions_modversionmismatch_description">
+                <English>The version of your mod does not match the server version.</English>
+                <French>La version de votre mod ne correspond pas à la version du serveur.</French>
+            </Key>
+            <Key ID="str_ar_missions_modversionmismatch_title">
+                <English>Mod Version Mismatch!</English>
+                <French>Version du Mod Mismatch!</French>
+            </Key>
+            <Key ID="str_ar_missions_modversionserver">
+                <English>Server mod version: %1</English>
+                <French>Version du mod serveur : %1</French>
+            </Key>
+        </Container>
+        <Container name="Respawn">
+            <Key ID="str_ar_missions_respawn">
+                <English>Respawn</English>
+                <French>Respawn</French>
+            </Key>
+            <Key ID="str_ar_missions_respawndelaycountdown">
+                <English>wait %1 seconds. (Respawn)</English>
+                <French>Attendez %1 secondes. (Respawn)</French>
+            </Key>
+        </Container>
+        <Container name="initWelcome">
+            <Key ID="str_ar_missions_welcomeMSG_Line1">
+                <English>Welcome to the server:</English>
+                <French>Bienvenue sur le serveur:</French>
+            </Key>
+            <Key ID="str_ar_missions_welcomeMSG_Line2">
+                <English>Mission:</English>
+                <French>Mission:</French>
+            </Key>
+            <Key ID="str_ar_missions_welcomeMSG_Line3">
+                <English>Hello</English>
+                <French>Bonjour</French>
+            </Key>
+        </Container>
+        <Container name="respawnMSG">
+            <Key ID="str_ar_missions_respawnMSG">
+                <English>, You have been evacuated.</English>
+                <French>, Vous avez été évacué.</French>
+            </Key>
+        </Container>
+        <Container name="unconsciousPlayerTasks">
+            <Key ID="str_ar_missions_unconscious_task_description">
+                <English>%1 needs a medic!&lt;br/&gt;&lt;br/&gt;He has been injured for %2h%3. He is located at %4.</English>
+                <French>%1 a besoin d'un médecin!&lt;br/&gt;&lt;br/&gt;Il est blessé depuis %2h%3. Il se trouve en %4.</French>
+            </Key>
+            <Key ID="str_ar_missions_unconscious_task_name">
+                <English>Heal: %1</English>
+                <French>Soigner : %1</French>
+            </Key>
+        </Container>
+    </Package>
+    <Package name="Loadout">
+        <Container name="class">
+            <Key ID="str_ar_missions_loadout_arf">
+                <English>ARF</English>
+                <French>ARF</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_at">
+                <English>AT</English>
+                <French>AT</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_cadet">
+                <English>Cadet</English>
+                <French>cadet</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_engineer">
+                <English>Engineer</English>
+                <French>Ingénieur</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_grenadier">
+                <English>Grenadier</English>
+                <French>Grenadier</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_heavy">
+                <English>Heavy</English>
+                <French>Lourd</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_marksman">
+                <English>Marksman</English>
+                <French>Tireur d'élite</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_medic">
+                <English>Medic</English>
+                <French>Médecin</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_pilot">
+                <English>Pilot</English>
+                <French>Pilote</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_rto">
+                <English>RTO</English>
+                <French>RTO</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_scout">
+                <English>Scout</English>
+                <French>Éclaireur</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_trooper">
+                <English>Trooper</English>
+                <French>Soldat</French>
+            </Key>
+        </Container>
+        <Container name="subclass">
+            <Key ID="str_ar_missions_loadout_dc15a">
+                <English>DC-15A</English>
+                <French>DC-15A</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_dc15s">
+                <English>DC-15S</English>
+                <French>DC-15S</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_dc15x">
+                <English>DC-15X</English>
+                <French>DC-15X</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_dc17sa">
+                <English>DC-17SA</English>
+                <French>DC-17SA</French>
+            </Key>
+            <Key ID="str_ar_missions_loadout_z6">
+                <English>Z-6</English>
+                <French>Z-6</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

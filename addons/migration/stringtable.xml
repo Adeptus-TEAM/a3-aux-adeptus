@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Migration">
+    <Package name="CfgVehicles">
+        <Key ID="str_ar_migration_obsolete">
+            <English>[61st] OBSOLETE</English>
+            <French>[61st] OBSOLÈTE</French>
+        </Key>
+    </Package>
+</Project>
