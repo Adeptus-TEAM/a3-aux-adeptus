@@ -1,0 +1,70 @@
+name = "Adeptus Auxiliaire"
+author = "Adeptus Team"
+url = "https://adeptusrepublica.fr/"
+prefix = "AR"
+mainprefix = "X"
+
+[version]
+path = "addons/main/script_version.hpp"
+git_hash = 8
+
+[files]
+include = [
+    "mod.cpp",
+    "meta.cpp",
+    "LICENSE",
+    "logo_ca.paa",
+    "*.dll",
+    "LICENSE.md",
+    "README.md",
+]
+exclude = [
+    "*.psd",
+    "*.png",
+    "*.md",
+]
+
+[hemtt.build]
+pdrive = "require"
+binarize = true
+rapify = true
+optional_mod_folders = false
+
+[hemtt.check]
+pdrive = "require"
+
+[hemtt.release]
+sign = true
+binarize = true
+rapify = true
+archive = true
+
+[hemtt.launch.default]
+presets = [
+    "Adeptus_Dev_Preset",
+]
+
+parameters = [
+    "-noPause",
+    "-noPauseAudio",
+]
+
+executable = "arma3_x64"
+file_patching = false
+binarize = true
+rapify = true
+
+[hemtt.launch.release]
+presets = [
+    "Adeptus_Release_Preset_0625",
+]
+
+parameters = [
+    "-noPause",
+    "-noPauseAudio",
+]
+
+executable = "arma3_x64"
+file_patching = false
+binarize = true
+rapify = true
