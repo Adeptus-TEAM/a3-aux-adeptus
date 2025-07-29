@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Dialogs (Loadout)">
+    <Package name="function">
+        <Key ID="str_ar_dialogs_loadout_loadmsg">
+            <English>&lt;t font='PuristaBold'&gt; You have loaded the equipment of &lt;br/&gt;&lt;/t&gt; &lt;t font='PuristaBold' size='1.6' color='#FFD200'&gt; %1 - %2 &lt;/t&gt;</English>
+            <French>&lt;t font='PuristaBold'&gt; Vous avez chargé l'équipement de &lt;br/&gt;&lt;/t&gt; &lt;t font='PuristaBold' size='1.6' color='#FFD200'&gt; %1 - %2 &lt;/t&gt;</French>
+        </Key>
+        <Key ID="str_ar_dialogs_loadout_openmenu">
+            <English>Open Loadout Menu</English>
+            <French>Ouvrir le menu de Loadout</French>
+        </Key>
+    </Package>
+    <Package name="rsc">
+        <Key ID="str_ar_dialogs_loadout_infoisengineer">
+            <English>Engineer Qualification</English>
+            <French>Qualification Ingénieur</French>
+        </Key>
+        <Key ID="str_ar_dialogs_loadout_infoiseod">
+            <English>EOD Qualification</English>
+            <French>Qualification EOD</French>
+        </Key>
+        <Key ID="str_ar_dialogs_loadout_infoismedic">
+            <English>Medical Qualification</English>
+            <French>Qualification Médicale</French>
+        </Key>
+        <Key ID="str_ar_dialogs_loadout_titleclass">
+            <English>Loadout Type</English>
+            <French>Type de Loadout</French>
+        </Key>
+        <Key ID="str_ar_dialogs_loadout_titleequipement">
+            <English>Loadout Equipment</English>
+            <French>Équipement du Loadout</French>
+        </Key>
+        <Key ID="str_ar_dialogs_loadout_titlesubclass">
+            <English>Loadout Variant</English>
+            <French>Variante de Loadout</French>
+        </Key>
+    </Package>
+</Project>

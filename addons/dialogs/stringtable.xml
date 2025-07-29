@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Dialogs">
+    <Package name="Functions">
+        <Key ID="str_ar_dialogs_btncancel">
+            <English>Cancel</English>
+            <French>Annuler</French>
+        </Key>
+        <Key ID="str_ar_dialogs_btnconfirm">
+            <English>Confirm</English>
+            <French>Confirmer</French>
+        </Key>
+    </Package>
+</Project>

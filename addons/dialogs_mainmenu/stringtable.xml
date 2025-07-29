@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Dialogs (Main Menu)">
+    <Package name="Functions (Main Menu)">
+        <Key ID="str_ar_dialogs_mainmenu_connect">
+            <English>Connect</English>
+            <French>Se connecter</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_name1">
+            <English>Training Server</English>
+            <French>Serveur de formation</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_name2">
+            <English>Main Server</English>
+            <French>Serveur Principal</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_name3">
+            <English>OPEX Server</English>
+            <French>Serveur OPEX</French>
+        </Key>
+    </Package>
+    <Package name="Functions (passwordCheck)">
+        <Key ID="str_ar_dialogs_mainmenu_header">
+            <English>Password Check: %1</English>
+            <French>Vérification du mot de passe: %1</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_info">
+            <English>Please enter your password to continue:</English>
+            <French>Veuillez entrer votre mot de passe pour continuer:</French>
+        </Key>
+    </Package>
+</Project>

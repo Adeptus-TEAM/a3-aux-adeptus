@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Dialogs (Garage)">
+    <Package name="rsc">
+        <Key ID="str_ar_dialogs_garage_btnDelete">
+            <English>Delete</English>
+            <French>Supprimer</French>
+        </Key>
+        <Key ID="str_ar_dialogs_garage_btnPylon">
+            <English>Pylons</English>
+            <French>Pylônes</French>
+        </Key>
+        <Key ID="str_ar_dialogs_garage_btnRearm">
+            <English>Rearm</English>
+            <French>Réarmer</French>
+        </Key>
+        <Key ID="str_ar_dialogs_garage_btnSpawn">
+            <English>Spawn</English>
+            <French>Déployer</French>
+        </Key>
+        <Key ID="str_ar_dialogs_garage_header">
+            <English>Garage Terminal</English>
+            <French>Terminal de Garage</French>
+        </Key>
+    </Package>
+</Project>

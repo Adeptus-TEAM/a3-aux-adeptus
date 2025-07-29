@@ -1,0 +1,9 @@
+PREP(deleteVehicle);
+PREP(displayVehicle);
+PREP(onLoad);
+PREP(openInterface);
+PREP(pylonsVehicle);
+PREP(rearmVehicle);
+PREP(selectionLeftButton);
+PREP(selectionRightButton);
+PREP(spawnVehicle);
