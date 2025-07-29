@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Misc (Medical Bot)">
+    <Package name="function">
+        <Key ID="str_ar_misc_medicalbot_adddamagetomedicalbot">
+            <English>Add Damage to Medical Bot</English>
+            <French>Ajouter des dégâts au bot médical</French>
+        </Key>
+        <Key ID="str_ar_misc_medicalbot_resetmedicalbot">
+            <English>Reset Medical Bot</English>
+            <French>Réinitialiser le bot médical</French>
+        </Key>
+    </Package>
+</Project>

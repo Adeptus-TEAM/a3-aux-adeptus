@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Misc (Respawn Beacon)">
+    <Package name="cfgVehicles">
+        <Key ID="str_ar_misc_respawnbeacon_active">
+            <English>Respawn Beacon Active</English>
+            <French>Balise de réapparition active</French>
+        </Key>
+        <Key ID="str_ar_misc_respawnbeacon_createnew">
+            <English>Create Respawn Beacon</English>
+            <French>Créer une balise de réapparition</French>
+        </Key>
+        <Key ID="str_ar_misc_respawnbeacon_grounditem">
+            <English>Respawn Beacon</English>
+            <French>Balise de réapparition</French>
+        </Key>
+        <Key ID="str_ar_misc_respawnbeacon_remove">
+            <English>Remove Respawn Beacon</English>
+            <French>Supprimer la balise de réapparition</French>
+        </Key>
+    </Package>
+    <Package name="cfgWeapons">
+        <Key ID="str_ar_misc_respawnbeacon_item">
+            <English>Respawn Beacon</English>
+            <French>Balise de réapparition</French>
+        </Key>
+        <Key ID="str_ar_misc_respawnbeacon_item_desc">
+            <English>Use this item to create a respawn beacon.</English>
+            <French>Utilisez cet objet pour créer une balise de réapparition.</French>
+        </Key>
+    </Package>
+    <Package name="function">
+        <Key ID="str_ar_misc_respawnbeacon_aborted">
+            <English>Aborted Creating Respawn Beacon</English>
+            <French>Création de la balise de réapparition annulée</French>
+        </Key>
+        <Key ID="str_ar_misc_respawnbeacon_building">
+            <English>Building Respawn Beacon</English>
+            <French>Construction de la balise de réapparition</French>
+        </Key>
+    </Package>
+</Project>
