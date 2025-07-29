@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Vehicles (Bison)">
+    <Package name="CfgVehicles">
+        <Container name="Bison">
+            <Key ID="str_ar_vehicles_bison_m411">
+                <English>[61st] M411 Bison (APC)</English>
+                <French>[61st] M411 Bison (APC)</French>
+            </Key>
+            <Key ID="str_ar_vehicles_bison_m412">
+                <English>[61st] M412 Bison (IFV)</English>
+                <French>[61st] M412 Bison (IFV)</French>
+            </Key>
+            <Key ID="str_ar_vehicles_bison_m413">
+                <English>[61st] M413 Bison (MGS)</English>
+                <French>[61st] M413 Bison (MGS)</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Vehicles (Hunter)">
+    <Package name="CfgVehicles">
+        <Container name="Hunter">
+            <Key ID="str_ar_vehicles_hunter_base">
+                <English>[61st] Hunter</English>
+                <French>[61st] Hunter</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

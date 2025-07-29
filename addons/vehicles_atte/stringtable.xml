@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Vehicles (ATTE)">
+    <Package name="CfgVehicles">
+        <Container name="ATTE">
+            <Key ID="str_ar_vehicles_atte_base">
+                <English>[61st] AT-TE</English>
+                <French>[61st] AT-TE</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

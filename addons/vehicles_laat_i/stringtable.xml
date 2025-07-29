@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Vehicles (LAAT/I)">
+    <Package name="CfgVehicles">
+        <Container name="Laat/I">
+            <Key ID="str_ar_vehicles_laat_i_mk1">
+                <English>[61st] LAAT/I Mk1</English>
+                <French>[61st] LAAT/I Mk1</French>
+            </Key>
+            <Key ID="str_ar_vehicles_laat_i_mk1lights">
+                <English>[61st] LAAT/I Mk1 (Lights)</English>
+                <French>[61st] LAAT/I Mk1 (Lights)</French>
+            </Key>
+            <Key ID="str_ar_vehicles_laat_i_mk2">
+                <English>[61st] LAAT/I Mk2</English>
+                <French>[61st] LAAT/I Mk2</French>
+            </Key>
+            <Key ID="str_ar_vehicles_laat_i_mk2lights">
+                <English>[61st] LAAT/I Mk2 (Lights)</English>
+                <French>[61st] LAAT/I Mk2 (Lights)</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Vehicles (Pandur)">
+    <Package name="CfgVehicles">
+        <Container name="Pandur">
+            <Key ID="str_ar_vehicles_pandur_tsp">
+                <English>[61st] Pandur (TSP)</English>
+                <French>[61st] Pandur (TSP)</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>
