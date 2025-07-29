@@ -96,7 +96,7 @@
             </Key>
             <Key ID="str_ar_missions_loadout_cadet">
                 <English>Cadet</English>
-                <French>cadet</French>
+                <French>Cadet</French>
             </Key>
             <Key ID="str_ar_missions_loadout_engineer">
                 <English>Engineer</English>
@@ -128,7 +128,7 @@
             </Key>
             <Key ID="str_ar_missions_loadout_scout">
                 <English>Scout</English>
-                <French>Éclaireur</French>
+                <French>Scout</French>
             </Key>
             <Key ID="str_ar_missions_loadout_trooper">
                 <English>Trooper</English>

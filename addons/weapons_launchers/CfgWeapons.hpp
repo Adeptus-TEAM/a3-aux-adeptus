@@ -1,6 +1,6 @@
 class CfgWeapons {
-    class 3AS_RPS6_F;
-    class SUBCVAR(RPS6_F) : 3AS_RPS6_F {
+    class 3AS_RPS6_Base;
+    class SUBCVAR(RPS6_F) : 3AS_RPS6_Base {
         baseWeapon = QSUBCVAR(RPS6_F);
         author = AUTHOR;
         displayName = CSTRING(RPS6_DisplayName);
