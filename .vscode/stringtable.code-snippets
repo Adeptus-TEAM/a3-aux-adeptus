@@ -1,0 +1,39 @@
+{
+	"Stringtable Package": {
+		"scope": "xml",
+		"prefix": "package",
+		"body": ["<Package name=\"$1\">", "\t", "</Package>"],
+		"description": "Créer un paquet de table de chaînes"
+	},
+	"Stringtable Container": {
+		"scope": "xml",
+		"prefix": "container",
+		"body": ["<Container name=\"$1\">", "\t", "</Container>"],
+		"description": "Créer un conteneur de table de chaînes"
+	},
+	"Stringtable Key": {
+		"scope": "xml",
+		"prefix": ["key", "str"],
+		"body": [
+			"<Key ID=\"$1\">",
+			"\t<English>$2</English>",
+			"\t<French>$3</French>",
+			"</Key>"
+		],
+		"description": "Créer une clé de table de chaînes"
+	},
+	"Line Break": {
+		"scope": "xml",
+		"prefix": "br",
+		"body": ["&lt;br/&gt;"],
+		"description": "Insérer un saut de ligne"
+	},
+	"Colored Text": {
+		"scope": "xml",
+		"prefix": "colortext",
+		"body": [
+			"&lt;t color='#${1|FFFFFF,FF0000,00FF00,0000FF,FFFF00,00FFFF,FF00FF|}'&gt;$2&lt;/t&gt;"
+		],
+		"description": "Insérer du texte coloré"
+	}
+}

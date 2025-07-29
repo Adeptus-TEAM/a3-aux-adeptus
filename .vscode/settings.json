@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "*.ext": "cpp",
+        "*.hpp": "cpp",
+        "*.cpp": "cpp",
+        "*.sqf": "sqf",
+        "*.cfg": "cpp",
+        "*.rvmat": "cpp",
+        "*.toml": "ini",
+        "*.rhai": "rust"
+    },
+    "files.autoSave": "afterDelay"
+}
