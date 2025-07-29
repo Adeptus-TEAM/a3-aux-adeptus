@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Object (Editor)">
+    <Package name="Attributes">
+        <Container name="Garage Terminal">
+            <Key ID="str_ar_objects_editor_garageAreaSize">
+                <English>Garage Terminal Area Size</English>
+                <French>Taille de la zone du terminal de garage</French>
+            </Key>
+            <Key ID="str_ar_objects_editor_garageSpawnObject">
+                <English>Garage Terminal Spawn Object</English>
+                <French>Objet de réapparition du terminal de garage</French>
+            </Key>
+            <Key ID="str_ar_objects_editor_garageVehiclesList">
+                <English>Garage Vehicles List</English>
+                <French>Liste des véhicules du garage</French>
+            </Key>
+        </Container>
+    </Package>
+    <Package name="CfgVehicles">
+        <Container name="Arsenal Box">
+            <Key ID="str_ar_objects_editor_arsenalbox">
+                <English>Arsenal Limited</English>
+                <French>Arsenal Limité</French>
+            </Key>
+        </Container>
+        <Container name="Garage Terminal">
+            <Key ID="str_ar_objects_editor_garageterminal">
+                <English>Garage Terminal</English>
+                <French>Terminal de Garage</French>
+            </Key>
+        </Container>
+        <Container name="Unit Trait Terminal">
+            <Key ID="str_ar_objects_editor_unittraitterminal">
+                <English>Unit Trait Terminal</English>
+                <French>Terminal de spécialité</French>
+            </Key>
+        </Container>
+    </Package>
+    <Package name="ComboNames">
+        <Container name="Garage Terminal">
+            <Key ID="str_ar_objects_editor_attackaerialvehicles">
+                <English>Attack Aerial Vehicles</English>
+                <French>Véhicules aériens d'attaque</French>
+            </Key>
+            <Key ID="str_ar_objects_editor_supplycrate">
+                <English>Supply Crates</English>
+                <French>Caisses de ravitaillement</French>
+            </Key>
+            <Key ID="str_ar_objects_editor_terrestrialvehicles">
+                <English>Terrestrial Vehicles</English>
+                <French>Véhicules terrestres</French>
+            </Key>
+            <Key ID="str_ar_objects_editor_transportaerialvehicles">
+                <English>Transport Aerial Vehicles</English>
+                <French>Véhicules aériens de transport</French>
+            </Key>
+        </Container>
+    </Package>
+    <Package name="functions">
+        <Key ID="str_ar_objects_editor_terminal">
+            <English>Open Garage</English>
+            <French>Ouvrir le Garage</French>
+        </Key>
+        <Container name="Unit Trait Terminal">
+            <Key ID="str_ar_objects_activatetraitengineer">
+                <English>&lt;t color='#FFFFFF'&gt;Activate Engineer Qualification&lt;/t&gt;</English>
+                <French>&lt;t color='#FFFFFF'&gt;Activer Qualification Ingénieur&lt;/t&gt;</French>
+            </Key>
+            <Key ID="str_ar_objects_activatetraitexplosivespecialist">
+                <English>&lt;t color='#FFFFFF'&gt;Activate Explosive Specialist Qualification&lt;/t&gt;</English>
+                <French>&lt;t color='#FFFFFF'&gt;Activer Qualification Spécialiste en Explosifs&lt;/t&gt;</French>
+            </Key>
+            <Key ID="str_ar_objects_activatetraitmedic">
+                <English>&lt;t color='#FFFFFF'&gt;Activate Medical Qualification&lt;/t&gt;</English>
+                <French>&lt;t color='#FFFFFF'&gt;Activer Qualification Médicale&lt;/t&gt;</French>
+            </Key>
+            <Key ID="str_ar_objects_deactivatetraitengineer">
+                <English>&lt;t color='#FF0000'&gt;Deactivate Engineer Qualification&lt;/t&gt;</English>
+                <French>&lt;t color='#FF0000'&gt;Désactiver Qualification Ingénieur&lt;/t&gt;</French>
+            </Key>
+            <Key ID="str_ar_objects_deactivatetraitexplosivespecialist">
+                <English>&lt;t color='#FF0000'&gt;Deactivate Explosive Specialist Qualification&lt;/t&gt;</English>
+                <French>&lt;t color='#FF0000'&gt;Désactiver Qualification Spécialiste en Explosifs&lt;/t&gt;</French>
+            </Key>
+            <Key ID="str_ar_objects_deactivatetraitmedic">
+                <English>&lt;t color='#FF0000'&gt;Deactivate Medical Qualification&lt;/t&gt;</English>
+                <French>&lt;t color='#FF0000'&gt;Désactiver Qualification Médicale&lt;/t&gt;</French>
+            </Key>
+        </Container>
+    </Package>
+    <Package name="tooltips">
+        <Container name="Garage Terminal">
+            <Key ID="str_ar_objects_editor_garageAreaSizeTooltip">
+                <English>Write the size of the area you wish the garage to check to delete objects.</English>
+                <French>Ecrivez la taille de la zone que vous souhaitez que le garage vérifie pour supprimer les objets</French>
+            </Key>
+            <Key ID="str_ar_objects_editor_garageSpawnObjectTooltip">
+                <English>Write the var of the object you wish the objects to spawn on.</English>
+                <French>Ecrivez la variable de l'objet sur lequel vous souhaitez que les objets apparaissent</French>
+            </Key>
+            <Key ID="str_ar_objects_editor_garageVehiclesListTooltip">
+                <English>Choose from which list you want the garage to pick from. (Those are established in the mission's description.ext)</English>
+                <French>Choisissez la liste à partir de laquelle vous souhaitez que le garage effectue la sélection. (Celles-ci sont définies dans le fichier description.ext de la mission.)</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

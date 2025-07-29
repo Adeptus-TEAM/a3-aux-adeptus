@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Objects (FCP)">
+    <Package name="CfgVehicles">
+        <Key ID="str_ar_objects_fcp">
+            <English>Forward Command Post</English>
+            <French>Poste de Commandement Avancé</French>
+        </Key>
+        <Container name="actions">
+            <Key ID="str_ar_objects_fcp_deploy">
+                <English>Deploy Forward Command Post</English>
+                <French>Déployer le Poste de Commandement Avancé</French>
+            </Key>
+            <Key ID="str_ar_objects_fcp_undeploy">
+                <English>Undeploy Forward Command Post</English>
+                <French>Replier le Poste de Commandement Avancé</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

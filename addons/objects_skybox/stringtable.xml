@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Objects">
+    <Package name="Skybox">
+        <Key ID="str_ar_objects_skybox_hyperspace">
+            <English>Hyperspace Skybox</English>
+            <French>Skybox d'hyperespace</French>
+        </Key>
+    </Package>
+</Project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="objects (misc)">
+    <Package name="CfgVehicles">
+        <Container name="BriefingBench">
+            <Key ID="str_ar_objects_misc_briefingbench">
+                <English>Briefing Bench</English>
+                <French>Banc de briefing</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

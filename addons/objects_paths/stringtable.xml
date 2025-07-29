@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Objects (Paths)">
+    <Package name="CfgVehicles">
+        <Container name="Paths">
+            <Key ID="str_ar_objects_paths_armory_red">
+                <English>Red Armory Text</English>
+                <French>Texte Armurerie Rouge</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_arrow_blue">
+                <English>Blue Arrow</English>
+                <French>Flèche bleue</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_arrow_red">
+                <English>Red Arrow</English>
+                <French>Flèche rouge</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_arrow_yellow">
+                <English>Yellow Arrow</English>
+                <French>Flèche jaune</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_barracks_blue">
+                <English>Blue Barracks Text</English>
+                <French>Texte Baraquement Bleu</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_bridge_blue">
+                <English>Blue Bridge Text</English>
+                <French>Texte Pont Bleu</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_briefing_red">
+                <English>Red Briefing Text</English>
+                <French>Texte Briefing Rouge</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_hangar_1_yellow">
+                <English>Yellow Hangar 1 Text</English>
+                <French>Texte Hangar 1 Jaune</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_hangar_2_yellow">
+                <English>Yellow Hangar 2 Text</English>
+                <French>Texte Hangar 2 Jaune</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_infirmary_blue">
+                <English>Blue Infirmary Text</English>
+                <French>Texte Infirmerie Bleue</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_line_blue">
+                <English>Blue Line</English>
+                <French>Ligne bleue</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_line_red">
+                <English>Red Line</English>
+                <French>Ligne rouge</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_line_yellow">
+                <English>Yellow Line</English>
+                <French>Ligne jaune</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_main_hangar_yellow">
+                <English>Yellow Main Hangar Text</English>
+                <French>Texte Hangar Principal Jaune</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_turn_blue">
+                <English>Blue Turn</English>
+                <French>Tournant bleu</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_turn_red">
+                <English>Red Turn</English>
+                <French>Tournant rouge</French>
+            </Key>
+            <Key ID="str_ar_objects_paths_turn_yellow">
+                <English>Yellow Turn</English>
+                <French>Tournant jaune</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

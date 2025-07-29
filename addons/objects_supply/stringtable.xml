@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Objects (Supply)">
+    <Package name="CfgVehicles">
+        <Container name="supply">
+            <Key ID="str_ar_objects_supply_aa">
+                <English>Anti-Air Supply</English>
+                <French>Ravitaillement Lanceurs AA</French>
+            </Key>
+            <Key ID="str_ar_objects_supply_ammo">
+                <English>Ammunition Supply</English>
+                <French>Ravitaillement Munitions</French>
+            </Key>
+            <Key ID="str_ar_objects_supply_at">
+                <English>Anti-Tank Supply</English>
+                <French>Ravitaillement Lanceurs AT</French>
+            </Key>
+            <Key ID="str_ar_objects_supply_grenade">
+                <English>Grenade Supply</English>
+                <French>Ravitaillement Grenades</French>
+            </Key>
+            <Key ID="str_ar_objects_supply_grenadier">
+                <English>Grenadier Supply</English>
+                <French>Ravitaillement Grenadier</French>
+            </Key>
+            <Key ID="str_ar_objects_supply_medical">
+                <English>Medical Supply</English>
+                <French>Ravitaillement Médical</French>
+            </Key>
+            <Key ID="str_ar_objects_supply_weapons">
+                <English>Weapons Supply</English>
+                <French>Ravitaillement Armement</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>
