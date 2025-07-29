@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Zeus (Laat Air Drop)">
+    <Package name="Functions">
+        <Key ID="str_ar_zeus_laatairdrop_btnaddsupply">
+            <English>Add Supply</English>
+            <French>Ajouter des Fournitures</French>
+        </Key>
+        <Key ID="str_ar_zeus_laatairdrop_btndeletesupply">
+            <English>Delete Supply</English>
+            <French>Supprimer des Fournitures</French>
+        </Key>
+        <Key ID="str_ar_zeus_laatairdrop_drop_cancel">
+            <English>&lt;t color='#FF0000'&gt;Canceled.&lt;/t&gt;</English>
+            <French>&lt;t color='#FF0000'&gt;Annulé.&lt;/t&gt;</French>
+        </Key>
+        <Key ID="str_ar_zeus_laatairdrop_drop_confirmed">
+            <English>&lt;t color='#00FF00'&gt;Confirmed.&lt;/t&gt;</English>
+            <French>&lt;t color='#00FF00'&gt;Confirmé.&lt;/t&gt;</French>
+        </Key>
+        <Key ID="str_ar_zeus_laatairdrop_header">
+            <English>Laat Air Drop</English>
+            <French>Largage Aérien Laat</French>
+        </Key>
+        <Key ID="str_ar_zeus_laatairdrop_titleGestSupply">
+            <English>Supply Management :</English>
+            <French>Gestion des Fournitures :</French>
+        </Key>
+        <Key ID="str_ar_zeus_laatairdrop_titlesetdir">
+            <English>Set Direction :</English>
+            <French>Définir la Direction :</French>
+        </Key>
+        <Key ID="str_ar_zeus_laatairdrop_titlesetheight">
+            <English>Set Height :</English>
+            <French>Définir la Hauteur :</French>
+        </Key>
+    </Package>
+    <Package name="cfgVehicles">
+        <Key ID="str_ar_zeus_laatairdrop">
+            <English>Laat Air Drop</English>
+            <French>Largage Aérien Laat</French>
+        </Key>
+    </Package>
+</Project>
