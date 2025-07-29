@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Characters (Vests)">
+    <Package name="CfgWeapons">
+        <Container name="customs"></Container>
+        <Container name="regs">
+            <Key ID="str_ar_characters_vests_regs_base_arc_plate_vest">
+                <English>[61st] ARC Plate Vest</English>
+                <French>[61st] Veste Plaques ARC</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_arc_vest">
+                <English>[61st] ARC Vest</English>
+                <French>[61st] Veste ARC</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_arf_vest">
+                <English>[61st] ARF Vest</English>
+                <French>[61st] Veste ARF</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_assault_vest">
+                <English>[61st] Assault Vest</English>
+                <French>[61st] Veste d'Assaut</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_cfr_vest">
+                <English>[61st] CFR Vest</English>
+                <French>[61st] Veste CFR</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_clone_vest">
+                <English>[61st] Clone Vest</English>
+                <French>[61st] Veste Clone</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_commander_vest">
+                <English>[61st] Commander Vest</English>
+                <French>[61st] Veste de Commandant</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_engineer_vest">
+                <English>[61st] Engineer Vest</English>
+                <French>[61st] Veste d'Ingénieur</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_engineernco_vest">
+                <English>[61st] Engineer NCO Vest</English>
+                <French>[61st] Veste Sous-Officier Ingénieur</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_forcereconnco_vest">
+                <English>[61st] Force Recon NCO Vest</English>
+                <French>[61st] Veste Sous-Officier Reconnaissance</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_grenadier_vest">
+                <English>[61st] Grenadier Vest</English>
+                <French>[61st] Veste Grenadier</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_hazard_vest">
+                <English>[61st] Hazard Vest</English>
+                <French>[61st] Veste Hazmat</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_heavy_vest">
+                <English>[61st] Heavy Vest</English>
+                <French>[61st] Veste Lourde</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_kama_vest">
+                <English>[61st] Kama Vest</English>
+                <French>[61st] Veste Kama</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_lieutenant_vest">
+                <English>[61st] Lieutenant Vest</English>
+                <French>[61st] Veste Lieutenant</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_medic_vest">
+                <English>[61st] Medic Vest</English>
+                <French>[61st] Veste Médic</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_officer_vest">
+                <English>[61st] Officer Vest</English>
+                <French>[61st] Veste Officier</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_recon_vest">
+                <English>[61st] Recon Vest</English>
+                <French>[61st] Veste Reconnaissance</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_reconnco_vest">
+                <English>[61st] Recon NCO Vest</English>
+                <French>[61st] Veste Sous-Officier Reconnaissance</French>
+            </Key>
+            <Key ID="str_ar_characters_vests_regs_base_specialist_vest">
+                <English>[61st] Specialist Vest</English>
+                <French>[61st] Veste Spécialiste</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

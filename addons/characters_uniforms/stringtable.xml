@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Characters (Uniforms)">
+    <Package name="CfgWeapons">
+        <Container name="customs">
+            <Key ID="str_ar_characters_uniforms_customs_ankh">
+                <English>[61st] Ankh Uniform</English>
+                <French>[61st] Uniforme Ankh</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_archer">
+                <English>[61st] Archer Uniform</English>
+                <French>[61st] Uniforme Archer</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_code">
+                <English>[61st] Code Uniform</English>
+                <French>[61st] Uniforme Code</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_dragon">
+                <English>[61st] Dragon Uniform</English>
+                <French>[61st] Uniforme Dragon</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_gart">
+                <English>[61st] Gart Uniform</English>
+                <French>[61st] Uniforme Gart</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_liberty">
+                <English>[61st] Liberty Uniform</English>
+                <French>[61st] Uniforme Liberty</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_magic">
+                <English>[61st] Magic Uniform</English>
+                <French>[61st] Uniforme Magic</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_nek">
+                <English>[61st] Nek Uniform</English>
+                <French>[61st] Uniforme Nek</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_ozy">
+                <English>[61st] Ozy Uniform</English>
+                <French>[61st] Uniforme Ozy</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_phantom">
+                <English>[61st] Phantom Uniform</English>
+                <French>[61st] Uniforme Phantom</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_puce">
+                <English>[61st] Puce Uniform</English>
+                <French>[61st] Uniforme Puce</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_red">
+                <English>[61st] Red Uniform</English>
+                <French>[61st] Uniforme Red</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_sight">
+                <English>[61st] Sight Uniform</English>
+                <French>[61st] Uniforme Sight</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_sixone">
+                <English>[61st] SixOne Uniform</English>
+                <French>[61st] Uniforme SixOne</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_spearhead">
+                <English>[61st] Spearhead Uniform</English>
+                <French>[61st] Uniforme Spearhead</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_customs_sting">
+                <English>[61st] Sting Uniform</English>
+                <French>[61st] Uniforme Sting</French>
+            </Key>
+        </Container>
+        <Container name="regs">
+            <Key ID="str_ar_characters_uniforms_regs_arf_desert">
+                <English>[61st] ARF Desert Uniform</English>
+                <French>[61st] Uniforme ARF Désert</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_regs_arf_forest">
+                <English>[61st] ARF Forest Uniform</English>
+                <French>[61st] Uniforme ARF Forêt</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_regs_engineer">
+                <English>[61st] Engineer Uniform</English>
+                <French>[61st] Uniforme Ingénieur</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_regs_marine">
+                <English>[61st] Marine Uniform</English>
+                <French>[61st] Uniforme Marine</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_regs_marine_co">
+                <English>[61st] Marine CO Uniform</English>
+                <French>[61st] Uniforme Marine CO</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_regs_scout">
+                <English>[61st] Scout Uniform</English>
+                <French>[61st] Uniforme Scout</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_regs_v1">
+                <English>[61st] Uniform v1</English>
+                <French>[61st] Uniforme v1</French>
+            </Key>
+            <Key ID="str_ar_characters_uniforms_regs_v2">
+                <English>[61st] Uniform v2</English>
+                <French>[61st] Uniforme v2</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

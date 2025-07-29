@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Characters (Units)">
+    <Package name="CfgVehicles">
+        <Container name="customs"></Container>
+        <Container name="groups">
+            <Key ID="str_ar_groups_clonep1">
+                <English>[61st] Clones P1</English>
+                <French>[61e] Clones P1</French>
+            </Key>
+            <Key ID="str_ar_groups_clonep2">
+                <English>[61st] Clones P2</English>
+                <French>[61e] Clones P2</French>
+            </Key>
+        </Container>
+        <Container name="regs">
+            <Key ID="str_ar_characters_units_arf_desert_unit">
+                <English>Trooper ARF Desert</English>
+                <French>Trooper ARF Desert</French>
+            </Key>
+            <Key ID="str_ar_characters_units_arf_forest_unit">
+                <English>Trooper ARF Forest</English>
+                <French>Trooper ARF Forest</French>
+            </Key>
+            <Key ID="str_ar_characters_units_arf_p1_unit">
+                <English>Trooper ARF [P1]</English>
+                <French>Trooper ARF [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_arf_p2_unit">
+                <English>Trooper ARF [P2]</English>
+                <French>Trooper ARF [P2]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_at_p1_unit">
+                <English>Trooper AT [P1]</English>
+                <French>Trooper AT [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_at_p2_unit">
+                <English>Trooper AT [P2]</English>
+                <French>Trooper AT [P2]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_barc_unit">
+                <English>Trooper BARC</English>
+                <French>Trooper BARC</French>
+            </Key>
+            <Key ID="str_ar_characters_units_engineer_p1_unit">
+                <English>Trooper Engineer [P1]</English>
+                <French>Trooper Engineer [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_engineer_p2_unit">
+                <English>Trooper Engineer [P2]</English>
+                <French>Trooper Engineer [P2]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_heavy_p1_unit">
+                <English>Trooper Heavy [P1]</English>
+                <French>Trooper Heavy [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_heavy_p2_unit">
+                <English>Trooper Heavy [P2]</English>
+                <French>Trooper Heavy [P2]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_lieutenant_p1_unit">
+                <English>Trooper Lieutenant [P1]</English>
+                <French>Trooper Lieutenant [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_lieutenant_p2_unit">
+                <English>Trooper Lieutenant [P2]</English>
+                <French>Trooper Lieutenant [P2]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_marine_co_unit">
+                <English>Trooper Marine CO</English>
+                <French>Trooper Marine CO</French>
+            </Key>
+            <Key ID="str_ar_characters_units_marine_unit">
+                <English>Trooper Marine</English>
+                <French>Trooper Marine</French>
+            </Key>
+            <Key ID="str_ar_characters_units_medic_p1_unit">
+                <English>Trooper Medic [P1]</English>
+                <French>Trooper Medic [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_medic_p2_unit">
+                <English>Trooper Medic [P2]</English>
+                <French>Trooper Medic [P2]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_pilot_p1_unit">
+                <English>Trooper Pilot [P1]</English>
+                <French>Trooper Pilot [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_pilot_p2_unit">
+                <English>Trooper Pilot [P2]</English>
+                <French>Trooper Pilot [P2]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_scout_unit">
+                <English>Trooper Scout</English>
+                <French>Trooper Scout</French>
+            </Key>
+            <Key ID="str_ar_characters_units_sergeant_p1_unit">
+                <English>Trooper Sergeant [P1]</English>
+                <French>Trooper Sergent [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_sergeant_p2_unit">
+                <English>Trooper Sergeant [P2]</English>
+                <French>Trooper Sergent [P2]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_specop_p1_unit">
+                <English>Trooper SpecOp [P1]</English>
+                <French>Trooper SpecOp [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_specop_p2_unit">
+                <English>Trooper SpecOp [P2]</English>
+                <French>Trooper SpecOp [P2]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_unarmed_marine_co_unit">
+                <English>Trooper Unarmed Marine CO</English>
+                <French>Trooper Non Armé Marine CO</French>
+            </Key>
+            <Key ID="str_ar_characters_units_unarmed_marine_unit">
+                <English>Trooper Unarmed Marine</English>
+                <French>Trooper Non Armé Marine</French>
+            </Key>
+            <Key ID="str_ar_characters_units_unarmed_v1_p1_unit">
+                <English>Trooper Unarmed V1 [P1]</English>
+                <French>Trooper Non Armé V1 [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_unarmed_v1_p2_unit">
+                <English>Trooper Unarmed V1 [P2]</English>
+                <French>Trooper Non Armé V1 [P2]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_unarmed_v2_p1_unit">
+                <English>Trooper Unarmed V2 [P1]</English>
+                <French>Trooper Non Armé V2 [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_unarmed_v2_p2_unit">
+                <English>Trooper Unarmed V2 [P2]</English>
+                <French>Trooper Non Armé V2 [P2]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_v1_p1_unit">
+                <English>Trooper V1 [P1]</English>
+                <French>Trooper V1 [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_v1_p2_unit">
+                <English>Trooper V1 [P2]</English>
+                <French>Trooper V1 [P2]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_v2_p1_unit">
+                <English>Trooper V2 [P1]</English>
+                <French>Trooper V2 [P1]</French>
+            </Key>
+            <Key ID="str_ar_characters_units_v2_p2_unit">
+                <English>Trooper V2 [P2]</English>
+                <French>Trooper V2 [P2]</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

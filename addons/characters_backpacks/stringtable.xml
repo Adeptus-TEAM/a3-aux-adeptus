@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Characters (Backpacks)">
+    <Package name="CfgVehicles">
+        <Container name="customs">
+            <Key ID="str_ar_characters_customs_spearhead_mediumradio_backpack">
+                <English>[61st] Spearhead Medium Radio Backpack</English>
+                <French>[61st] Sac à dos radio moyen Spearhead</French>
+            </Key>
+        </Container>
+        <Container name="regs">
+            <Key ID="str_ar_characters_regs_base_heavy_backpack">
+                <English>[61st] Heavy Backpack</English>
+                <French>[61st] Sac à dos lourd</French>
+            </Key>
+            <Key ID="str_ar_characters_regs_base_heavymedic_backpack">
+                <English>[61st] Heavy Medic Backpack</English>
+                <French>[61st] Sac à dos de médecin lourd</French>
+            </Key>
+            <Key ID="str_ar_characters_regs_base_invisible_backpack">
+                <English>[61st] Invisible Backpack</English>
+                <French>[61st] Sac à dos invisible</French>
+            </Key>
+            <Key ID="str_ar_characters_regs_base_medic_backpack">
+                <English>[61st] Medic Backpack</English>
+                <French>[61st] Sac à dos de médecin</French>
+            </Key>
+            <Key ID="str_ar_characters_regs_base_medium_backpack">
+                <English>[61st] Medium Backpack</English>
+                <French>[61st] Sac à dos moyen</French>
+            </Key>
+            <Key ID="str_ar_characters_regs_base_mediumradio_backpack">
+                <English>[61st] Medium Radio Backpack</English>
+                <French>[61st] Sac à dos radio moyen</French>
+            </Key>
+            <Key ID="str_ar_characters_regs_base_radio_backpack">
+                <English>[61st] Radio Backpack</English>
+                <French>[61st] Sac à dos radio</French>
+            </Key>
+            <Key ID="str_ar_characters_regs_base_rocket_backpack">
+                <English>[61st] Rocket Backpack</English>
+                <French>[61st] Sac à dos de fusée</French>
+            </Key>
+            <Key ID="str_ar_characters_regs_base_standard_backpack">
+                <English>[61st] Standard Backpack</English>
+                <French>[61st] Sac à dos standard</French>
+            </Key>
+            <Key ID="str_ar_characters_regs_eod_heavy_backpack">
+                <English>[61st] EOD Heavy Backpack</English>
+                <French>[61st] Sac à dos lourd EOD</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

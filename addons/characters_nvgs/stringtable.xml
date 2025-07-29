@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Characters (NVGs)">
+    <Package name="CfgWeapons">
+        <Container name="customs"></Container>
+        <Container name="regs">
+            <Key ID="str_ar_characters_nvgs_regs_base_p1_commander_nvg">
+                <English>[61st] Commander NVG P1</English>
+                <French>[61e] NVG Commandant P1</French>
+            </Key>
+            <Key ID="str_ar_characters_nvgs_regs_base_p1_marshalcommander_nvg">
+                <English>[61st] Marshal Commander NVG P1</English>
+                <French>[61e] NVG Commandant Marshal P1</French>
+            </Key>
+            <Key ID="str_ar_characters_nvgs_regs_base_p1_standard_nvg">
+                <English>[61st] Standard NVG P1</English>
+                <French>[61e] NVG Standard P1</French>
+            </Key>
+            <Key ID="str_ar_characters_nvgs_regs_base_p2_commander_nvg">
+                <English>[61st] Commander NVG P2</English>
+                <French>[61e] NVG Commandant P2</French>
+            </Key>
+            <Key ID="str_ar_characters_nvgs_regs_base_p2_marshalcommander_nvg">
+                <English>[61st] Marshal Commander NVG P2</English>
+                <French>[61e] NVG Commandant Marshal P2</French>
+            </Key>
+            <Key ID="str_ar_characters_nvgs_regs_base_p2_standard_nvg">
+                <English>[61st] Standard NVG P2</English>
+                <French>[61e] NVG Standard P2</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>

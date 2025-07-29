@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Characters (Helmets)">
+    <Package name="CfgWeapons">
+        <Container name="customs">
+            <Key ID="str_ar_characters_helmets_customs_ankh_p1_helmet">
+                <English>[61st] Ankh Helmet P1</English>
+                <French>[61st] Casque Ankh P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_ankh_p2_helmet">
+                <English>[61st] Ankh Helmet P2</English>
+                <French>[61st] Casque Ankh P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_archer_p1_helmet">
+                <English>[61st] Archer Helmet P1</English>
+                <French>[61st] Casque Archer P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_archer_p2_helmet">
+                <English>[61st] Archer Helmet P2</English>
+                <French>[61st] Casque Archer P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_code_scout_helmet">
+                <English>[61st] Code Scout Helmet</English>
+                <French>[61st] Casque Scout Code</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_dragon_p1_helmet">
+                <English>[61st] Dragon Helmet P1</English>
+                <French>[61st] Casque Dragon P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_dragon_p2_helmet">
+                <English>[61st] Dragon Helmet P2</English>
+                <French>[61st] Casque Dragon P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_gart_p1_helmet">
+                <English>[61st] Gart Helmet P1</English>
+                <French>[61st] Casque Gart P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_gart_p2_helmet">
+                <English>[61st] Gart Helmet P2</English>
+                <French>[61st] Casque Gart P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_liberty_engineer_p1_helmet">
+                <English>[61st] Liberty Engineer Helmet P1</English>
+                <French>[61st] Casque Ingénieur Liberty P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_liberty_engineer_p2_helmet">
+                <English>[61st] Liberty Engineer Helmet P2</English>
+                <French>[61st] Casque Ingénieur Liberty P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_magic_p1_helmet">
+                <English>[61st] Magic Helmet P1</English>
+                <French>[61st] Casque Magic P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_magic_p2_helmet">
+                <English>[61st] Magic Helmet P2</English>
+                <French>[61st] Casque Magic P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_nek_engineer_p2_helmet">
+                <English>[61st] Nek Engineer Helmet P2</English>
+                <French>[61st] Casque Ingénieur Nek P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_nek_pilot_p2_helmet">
+                <English>[61st] Nek Pilot Helmet P2</English>
+                <French>[61st] Casque Pilote Nek P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_ozy_p2_helmet">
+                <English>[61st] Ozy Helmet P2</English>
+                <French>[61st] Casque Ozy P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_ozy_scout_helmet">
+                <English>[61st] Ozy Scout Helmet</English>
+                <French>[61st] Casque Scout Ozy</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_phantom_p1_helmet">
+                <English>[61st] Phantom Helmet P1</English>
+                <French>[61st] Casque Phantom P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_phantom_p2_helmet">
+                <English>[61st] Phantom Helmet P2</English>
+                <French>[61st] Casque Phantom P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_puce_barc_helmet">
+                <English>[61st] Puce Barc Helmet</English>
+                <French>[61st] Casque Barc Puce</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_puce_p1_helmet">
+                <English>[61st] Puce Helmet P1</English>
+                <French>[61st] Casque Puce P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_red_p1_helmet">
+                <English>[61st] Red Helmet P1</English>
+                <French>[61st] Casque Red P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_red_rex_helmet">
+                <English>[61st] Red Rex Helmet</English>
+                <French>[61st] Casque Red Rex</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_sight_pilot_p1_helmet">
+                <English>[61st] Sight Pilot Helmet P1</English>
+                <French>[61st] Casque Pilote Sight P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_sight_pilot_p2_helmet">
+                <English>[61st] Sight Pilot Helmet P2</English>
+                <French>[61st] Casque Pilote Sight P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_sixone_p1_helmet">
+                <English>[61st] SixOne Helmet P1</English>
+                <French>[61st] Casque SixOne P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_sixone_p2_helmet">
+                <English>[61st] SixOne Helmet P2</English>
+                <French>[61st] Casque SixOne P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_spearhead_p1_helmet">
+                <English>[61st] Spearhead Helmet P1</English>
+                <French>[61st] Casque Spearhead P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_spearhead_p2_helmet">
+                <English>[61st] Spearhead Helmet P2</English>
+                <French>[61st] Casque Spearhead P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_sting_scout_helmet">
+                <English>[61st] Sting Scout Helmet</English>
+                <French>[61st] Casque Scout Sting</French>
+            </Key>
+        </Container>
+        <Container name="regs">
+            <Key ID="str_ar_characters_helmets_regs_base_arc_helmet">
+                <English>[61st] ARC Helmet</English>
+                <French>[61st] Casque ARC</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_base_arf_p1_helmet">
+                <English>[61st] ARF Helmet P1</English>
+                <French>[61st] Casque ARF P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_base_arf_p2_helmet">
+                <English>[61st] ARF Helmet P2</English>
+                <French>[61st] Casque ARF P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_base_barc_helmet">
+                <English>[61st] Barc Helmet</English>
+                <French>[61st] Casque Barc</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_base_engineer_p1_helmet">
+                <English>[61st] Engineer Helmet P1</English>
+                <French>[61st] Casque d'Ingénieur P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_base_engineer_p2_helmet">
+                <English>[61st] Engineer Helmet P2</English>
+                <French>[61st] Casque d'Ingénieur P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_base_marine_helmet">
+                <English>[61st] Marine Helmet</English>
+                <French>[61st] Casque Marine</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_base_pilot_p1_helmet">
+                <English>[61st] Pilot Helmet P1</English>
+                <French>[61st] Casque Pilote P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_base_pilot_p2_helmet">
+                <English>[61st] Pilot Helmet P2</English>
+                <French>[61st] Casque Pilote P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_base_scout_helmet">
+                <English>[61st] Scout Helmet</English>
+                <French>[61st] Casque Scout</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_base_specop_p1_helmet">
+                <English>[61st] SpecOps Helmet P1</English>
+                <French>[61st] Casque SpecOps P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_base_specop_p2_helmet">
+                <English>[61st] SpecOps Helmet P2</English>
+                <French>[61st] Casque SpecOps P2</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_co_marine_helmet">
+                <English>[61st] Marine Helmet (CO)</English>
+                <French>[61st] Casque Marine (CO)</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_desert_arf_p1_helmet">
+                <English>[61st] ARF Helmet P1 (Desert)</English>
+                <French>[61st] Casque ARF P1 (Désert)</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_forest_arf_p1_helmet">
+                <English>[61st] ARF Helmet P1 (Forest)</English>
+                <French>[61st] Casque ARF P1 (Forêt)</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_v1_p1_helmet">
+                <English>[61st] P1 Helmet (V1)</English>
+                <French>[61st] Casque P1 (V1)</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_v1_p2_helmet">
+                <English>[61st] P2 Helmet (V1)</English>
+                <French>[61st] Casque P2 (V1)</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_v2_p1_helmet">
+                <English>[61st] P1 Helmet (V2)</English>
+                <French>[61st] Casque P1 (V2)</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_regs_v2_p2_helmet">
+                <English>[61st] P2 Helmet (V2)</English>
+                <French>[61st] Casque P2 (V2)</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>
