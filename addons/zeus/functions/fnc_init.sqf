@@ -33,8 +33,8 @@ TRACE_1("ar_zeus_fnc_init",_this);
 		INFO_1("Zeus module initialized for unit: %1",_unit);
 		[{
 			params ["_unit"];
-			_curator addCuratorAddons activatedAddons;
 			private _curator = getAssignedCuratorLogic _unit;
+			_curator addCuratorAddons activatedAddons;
 			[_curator] call FUNC(initEH);
 			_curator addCuratorEditableObjects [allUnits, true];
 		}, [_unit], 5] call CBA_fnc_waitAndExecute;
