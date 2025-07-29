@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Weapons (Rifles)">
+    <Package name="CfgWeapons">
+        <Container name="z6">
+            <Key ID="str_ar_weapons_rifles_z6">
+                <English>[61st] Z-6 Rotary Blaster Cannon</English>
+                <French>[61st] Canon Blaster Rotatif Z-6</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>
