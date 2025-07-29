@@ -1,12 +1,11 @@
 class CfgMagazines {
-    class CA_LauncherMagazine;
-    class SUBCVAR(RPS6_AT_Mag) : CA_LauncherMagazine {
+    class 3AS_MK40_AT;
+    class SUBCVAR(RPS6_AT_Mag) : 3AS_MK40_AT {
         author = AUTHOR;
         displayName = CSTRING(RPS6_AT_Mag_DisplayName);
         descriptionShort = CSTRING(RPS6_AT_Mag_Description);
         ammo = QSUBCVAR(RPS6_AT_Ammo);
         count = 1;
-        initSpeed = 50;
         scope = 2;
         scopeArsenal = 2;
         picture = QPATHTOF(data\rps6_mag_ca.paa);
