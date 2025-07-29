@@ -1,0 +1,20 @@
+# Fichiers binaires et exécutables
+*.pbo
+hemtt
+hemtt.exe
+.hemttout
+
+# Clés privées
+*.biprivatekey
+
+# Répertoires de release
+releases
+
+# Images dans addons
+**/addons/**/*.png
+**/addons/*.png
+
+# Fichiers de configuration ADC
+.adc/.adc
+.adc/**/*.backup
+.adc/**/*.h
