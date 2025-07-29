@@ -1,0 +1,14 @@
+name            = "[61St] - Adeptus Auxiliaire Mod";
+author			= "Adeptus Team";			
+logo			= "logo_ca.paa";		
+logoOver		= "logo_ca.paa";
+tooltip			= "[61St] - Adeptus Auxiliaire Mod";
+tooltipOwned	= "[61St] - Adeptus Auxiliaire Mod";				
+picture			= "logo_ca.paa";		
+actionName		= "Adeptus";
+action			= "https://adeptusrepublica.fr";			
+overview		= "Ce mod contient des armures et des matériaux destinés au serveur Adeptus Républica.";	
+hideName		= 0;					
+hidePicture		= 0;						
+dlcColor[]		= { 1, 0.8235, 0, 1 };	
+logoSmall		= "logo_ca.paa";
