@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Missions (Builder)">
+    <Package name="Functions">
+        <Key ID="str_ar_missions_builder_cancelledGenerationDescriptionEXT">
+            <English>Cancelled 'description.ext' generation</English>
+            <French>Génération du 'description.ext' annulée</French>
+        </Key>
+        <Key ID="str_ar_missions_builder_errorGenerationDescriptionEXT">
+            <English>Error generating 'description.ext'</English>
+            <French>Erreur lors de la génération du 'description.ext'</French>
+        </Key>
+        <Key ID="str_ar_missions_builder_successGenerationDescriptionEXT">
+            <English>Successfully generated 'description.ext'</English>
+            <French>Génération du 'description.ext' réussie</French>
+        </Key>
+    </Package>
+    <Package name="rsc">
+        <Key ID="str_ar_missions_builder_descriptionExtExistsError">
+            <English>Description.ext file already exists. Cannot open mission parameters interface.</English>
+            <French>Le fichier description.ext existe déjà. Impossible d'ouvrir l'interface des paramètres de mission.</French>
+        </Key>
+        <Key ID="str_ar_missions_builder_missionDescText">
+            <English>Mission Description:</English>
+            <French>Description de la mission:</French>
+        </Key>
+        <Key ID="str_ar_missions_builder_missionNameText">
+            <English>Mission Name:</English>
+            <French>Nom de la mission:</French>
+        </Key>
+        <Key ID="str_ar_missions_builder_missionPhaseText">
+            <English>Clone Phase:</English>
+            <French>Phase des clones:</French>
+        </Key>
+        <Key ID="str_ar_missions_builder_missionUnderfireTimeText">
+            <English>Underfire Time:</English>
+            <French>Temps sous le feu:</French>
+        </Key>
+        <Key ID="str_ar_missions_builder_missionparameterstext">
+            <English>Export Mission Parameters</English>
+            <French>Exporter la mission</French>
+        </Key>
+        <Key ID="str_ar_missions_builder_missionrespawnbuttontimetext">
+            <English>Respawn Button Time:</English>
+            <French>Temps du bouton de réapparition:</French>
+        </Key>
+        <Key ID="str_ar_missions_builder_missionrespawndelaytext">
+            <English>Respawn Delay:</English>
+            <French>Délai de réapparition:</French>
+        </Key>
+        <Key ID="str_ar_missions_builder_respawnbuttontimetooltip">
+            <English>Time before the respawn button becomes available (in seconds)</English>
+            <French>Temps avant que le bouton de réapparition soit disponible (en secondes)</French>
+        </Key>
+        <Key ID="str_ar_missions_builder_respawndelaytooltip">
+            <English>Delay after death before respawning (in seconds)</English>
+            <French>Délai après la mort avant la réapparition (en secondes)</French>
+        </Key>
+        <Key ID="str_ar_missions_builder_underfireTimeTooltip">
+            <English>Time spent waiting after being under fire before being able to return to third person (in seconds)</English>
+            <French>Temps d'attente après avoir été sous le feu avant de pouvoir revenir à la 3ème personne (en secondes)</French>
+        </Key>
+    </Package>
+</Project>
