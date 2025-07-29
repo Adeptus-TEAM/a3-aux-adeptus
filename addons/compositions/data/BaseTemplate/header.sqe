@@ -1,0 +1,12 @@
+version=54;
+name="Base Template";
+author="Bragg";
+category="AR_editor";
+requiredAddons[]=
+{
+	"AR_Characters_Units",
+	"A3_Modules_F_Curator_Curator",
+	"A3_Modules_F",
+	"A3_Structures_F_Civ_InfoBoards",
+	"AR_Objects_Editor"
+};

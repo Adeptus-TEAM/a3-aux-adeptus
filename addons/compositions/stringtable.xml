@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Compositions">
+    <Package name="Cfg3DEN">
+        <Key ID="str_ar_compositions_basetemplate">
+            <English>[61st] Base Template</English>
+            <French>[61st] Template de base</French>
+        </Key>
+        <Key ID="str_ar_compositions_venator">
+            <English>[61st] Purgatory</English>
+            <French>[61st] Purgatoire</French>
+        </Key>
+    </Package>
+</Project>
