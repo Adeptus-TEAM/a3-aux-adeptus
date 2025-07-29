@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Adeptus Auxiliaires">
+    <Package name="main">
+        <Key ID="str_ar_main_3den">
+            <English>[61st] Adeptus Republica</English>
+            <French>[61st] Adeptus Républica</French>
+        </Key>
+        <Key ID="str_ar_main_3den_CloneMarine">
+            <English>Clone Trooper Marine</English>
+            <French>Clone Trooper Marine</French>
+        </Key>
+        <Key ID="str_ar_main_3den_CloneP1">
+            <English>Clone Trooper [P1]</English>
+            <French>Clone Trooper [P1]</French>
+        </Key>
+        <Key ID="str_ar_main_3den_CloneP2">
+            <English>Clone Trooper [P2]</English>
+            <French>Clone Trooper [P2]</French>
+        </Key>
+        <Key ID="str_ar_main_3den_CloneUnarmed">
+            <English>Clone Trooper Unarmed</English>
+            <French>Clone Trooper Non Armé</French>
+        </Key>
+        <Key ID="str_ar_main_3den_Editor">
+            <English>Editor</English>
+            <French>Éditeur</French>
+        </Key>
+        <Key ID="str_ar_main_3den_FactionBlufor">
+            <English>[61st] Adeptus</English>
+            <French>[61st] Adeptus</French>
+        </Key>
+        <Key ID="str_ar_main_3den_Skybox">
+            <English>Skybox</English>
+            <French>Skybox</French>
+        </Key>
+        <Key ID="str_ar_main_actionname">
+            <English>Website</English>
+            <French>Site Web</French>
+        </Key>
+        <Key ID="str_ar_main_name">
+            <English>Adeptus Republica</English>
+            <French>Adeptus Republica</French>
+        </Key>
+        <Key ID="str_ar_main_overview">
+            <English>This mod contains armors and materials for the Adeptus Republica server.</English>
+            <French>Ce mod contient des armures et des matériaux destinés au serveur Adeptus Républica.</French>
+        </Key>
+        <Key ID="str_ar_main_url">
+            <English>https://www.adeptusrepublica.com</English>
+            <French>https://www.adeptusrepublica.com</French>
+        </Key>
+    </Package>
+</Project>
