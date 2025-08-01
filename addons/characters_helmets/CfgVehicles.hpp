@@ -65,6 +65,7 @@ class cfgVehicles {
         // Phase 1 Helmet
             CLASS_HEADGEAR(Customs,Ankh,P1);
             CLASS_HEADGEAR(Customs,Archer,P1);
+            CLASS_HEADGEAR(Customs,Bragg,P1);
             CLASS_HEADGEAR(Customs,Dragon,P1);
             CLASS_HEADGEAR(Customs,Gart,P1);
             CLASS_HEADGEAR(Customs,Magic,P1);
@@ -77,6 +78,7 @@ class cfgVehicles {
         // Phase 2 Helmet
             CLASS_HEADGEAR(Customs,Ankh,P2);
             CLASS_HEADGEAR(Customs,Archer,P2);
+            CLASS_HEADGEAR(Customs,Bragg,P2);
             CLASS_HEADGEAR(Customs,Dragon,P2);
             CLASS_HEADGEAR(Customs,Gart,P2);
             CLASS_HEADGEAR(Customs,Magic,P2);

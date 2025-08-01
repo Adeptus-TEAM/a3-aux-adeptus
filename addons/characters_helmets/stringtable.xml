@@ -18,6 +18,14 @@
                 <English>[61st] Archer Helmet P2</English>
                 <French>[61st] Casque Archer P2</French>
             </Key>
+            <Key ID="str_ar_characters_helmets_customs_bragg_p1_helmet">
+                <English>[61st] Bragg Helmet P1</English>
+                <French>[61st] Casque Bragg P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_bragg_p2_helmet">
+                <English>[61st] Bragg Helmet P2</English>
+                <French>[61st] Casque Bragg P2</French>
+            </Key>
             <Key ID="str_ar_characters_helmets_customs_code_scout_helmet">
                 <English>[61st] Code Scout Helmet</English>
                 <French>[61st] Casque Scout Code</French>

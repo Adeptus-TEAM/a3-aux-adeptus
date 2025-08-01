@@ -35,7 +35,8 @@ class CfgPatches {
             QECVAR(Sight,U),
             QECVAR(SixOne,U),
             QECVAR(Spearhead,U),
-            QECVAR(Sting,U)
+            QECVAR(Sting,U),
+            QECVAR(Bragg,U)
         };
         weapons[] = {
             // Regs
@@ -63,7 +64,8 @@ class CfgPatches {
             QECVAR(Sight,Uniform),
             QECVAR(SixOne,Uniform),
             QECVAR(Spearhead,Uniform),
-            QECVAR(Sting,Uniform)
+            QECVAR(Sting,Uniform),
+            QECVAR(Bragg,Uniform)
         };
         VERSION_CONFIG;
     };
