@@ -10,3 +10,8 @@ options.banned = [
     "spawn", # Scheduled should be avoided whenever possible
     "execVM", # Script files should never be run directly, they should be functions
 ]
+
+[stringtables.usage]
+options.ignore_unused = false
+options.ignore_duplicate = false
+options.ignore_missing = false
