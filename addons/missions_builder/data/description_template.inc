@@ -53,7 +53,6 @@ onLoadMission = %MISSION_DESCRIPTION%;
 %SUPPLY_CRATE%[] = {
 	"AR_Objects_Supply_Ammo",
 	"AR_Objects_Supply_AT",
-	"AR_Objects_Supply_AA",
 	"AR_Objects_Supply_Grenade",
 	"AR_Objects_Supply_Medical",
 	"AR_Objects_Supply_Grenadier",
