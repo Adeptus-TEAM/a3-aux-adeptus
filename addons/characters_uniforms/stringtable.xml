@@ -10,6 +10,10 @@
                 <English>[61st] Archer Uniform</English>
                 <French>[61st] Uniforme Archer</French>
             </Key>
+            <Key ID="str_ar_characters_uniforms_customs_bragg">
+                <English>[61st] Bragg Uniform</English>
+                <French>[61st] Uniforme Bragg</French>
+            </Key>
             <Key ID="str_ar_characters_uniforms_customs_code">
                 <English>[61st] Code Uniform</English>
                 <French>[61st] Uniforme Code</French>

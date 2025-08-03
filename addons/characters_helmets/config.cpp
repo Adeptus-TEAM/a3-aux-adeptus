@@ -3,7 +3,7 @@
 class CfgPatches {
     class SUBADDON {
         author = AUTHOR;
-        authors[] = { "Bragg", "Archer" };
+        authors[] = { "Admors", "Bragg", "Archer" };
         url = ECSTRING(main,url);
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
@@ -61,7 +61,9 @@ class CfgPatches {
             QECVAR(SixOne,P2_Headgear),
             QECVAR(Spearhead,P1_Headgear),
             QECVAR(Spearhead,P2_Headgear),
-            QECVAR(Sting,scout_Headgear)
+            QECVAR(Sting,scout_Headgear),
+            QECVAR(Bragg,P1_Headgear),
+            QECVAR(Bragg,P2_Headgear)
         };
         weapons[] = {
             // Regs

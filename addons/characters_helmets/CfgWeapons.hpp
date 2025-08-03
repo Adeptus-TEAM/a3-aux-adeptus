@@ -113,7 +113,11 @@ class cfgWeapons {
             // BARC Helmet w/ visor illumination
                 CLASS_BARC_HELMET_CUSTOMVISOR(Customs,Puce);
             
+            // Phase 1 Helmet w/ visor illumination
+                CLASS_P1_HELMET_CUSTOMVISOR(Customs,Bragg);
+
             // Phase 2 Helmet w/ visor illumination
+                CLASS_P2_HELMET_CUSTOMVISOR(Customs,Bragg);
                 CLASS_P2_HELMET_CUSTOMVISOR(Customs,Archer);
                 CLASS_P2_HELMET_CUSTOMVISOR(Customs,Magic);
                 CLASS_P2_HELMET_CUSTOMVISOR(Customs,Spearhead);

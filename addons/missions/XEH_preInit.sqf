@@ -14,4 +14,4 @@ private _category = [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)];
 ADDON = true;
 
 [] call FUNC(initCheckVersion);
-[] call FUNC(initFortify);
+

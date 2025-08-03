@@ -25,8 +25,6 @@ if (isNull _object) exitWith {
 	WARNING("ar_dialogs_loadout_fnc_addaction: No object provided");
 };
 
-[_object, "LISTEN_BRIEFING", "ASIS"] call BIS_fnc_ambientAnim;
-
 _object addAction [
 	LSUBLSTRING(openMenu), {
 		params ["_target", "_caller", "_actionId", "_arguments"];
