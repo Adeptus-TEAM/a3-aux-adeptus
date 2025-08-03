@@ -17,7 +17,7 @@ class cfgWeapons {
         CLASS_UNIFORM(Customs,Ankh);
         CLASS_UNIFORM(Customs,Archer);
         CLASS_UNIFORM(Customs,Bragg);
-        CLASS_UNIFORM(Customs,COde);
+        CLASS_UNIFORM(Customs,Code);
         CLASS_UNIFORM(Customs,Dragon);
         CLASS_UNIFORM(Customs,Gart);
         CLASS_UNIFORM(Customs,Liberty);
