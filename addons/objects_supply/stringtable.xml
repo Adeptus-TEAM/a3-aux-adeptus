@@ -2,10 +2,6 @@
 <Project name="Objects (Supply)">
     <Package name="CfgVehicles">
         <Container name="supply">
-            <Key ID="str_ar_objects_supply_aa">
-                <English>Anti-Air Supply</English>
-                <French>Ravitaillement Lanceurs AA</French>
-            </Key>
             <Key ID="str_ar_objects_supply_ammo">
                 <English>Ammunition Supply</English>
                 <French>Ravitaillement Munitions</French>
