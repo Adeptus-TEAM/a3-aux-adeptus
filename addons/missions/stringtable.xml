@@ -83,6 +83,12 @@
                 <French>Soigner : %1</French>
             </Key>
         </Container>
+        <Container name="verifyLoadout">
+            <Key ID="str_ar_missions_verifyLoadout">
+                <English>&lt;t color='#FFFFFF' size= '1.25'&gt;Maximum allowed of %1 reached. (Max: %2)&lt;/t&gt;</English>
+                <French>&lt;t color='#FFFFFF' size= '1.25'&gt;Maximum autorisé de %1 atteint. (Max: %2)&lt;/t&gt;</French>
+            </Key>
+        </Container>
     </Package>
     <Package name="Loadout">
         <Container name="class">

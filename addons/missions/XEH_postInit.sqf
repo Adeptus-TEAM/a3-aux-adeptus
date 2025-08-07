@@ -14,4 +14,5 @@ if (hasInterface) then {
 	[_unit] call FUNC(initUnderfire);
 	[_unit] call FUNC(initWelcome);
 	[_unit] call FUNC(initRespawn);
+	[_unit] call FUNC(initVerifyLoadout);
 };
