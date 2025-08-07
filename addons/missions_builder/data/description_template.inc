@@ -83,7 +83,7 @@ joinUnassigned = 1;
 enableDebugConsole = 1;
 
 corpseManagerMode = 2;
-corpseLimit = 1;
+corpseLimit = 0;
 corpseRemovalMinTime = 0;
 corpseRemovalMaxTime = 5;
 
