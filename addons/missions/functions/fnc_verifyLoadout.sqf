@@ -1,43 +1,45 @@
 #include "..\script_component.hpp"
 /*
- * Authors: You
+ * Authors: Adeptus TEAM
  * Empêche les joueurs de dépasser la limite d'objets autorisée.
  *
  * Arguments:
- * <NONE>
+ * 0: _player (default: objNull) <OBJECT> - Le joueur à vérifier
  *
  * Return Value:
  * <NONE>
  *
  * Example:
- * [] call AR_missions_fnc_verifyLoadout
+ * [player] call AR_missions_fnc_verifyLoadout
  *
  * Public: No
  */
 
-params [];
+params [
+	["_player", objNull, [objNull]]
+];
+
 TRACE_1("fnc_verifyLoadout",_this);
 
-private _playerLoadoutItemWithMagazines = itemsWithMagazines player;
+private _playerLoadoutItemWithMagazines = itemsWithMagazines _player;
 
 private _blackList = [
 	["SquadShieldMagazine", 2],
-	["ShieldGrenade_Mag",2],
-	["ShieldGrenadePersonal_Mag",0]
+	["ShieldGrenade_Mag", 4],
+	["ShieldGrenadePersonal_Mag", 0]
 ];
 
 {
-	private _BL_itemClassname = _x select 0;
-	private _BL_itemLimit = _x select 1;
+	_x params ["_BL_itemClassname","_BL_itemLimit"];
 
 	private _itemQuantity = {_BL_itemClassname == _x} count _playerLoadoutItemWithMagazines;
-	if(_itemQuantity > _BL_itemLimit)then{
-		for[{private _i = 0},{_i < (_itemQuantity - _BL_itemLimit)},{_i = _i + 1}]do{
-			player removeItem _BL_itemClassname;
-			INFO_2("Removed item:%1 from %2 due to exceeding limit",_BL_itemClassname,player);
+	if (_itemQuantity > _BL_itemLimit) then {
+		for [ {private _i = 0}, {_i < (_itemQuantity - _BL_itemLimit)}, {_i = _i + 1} ] do {
+			_player removeItem _BL_itemClassname;
+			INFO_2("Removed item:%1 from %2 due to exceeding limit",_BL_itemClassname,_player);
 		};
-		private _BL_itemClassnameDisplayName = getText (configFile >> "CfgMagazines" >> _BL_itemClassname >> "displayName");
-		[[format[LLSTRING(verifyLoadout),_BL_itemClassnameDisplayName,_BL_itemLimit], "PLAIN DOWN", -1,false, true]] remoteExec ["cutText",player,false];
-		["Alarm"] remoteExec ["playSound", player, false];
+		private _BL_itemClassnameDisplayName = (configFile >> "CfgMagazines" >> _BL_itemClassname) call BIS_fnc_displayName;
+		cutText [FORMAT_2(LLSTRING(verifyLoadout),_BL_itemClassnameDisplayName,_BL_itemLimit), "PLAIN DOWN", 0, false, true];
+		playSound "Alarm";
 	};
-}forEach _blackList;
+} forEach _blackList;
