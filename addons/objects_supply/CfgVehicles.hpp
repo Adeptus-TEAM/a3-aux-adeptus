@@ -50,7 +50,26 @@ class CfgVehicles {
             MAG_XX(AR_Weapons_Launchers_RPS6_AT_Mag,20);
         };
     };
-    
+    class SUBCVAR(AA) : JLTS_Ammobox_launchers_GAR {
+        displayName = SUBCSTRING(AA);
+        scope = 2;
+        scopeCurator = 2;
+        ace_dragging_ignoreWeightCarry = TRUE;
+        ace_dragging_ignoreWeight = TRUE;
+        CATEGORY_AR;
+        SUBCATEGORY_STORAGE;
+        EDITORPREVIEW(SUBCVAR(at));
+        EMPTY_BACKPACK;
+        EMPTY_ITEM;
+        maximumLoad = 2000;
+        class TransportWeapons {
+            WEAP_XX(3AS_PLX1_AA,2);
+        };
+        class TransportMagazines {
+            MAG_XX(3AS_JLTS_MK39_AA,10);
+        };
+    };
+
     class SUBCVAR(Grenade) : JLTS_Ammobox_grenades_GAR {
         displayName = SUBCSTRING(Grenade);
         scope = 2;
