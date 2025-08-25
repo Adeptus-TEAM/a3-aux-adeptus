@@ -38,7 +38,7 @@ private _blackList = [
 			_player removeItem _BL_itemClassname;
 			INFO_2("Removed item:%1 from %2 due to exceeding limit",_BL_itemClassname,_player);
 		};
-		private _BL_itemClassnameDisplayName = (configFile >> "CfgMagazines" >> _BL_itemClassname) call BIS_fnc_displayName;
+		private _BL_itemClassnameDisplayName = [configFile >> "CfgMagazines" >> _BL_itemClassname] call BIS_fnc_displayName;
 		cutText [FORMAT_2(LLSTRING(verifyLoadout),_BL_itemClassnameDisplayName,_BL_itemLimit), "PLAIN DOWN", 0, false, true];
 		playSound "Alarm";
 	};
