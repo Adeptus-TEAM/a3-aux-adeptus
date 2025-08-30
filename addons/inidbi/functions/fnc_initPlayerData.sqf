@@ -54,7 +54,6 @@ if (!isDedicated) exitWith {
 			};
 			[_player, _data] call FUNC(applyLoadedDataOnPlayer); // Apply the loaded data to the player unit
 
-			[_player, _UID] call FUNC(updatePlayerData);
 			INFO_1("[INIDBI] %1 profile has been loaded",_UID);
 			true
 		} else {
