@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Weapons (Grenades)">
+    <Package name="CfgWeapons">
+        <Container name="EMP">
+            <Key ID="str_ar_weapons_grenades_emp_detonator">
+                <English>[61st] EMP Grenade</English>
+                <French>[61st] Grenade à IEM</French>
+            </Key>
+            <Key ID="str_ar_weapons_grenades_emp_detonator_short">
+                <English>EMP Grenade</English>
+                <French>Grenade à IEM</French>
+            </Key>
+        </Container>
+    </Package>
+</Project>
