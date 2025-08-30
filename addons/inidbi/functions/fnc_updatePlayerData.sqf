@@ -35,13 +35,17 @@ if (isNil "_inidbi") exitWith {
 // Get player data
 private _playerName = _data getOrDefault ["Name", name _player]; // Get the player's name, or use the provided data
 private _playerLoadout = _data getOrDefault ["Loadout", getUnitLoadout _player]; // Get the player's loadout, or use the provided data
-private _playerTraits = _data getOrDefault ["Traits", [false,false,false]]; // Get the player's traits, or use the provided data
+private _ismedic = _data getOrDefault ["isMedic", _player getUnitTrait "Medic"];
+private _isengineer = _data getOrDefault ["isEngineer", _player getUnitTrait "Engineer"];
+private _iseod = _data getOrDefault ["isEOD", _player getUnitTrait "EOD"];
 
 // Write player data to the INIDBI instance
 ["Write", ["GameData", "Name", _playerName]] call _inidbi;
 ["Write", ["GameData", "SteamID64", _UID]] call _inidbi;
 ["Write", ["GameData", "Loadout", _playerLoadout]] call _inidbi;
-["Write", ["GameData", "Traits", _playerTraits]] call _inidbi;
+["Write", ["GameData", "isMedic", _ismedic]] call _inidbi;
+["Write", ["GameData", "isEngineer", _isengineer]] call _inidbi;
+["Write", ["GameData", "isEOD", _iseod]] call _inidbi;
 
 INFO_1("[INIDBI] %1 profile has been updated",_UID);
 

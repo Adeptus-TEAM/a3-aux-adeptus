@@ -32,19 +32,25 @@ if (isNil "_inidbi") exitWith {
 
 private _playerName = ["Read", ["GameData", "Name"]] call _inidbi;
 private _playerLoadout = ["Read", ["GameData", "Loadout"]] call _inidbi;
-private _playerTraits = ["Read", ["GameData", "Traits"]] call _inidbi;
+private _ismedic = ["Read", ["GameData", "isMedic"]] call _inidbi;
+private _isengineer = ["Read", ["GameData", "isEngineer"]] call _inidbi;
+private _iseod = ["Read", ["GameData", "isEOD"]] call _inidbi;
 
 private _data = createHashMapFromArray [
 	["Name", _playerName],
 	["SteamID64", _UID],
 	["Loadout", _playerLoadout],
-	["Traits", _playerTraits]
+	["isMedic", _ismedic],
+	["isEngineer", _isengineer],
+	["isEOD", _iseod]
 ];
 
 if (isNil "_data") exitWith {
 	ERROR_1("[INIDBI] Failed to load player data for %1",_UID);
 	[]
 };
+
+_player setVariable [QGVAR(playerData),_data];
 
 INFO_1("[INIDBI] %1 profile has been loaded",_UID);
 
