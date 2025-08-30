@@ -53,6 +53,7 @@ onLoadMission = %MISSION_DESCRIPTION%;
 %SUPPLY_CRATE%[] = {
 	"AR_Objects_Supply_Ammo",
 	"AR_Objects_Supply_AT",
+	"AR_Objects_Supply_AA",
 	"AR_Objects_Supply_Grenade",
 	"AR_Objects_Supply_Medical",
 	"AR_Objects_Supply_Grenadier",
@@ -83,7 +84,7 @@ joinUnassigned = 1;
 enableDebugConsole = 1;
 
 corpseManagerMode = 2;
-corpseLimit = 1;
+corpseLimit = 0;
 corpseRemovalMinTime = 0;
 corpseRemovalMaxTime = 5;
 

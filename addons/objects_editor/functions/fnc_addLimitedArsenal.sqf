@@ -55,7 +55,8 @@ _availableWeapon = [
 	"WBK_survival_weapon_4",
 	"WBK_survival_weapon_4_r",
 	"Weap_melee_knife",
-	"AR_Weapons_Launchers_RPS6_F"
+	"AR_Weapons_Launchers_RPS6_F",
+	"3AS_PLX1_AA"
 ];
 
 // Populate with predefined items and whatever is already in the crate

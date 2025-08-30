@@ -41,26 +41,14 @@ TRACE_1("fnc_applyLoadedDataOnPlayer",_this);
 			_player setUnitLoadout _playerLoadout;
 			INFO_1("[INIDBI] Loadout data has been applied for %1",_player);
 		};
+		private _ismedic = _data getOrDefault ["isMedic", false];
+		private _isengineer = _data getOrDefault ["isEngineer", false];
+		private _iseod = _data getOrDefault ["isEOD", false];
 
-		// Apply traits to the player
-		private _playerTraits = _data getOrDefault ["Traits", []];
-		if (isNil "_playerTraits") then {
-			ERROR_1("[INIDBI] No traits data found for %1",_player);
-		} else {
-			TRACE_1("[INIDBI] Applying traits data for %1",_player);
-			private _ismedic = _playerTraits select 0;
-			private _isengineer = _playerTraits select 1;
-			private _iseod = _playerTraits select 2;
-
-			[_player, "medic", _ismedic] call EFUNC(missions,setUnitTrait);
-			[_player, "eod", _iseod] call EFUNC(missions,setUnitTrait);
-
-			if (_isengineer && _iseod) then {
-				[_player, "engineer", _isengineer] call EFUNC(missions,setUnitTrait);
-			};
-
-			INFO_1("[INIDBI] Traits data has been applied for %1",_player);
-		};
+		[_player, "medic", _ismedic] call EFUNC(missions,setUnitTrait);
+		[_player, "eod", _iseod] call EFUNC(missions,setUnitTrait);
+		[_player, "engineer", _isengineer] call EFUNC(missions,setUnitTrait);
+		INFO_1("[INIDBI] Traits data has been applied for %1",_player);
 	},
 	[_player, _data]
 ] call CBA_fnc_waitUntilAndExecute;
