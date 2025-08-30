@@ -50,7 +50,7 @@ if (isNil "_data") exitWith {
 	[]
 };
 
-_player setVariable [QGVAR(playerData),_data];
+_player setVariable [QGVAR(playerData),_data,true]; // Store the player data in the variable AR_IniDBi_playerData
 
 INFO_1("[INIDBI] %1 profile has been loaded",_UID);
 

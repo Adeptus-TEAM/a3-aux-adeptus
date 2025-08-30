@@ -37,15 +37,21 @@ private _playerName = _data getOrDefault ["Name", name _player]; // Get the play
 private _playerLoadout = _data getOrDefault ["Loadout", getUnitLoadout _player]; // Get the player's loadout, or use the provided data
 private _ismedic = _data getOrDefault ["isMedic", _player getUnitTrait "Medic"];
 private _isengineer = _data getOrDefault ["isEngineer", _player getUnitTrait "Engineer"];
-private _iseod = _data getOrDefault ["isEOD", _player getUnitTrait "EOD"];
+private _iseod = _data getOrDefault ["isEOD", _player getUnitTrait "ExplosiveSpecialist"];
 
 // Write player data to the INIDBI instance
 ["Write", ["GameData", "Name", _playerName]] call _inidbi;
+TRACE_1("fnc_updatePlayerData (Write Name)",_playerName);
 ["Write", ["GameData", "SteamID64", _UID]] call _inidbi;
+TRACE_1("fnc_updatePlayerData (Write SteamID64)",_UID);
 ["Write", ["GameData", "Loadout", _playerLoadout]] call _inidbi;
+TRACE_1("fnc_updatePlayerData (Write Loadout)",_playerLoadout);
 ["Write", ["GameData", "isMedic", _ismedic]] call _inidbi;
+TRACE_1("fnc_updatePlayerData (Write isMedic)",_ismedic);
 ["Write", ["GameData", "isEngineer", _isengineer]] call _inidbi;
+TRACE_1("fnc_updatePlayerData (Write isEngineer)",_isengineer);
 ["Write", ["GameData", "isEOD", _iseod]] call _inidbi;
+TRACE_1("fnc_updatePlayerData (Write isEOD)",_iseod);
 
 INFO_1("[INIDBI] %1 profile has been updated",_UID);
 

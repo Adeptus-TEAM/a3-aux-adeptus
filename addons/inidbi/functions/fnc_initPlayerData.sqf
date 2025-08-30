@@ -26,27 +26,27 @@ if (!isDedicated) exitWith {
 	false
 };
 
-private _UID = getPlayerUID _player; // Get the player's unique identifier (UID)
+[
+	{
+		params ["_player"];
+		!isNull _player && isPlayer _player
+	}, {
+		params ["_player","_UID"];
+		private _UID = getPlayerUID _player; // Get the player's unique identifier (UID)
 
-private _inidbi = [_UID] call FUNC(createInstance); // Create a new INIDBI instance for the player
+		private _inidbi = [_UID] call FUNC(createInstance); // Create a new INIDBI instance for the player
 
-if (isNil "_inidbi") exitWith {
-	ERROR_1("[INIDBI] Failed to create INIDBI instance for %1",_UID);
-	false
-};
+		if (isNil "_inidbi") exitWith {
+			ERROR_1("[INIDBI] Failed to create INIDBI instance for %1",_UID);
+			false
+		};
 
-// Check if the player profile already exists in the INIDBI instance
-private _hasProfile = "exists" call _inidbi;
+		// Check if the player profile already exists in the INIDBI instance
+		private _hasProfile = "exists" call _inidbi;
 
-if (_hasProfile) then {
-	INFO_1("[INIDBI] Loading existing player profile for %1",_UID);
-	// Load the player data from the INIDBI instance
-	[
-		{
-			params ["_player","_UID"];
-			!isNull _player
-		}, {
-			params ["_player","_UID"];
+		if (_hasProfile) then {
+			INFO_1("[INIDBI] Loading existing player profile for %1",_UID);
+			// Load the player data from the INIDBI instance
 			private _data = [_player] call FUNC(loadPlayerData);
 			if (isNil "_data") exitWith {
 				ERROR_1("[INIDBI] Failed to load player data for %1",_UID);
@@ -57,17 +57,8 @@ if (_hasProfile) then {
 			[_player, _UID] call FUNC(updatePlayerData);
 			INFO_1("[INIDBI] %1 profile has been loaded",_UID);
 			true
-		},
-		[_player, _UID]
-	] call CBA_fnc_waitUntilAndExecute;
-} else {
-	INFO_1("[INIDBI] Creating new player profile for %1",_UID);
-	[
-		{
-			params ["_player"];
-			!isNull _player
-		}, {
-			params ["_player","_UID"];
+		} else {
+			INFO_1("[INIDBI] Creating new player profile for %1",_UID);
 			// Create a new player profile in the INIDBI instance
 			private _handleUpdate = [_player, _UID] call FUNC(updatePlayerData);
 			if (!_handleUpdate) exitWith {
@@ -76,9 +67,8 @@ if (_hasProfile) then {
 			};
 			INFO_1("[INIDBI] %1 profile has been initialized",_UID);
 			true
-		},
-		[_player, _UID]
-	] call CBA_fnc_waitUntilAndExecute;
-};
-
-INFO("fnc_initPlayerData (Done)");
+		};
+		INFO("fnc_initPlayerData (Done)");
+	},
+	[_player, _UID]
+] call CBA_fnc_waitUntilAndExecute;
