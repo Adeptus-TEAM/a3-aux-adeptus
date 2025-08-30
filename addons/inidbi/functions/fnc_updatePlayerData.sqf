@@ -46,3 +46,4 @@ private _playerTraits = _data getOrDefault ["Traits", [_player getUnitTrait "Med
 INFO_1("[INIDBI] %1 profile has been updated",_UID);
 
 TRACE_1("fnc_updatePlayerData (Done)",true);
+true

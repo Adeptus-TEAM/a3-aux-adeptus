@@ -22,6 +22,7 @@ if (isDedicated) then {
 	addMissionEventHandler ["HandleDisconnect", {
 		params ["_unit", "_id", "_uid", "_name"];
 		[_unit,_uid] call FUNC(updatePlayerData);
+		false; 
 	}];
 	
 	[
