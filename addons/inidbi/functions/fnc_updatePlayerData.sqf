@@ -35,7 +35,7 @@ if (isNil "_inidbi") exitWith {
 // Get player data
 private _playerName = _data getOrDefault ["Name", name _player]; // Get the player's name, or use the provided data
 private _playerLoadout = _data getOrDefault ["Loadout", getUnitLoadout _player]; // Get the player's loadout, or use the provided data
-private _playerTraits = _data getOrDefault ["Traits", [_player getUnitTrait "Medic", _player getUnitTrait "Engineer", _player getUnitTrait "ExplosiveSpecialist"]]; // Get the player's traits, or use the provided data
+private _playerTraits = _data getOrDefault ["Traits", [false,false,false]]; // Get the player's traits, or use the provided data
 
 // Write player data to the INIDBI instance
 ["Write", ["GameData", "Name", _playerName]] call _inidbi;
