@@ -38,30 +38,47 @@ if (isNil "_inidbi") exitWith {
 // Check if the player profile already exists in the INIDBI instance
 private _hasProfile = "exists" call _inidbi;
 
-private _handle = if (_hasProfile) then {
+if (_hasProfile) then {
 	INFO_1("[INIDBI] Loading existing player profile for %1",_UID);
 	// Load the player data from the INIDBI instance
-	private _data = [_player] call FUNC(loadPlayerData);
-	if (isNil "_data") exitWith {
-		ERROR_1("[INIDBI] Failed to load player data for %1",_UID);
-		false
-	};
-	[_player, _data] call FUNC(applyLoadedDataOnPlayer); // Apply the loaded data to the player unit
+	[
+		{
+			params ["_player","_UID"];
+			!isNull _player
+		}, {
+			params ["_player","_UID"];
+			private _data = [_player] call FUNC(loadPlayerData);
+			if (isNil "_data") exitWith {
+				ERROR_1("[INIDBI] Failed to load player data for %1",_UID);
+				false
+			};
+			[_player, _data] call FUNC(applyLoadedDataOnPlayer); // Apply the loaded data to the player unit
 
-	[_player, _UID] call FUNC(updatePlayerData);
-	INFO_1("[INIDBI] %1 profile has been loaded",_UID);
-	true
+			[_player, _UID] call FUNC(updatePlayerData);
+			INFO_1("[INIDBI] %1 profile has been loaded",_UID);
+			true
+		},
+		[_player, _UID]
+	] call CBA_fnc_waitUntilAndExecute;
 } else {
 	INFO_1("[INIDBI] Creating new player profile for %1",_UID);
-	// Create a new player profile in the INIDBI instance
-	private _handleUpdate = [_player, _UID] call FUNC(updatePlayerData);
-	if (!_handleUpdate) exitWith {
-		ERROR_1("[INIDBI] Failed to create player data for %1",_UID);
-		false
-	};
-	INFO_1("[INIDBI] %1 profile has been initialized",_UID);
-	true
+	[
+		{
+			params ["_player"];
+			!isNull _player
+		}, {
+			params ["_player","_UID"];
+			// Create a new player profile in the INIDBI instance
+			private _handleUpdate = [_player, _UID] call FUNC(updatePlayerData);
+			if (!_handleUpdate) exitWith {
+				ERROR_1("[INIDBI] Failed to create player data for %1",_UID);
+				false
+			};
+			INFO_1("[INIDBI] %1 profile has been initialized",_UID);
+			true
+		},
+		[_player, _UID]
+	] call CBA_fnc_waitUntilAndExecute;
 };
 
-TRACE_1("fnc_initPlayerData (Done)",_handle);
-_handle
+INFO("fnc_initPlayerData (Done)");
