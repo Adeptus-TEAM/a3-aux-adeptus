@@ -26,7 +26,8 @@ private _playerLoadoutItemWithMagazines = itemsWithMagazines _player;
 private _blackList = [
 	["SquadShieldMagazine", 2],
 	["ShieldGrenade_Mag", 4],
-	["ShieldGrenadePersonal_Mag", 0]
+	["ShieldGrenadePersonal_Mag", 0],
+	["JLTS_clone_comlink", 0]
 ];
 
 {
