@@ -31,7 +31,7 @@ if (!isDedicated) exitWith {
 		params ["_player"];
 		!isNull _player && isPlayer _player
 	}, {
-		params ["_player","_UID"];
+		params ["_player"];
 		private _UID = getPlayerUID _player; // Get the player's unique identifier (UID)
 
 		private _inidbi = [_UID] call FUNC(createInstance); // Create a new INIDBI instance for the player
@@ -70,5 +70,5 @@ if (!isDedicated) exitWith {
 		};
 		INFO("fnc_initPlayerData (Done)");
 	},
-	[_player, _UID]
+	[_player]
 ] call CBA_fnc_waitUntilAndExecute;
