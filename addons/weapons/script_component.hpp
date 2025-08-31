@@ -1,4 +1,4 @@
-#define COMPONENT Weapons
+#define COMPONENT weapons
 #define COMPONENT_BEAUTIFIED Weapons
 #include "\x\ar\addons\main\script_mod.hpp"
 
