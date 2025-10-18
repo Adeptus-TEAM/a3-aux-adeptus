@@ -26,13 +26,13 @@
                 <English>[61st] Bragg Helmet P2</English>
                 <French>[61st] Casque Bragg P2</French>
             </Key>
-            <Key ID="str_ar_characters_helmets_customs_code_p1_helmet">
-                <English>[61st] Code Helmet P1</English>
-                <French>[61st] Casque Code P1</French>
-            </Key>
             <Key ID="str_ar_characters_helmets_customs_code_marine_helmet">
                 <English>[61st] Code Marine Helmet</English>
                 <French>[61st] Casque Marine Code</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_code_p1_helmet">
+                <English>[61st] Code Helmet P1</English>
+                <French>[61st] Casque Code P1</French>
             </Key>
             <Key ID="str_ar_characters_helmets_customs_dragon_p1_helmet">
                 <English>[61st] Dragon Helmet P1</English>
