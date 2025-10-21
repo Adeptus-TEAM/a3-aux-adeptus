@@ -59,7 +59,7 @@ onLoadMission = %MISSION_DESCRIPTION%;
 	"AR_Objects_Supply_Grenadier",
 	"AR_Objects_Supply_Weapons",
 	"AR_Objects_Supply_Engineer",
-	"AR_Object_Supply_Empty"
+	"AR_Objects_Supply_Empty"
 };
 
 // Respawn settings

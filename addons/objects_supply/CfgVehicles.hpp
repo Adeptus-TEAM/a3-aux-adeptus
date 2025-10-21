@@ -213,6 +213,7 @@ class CfgVehicles {
         EMPTY_MAGAZINE;
         EMPTY_BACKPACK;
         EMPTY_ITEM;
+        EMPTY_WEAPON;
         maximumLoad = 2000;
     };
 };

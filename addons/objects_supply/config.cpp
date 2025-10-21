@@ -17,8 +17,8 @@ class CfgPatches {
             QSUBCVAR(Medical),
             QSUBCVAR(Grenadier),
             QSUBCVAR(Weapons),
-            QSUBCVAR(Empty)
-            //QSUBCVAR(Engineer),
+            QSUBCVAR(Empty),
+            QSUBCVAR(Engineer)
         };
         weapons[] = {};
         VERSION_CONFIG;
