@@ -111,6 +111,23 @@ class CfgVehicles {
         EMPTY_WEAPON;
         maximumLoad = 2000;
         class TransportItems {
+            ITEM_XX(ACE_elasticBandage,50);
+            ITEM_XX(ACE_epinephrine,50);
+            ITEM_XX(ACE_morphine,50);
+            ITEM_XX(ACE_packingBandage,50);
+            ITEM_XX(ACE_personalAidKit,5);
+            ITEM_XX(ACE_quikclot,30);
+            ITEM_XX(ACE_salineIV,50);
+            ITEM_XX(ACE_salineIV_250,50);
+            ITEM_XX(ACE_salineIV_500,50);
+            ITEM_XX(ACE_splint,50);
+            ITEM_XX(ACE_surgicalKit,5);
+            ITEM_XX(ACE_tourniquet,50);
+            ITEM_XX(ace_filedDressing,50);
+            ITEM_XX(kat_X_AED,5);
+            ITEM_XX(kat_bvm,5);
+            ITEM_XX(kat_carbonate,20);
+            ITEM_XX(kat_nytroglycerin,20);
         };
     };
 
@@ -197,7 +214,5 @@ class CfgVehicles {
         EMPTY_BACKPACK;
         EMPTY_ITEM;
         maximumLoad = 2000;
-        class TransportWeapons {
-        };
     };
 };
