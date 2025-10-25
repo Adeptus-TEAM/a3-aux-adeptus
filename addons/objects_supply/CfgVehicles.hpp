@@ -27,6 +27,7 @@ class CfgVehicles {
             MAG_XX(3AS_45Rnd_EC50_Mag,20);
             MAG_XX(3AS_60Rnd_EC30_mag,20);
             MAG_XX(3AS_60Rnd_EC50_Mag,20);
+            MAG_XX(JLTS_DC17SA_mag,20);
         };
     };
 
@@ -144,9 +145,12 @@ class CfgVehicles {
         EMPTY_WEAPON;
         maximumLoad = 2000;
         class TransportMagazines {
-            MAG_XX(3AS_1UGL_MK54_HE_shell,30);
-            MAG_XX(3AS_3UGL_MK56_Flare_White_shell,30);
-            MAG_XX(3AS_3UGL_MK55_Smoke_White_shell,30);
+            MAG_XX(1Rnd_HE_Grenade_shell,15);
+            MAG_XX(3AS_1UGL_MK54_HE_shell,15);
+            MAG_XX(3AS_1UGL_MK55_Smoke_White_shell,15);
+            MAG_XX(3AS_1UGL_MK55_Smoke_Green_shell,15);
+            MAG_XX(3AS_1UGL_MK56_Flare_White_shell,15);
+            MAG_XX(3AS_1UGL_MK56_Flare_Green_shell,15);
         };
     };
 
@@ -173,5 +177,43 @@ class CfgVehicles {
             WEAP_XX(Shovel_Russian_Rotated,5);
             WEAP_XX(AR_Z6,5);
         };
+    };
+    class SUBCVAR(Engineer) : JLTS_Ammobox_launchers_GAR {
+        displayName = SUBCSTRING(Engineer);
+        scope = 2;
+        scopeCurator = 2;
+        ace_dragging_ignoreWeightCarry = TRUE;
+        ace_dragging_ignoreWeight = TRUE;
+        CATEGORY_AR;
+        SUBCATEGORY_STORAGE;
+        EDITORPREVIEW(SUBCVAR(at));
+        EMPTY_BACKPACK;
+        EMPTY_MAGAZINE;
+        EMPTY_WEAPON;
+        maximumLoad = 2000;
+        class TransportItems {
+            ITEM_XX(ShieldGrenade_Mag,10);
+            ITEM_XX(SquadShieldMagazine,5);
+            ITEM_XX(AR_Misc_RespawnBeacon_item,5);
+            ITEM_XX(JLTS_grenade_emp_mag,5);
+            ITEM_XX(DemoCharge_Remote_Mag,5);
+            ITEM_XX(ACE_Clacker,2);
+        };
+    };
+
+    class SUBCVAR(Empty) : JLTS_Ammobox_weapons_GAR {
+        displayName = SUBCSTRING(Empty);
+        scope = 2;
+        scopeCurator = 2;
+        ace_dragging_ignoreWeightCarry = TRUE;
+        ace_dragging_ignoreWeight = TRUE;
+        CATEGORY_AR;
+        SUBCATEGORY_STORAGE;
+        EDITORPREVIEW(SUBCVAR(weapons));
+        EMPTY_MAGAZINE;
+        EMPTY_BACKPACK;
+        EMPTY_ITEM;
+        EMPTY_WEAPON;
+        maximumLoad = 2000;
     };
 };
