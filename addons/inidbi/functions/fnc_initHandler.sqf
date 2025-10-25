@@ -26,16 +26,22 @@ if (isDedicated) then {
 	}];
 	
 	[
-		{
-			{
-				private _unit = _x;
-				private _uid = getPlayerUID _unit; // Get the player's unique identifier (UID)
-				[_unit,_uid] call FUNC(updatePlayerData);
-			} forEach allPlayers; // Ensure all players have their data updated
+		{ 
+			[
+				{
+					{
+						private _unit = _x;
+						private _uid = getPlayerUID _unit; // Get the player's unique identifier (UID)
+						[_unit,_uid] call FUNC(updatePlayerData);
+					} forEach allPlayers; // Ensure all players have their data updated
+				},
+				600, // every 600 seconds (10 minutes)
+				nil
+			] call CBA_fnc_addPerFrameHandler;
 		},
-		600, // every 600 seconds (10 minutes)
-		nil
-	] call CBA_fnc_addPerFrameHandler;
+		nil,
+		60
+	] call CBA_fnc_waitAndExecute;
 
 	INFO("[INIDBI] Handler initialized on dedicated server.");
 };
