@@ -26,25 +26,6 @@ params [
 
 TRACE_3("fnc_setUnitTrait",_unit,_specToAssign,_isSpecialist);
 
-// Define the specialist roles and their traits
-private _medical = { // Define the medical trait
-	params ["_unit", "_bool", "_lvl"];
-	_unit setVariable ["ace_medical_medicclass", _lvl, true];
-	_unit setUnitTrait ["Medic", _bool];
-};
-
-private _eod = { // Define the EOD trait
-	params ["_unit", "_bool"];
-	_unit setVariable ["ace_isExplosiveSpecialist", _bool, true];
-	_unit setUnitTrait ["ExplosiveSpecialist", _bool];
-};
-
-private _engineer = { // Define the engineer role and its traits
-	params ["_unit", "_bool", "_lvl"];
-	_unit setVariable ["ace_isEngineer", _lvl, true];
-	_unit setUnitTrait ["Engineer", _bool];
-};
-
 private _level = 0; // default level for specialists
 if (_isSpecialist) then {
 	_level = 2; // set level to 2 if the unit is a specialist
@@ -53,19 +34,26 @@ if (_isSpecialist) then {
 // Assign the specialist role based on the provided _specToAssign parameter
 switch (_specToAssign) do {
 	case "medic" : {
-		[_unit, _isSpecialist, _level] call _medical;
+		_unit setVariable ["ace_medical_medicclass", _level, true];
+		_unit setUnitTrait ["Medic", _isSpecialist];
 	};
 	case "engineer" : {
-		[_unit, _isSpecialist, _level] call _engineer;
-		[_unit, _isSpecialist] call _eod; // EOD trait is also assigned for engineers
+		_unit setVariable ["ace_isEngineer", _level, true];
+		_unit setUnitTrait ["Engineer", _isSpecialist];
+		_unit setVariable ["ace_isExplosiveSpecialist", _isSpecialist, true];
+		_unit setUnitTrait ["ExplosiveSpecialist", _isSpecialist];
 	};
 	case "eod" : {
-		[_unit, _isSpecialist] call _eod;
+		_unit setVariable ["ace_isExplosiveSpecialist", _isSpecialist, true];
+		_unit setUnitTrait ["ExplosiveSpecialist", _isSpecialist];
 	};
 	case "all" : {
-		[_unit, _isSpecialist, _level] call _medical;
-		[_unit, _isSpecialist, _level] call _engineer;
-		[_unit, _isSpecialist] call _eod;
+		_unit setVariable ["ace_medical_medicclass", _level, true];
+		_unit setUnitTrait ["Medic", _isSpecialist];
+		_unit setVariable ["ace_isEngineer", _level, true];
+		_unit setUnitTrait ["Engineer", _isSpecialist];
+		_unit setVariable ["ace_isExplosiveSpecialist", _isSpecialist, true];
+		_unit setUnitTrait ["ExplosiveSpecialist", _isSpecialist];
 	};
 	default {
 		INFO_1("fnc_setUnitTrait - Unknown specialist role: %1",_specToAssign);
