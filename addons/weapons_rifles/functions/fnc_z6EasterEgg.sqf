@@ -29,8 +29,8 @@ _unit setVariable [QGVAR(Z6_bulletCount), _bulletCount, true]; // Update the bul
 
 if (_bulletCount >= 100) then { // If the bullet count reaches 100, play a sound and reset the count
 	private _coinFlip = (random 1);
-	if (_coinFlip > 0.5) then {
-		playSound3D [QPATHTOF(data\sounds\z6_easteregg.ogg), _unit, false, _unit, 5, 1];
+	if (_coinFlip > 0.95) then {
+		playSound3D [QPATHTOF(data\sounds\z6_easteregg.ogg), _unit, false, getPosASL _unit, 1, 1];
 	};
 	_unit setVariable [QGVAR(Z6_bulletCount), 0, true]; // Reset the bullet count
 };

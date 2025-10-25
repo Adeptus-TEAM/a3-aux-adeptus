@@ -28,7 +28,7 @@ _object addAction [
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"];
 		[_caller, "medic", true] call EFUNC(missions,setUnitTrait);
-	}, nil, 1.5, false, false, "", QUOTE(_this getUnitTrait 'Medic' == false)
+	}, nil, 1.5, false, false, "", QUOTE(!(_this getUnitTrait 'Medic'))
 ];
 
 _object addAction [
@@ -36,7 +36,7 @@ _object addAction [
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"];
 		[_caller, "medic", false] call EFUNC(missions,setUnitTrait);
-	}, nil, 1.5, false, false, "", QUOTE(_this getUnitTrait 'Medic' == true)
+	}, nil, 1.5, false, false, "", QUOTE(_this getUnitTrait 'Medic')
 ];
 
 _object addAction [
@@ -44,7 +44,7 @@ _object addAction [
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"];
 		[_caller, "engineer", true] call EFUNC(missions,setUnitTrait);
-	}, nil, 1.5, false, false, "", QUOTE(_this getUnitTrait 'Engineer' == false)
+	}, nil, 1.5, false, false, "", QUOTE(!(_this getUnitTrait 'Engineer'))
 ];
 
 _object addAction [
@@ -52,7 +52,7 @@ _object addAction [
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"];
 		[_caller, "engineer", false] call EFUNC(missions,setUnitTrait);
-	}, nil, 1.5, false, false, "", QUOTE(_this getUnitTrait 'Engineer' == true)
+	}, nil, 1.5, false, false, "", QUOTE(_this getUnitTrait 'Engineer')
 ];
 
 _object addAction [
@@ -60,7 +60,7 @@ _object addAction [
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"];
 		[_caller, "eod", true] call EFUNC(missions,setUnitTrait);
-	}, nil, 1.5, false, false, "", QUOTE(_this getUnitTrait 'ExplosiveSpecialist' == false)
+	}, nil, 1.5, false, false, "", QUOTE(!(_this getUnitTrait 'ExplosiveSpecialist'))
 ];
 
 _object addAction [
@@ -68,5 +68,5 @@ _object addAction [
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"];
 		[_caller, "eod", false] call EFUNC(missions,setUnitTrait);
-	}, nil, 1.5, false, false, "", QUOTE(_this getUnitTrait 'ExplosiveSpecialist' == true)
+	}, nil, 1.5, false, false, "", QUOTE(_this getUnitTrait 'ExplosiveSpecialist')
 ];

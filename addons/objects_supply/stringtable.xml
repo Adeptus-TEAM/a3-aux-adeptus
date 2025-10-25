@@ -14,6 +14,14 @@
                 <English>Anti-Tank Supply</English>
                 <French>Ravitaillement Lanceurs AT</French>
             </Key>
+            <Key ID="str_ar_objects_supply_empty">
+                <English>Empty Supply</English>
+                <French>Ravitaillement vide</French>
+            </Key>
+            <Key ID="str_ar_objects_supply_engineer">
+                <English>Engineering Supply</English>
+                <French>Ravitaillement d'ingénierie</French>
+            </Key>
             <Key ID="str_ar_objects_supply_grenade">
                 <English>Grenade Supply</English>
                 <French>Ravitaillement Grenades</French>
