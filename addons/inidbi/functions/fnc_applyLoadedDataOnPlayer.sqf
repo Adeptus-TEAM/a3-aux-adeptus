@@ -26,7 +26,7 @@ TRACE_1("fnc_applyLoadedDataOnPlayer",_this);
 [
 	{
 		params ["_player"];
-		!isNull _player // Wait until the player is not null
+		(isPlayer _player) && (alive _player) && (!(isNull _player));
 	},
 	{
 		params ["_player", "_data"];
