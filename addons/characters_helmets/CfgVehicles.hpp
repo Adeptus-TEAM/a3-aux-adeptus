@@ -74,6 +74,7 @@ class cfgVehicles {
             CLASS_HEADGEAR(Customs,Red,P1);
             CLASS_HEADGEAR(Customs,SixOne,P1);
             CLASS_HEADGEAR(Customs,Spearhead,P1);
+            CLASS_HEADGEAR(Customs,Code,P1);
 
         // Phase 2 Helmet
             CLASS_HEADGEAR(Customs,Ankh,P2);
@@ -98,8 +99,11 @@ class cfgVehicles {
             CLASS_HEADGEAR(Customs,Red,Rex);
 
         // Scout Helmet
-            CLASS_HEADGEAR(Customs,COde,Scout);
+           //CLASS_HEADGEAR(Customs,Code,Scout);
             CLASS_HEADGEAR(Customs,Ozy,Scout);
             CLASS_HEADGEAR(Customs,Sting,Scout);
+
+        // Marines Helmet
+            CLASS_HEADGEAR(Customs,Code,Marine);
     /* End Customs */
 };

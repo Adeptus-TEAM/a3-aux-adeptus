@@ -74,6 +74,7 @@ class cfgWeapons {
         // Phase 1 Helmet
             CLASS_P1_HELMET(Customs,Ankh);
             CLASS_P1_HELMET(Customs,Archer);
+            CLASS_P1_HELMET(Customs,Code);
             CLASS_P1_HELMET(Customs,Dragon);
             CLASS_P1_HELMET(Customs,Magic);
             CLASS_P1_HELMET(Customs,Phantom);
@@ -102,9 +103,12 @@ class cfgWeapons {
             CLASS_REX_HELMET(Customs,Red);
 
         // Scout Helmet
-            CLASS_SCOUT_HELMET(Customs,COde);
+           // CLASS_SCOUT_HELMET(Customs,COde);
             CLASS_SCOUT_HELMET(Customs,Ozy);
             CLASS_SCOUT_HELMET(Customs,Sting);
+
+        // Marine Helmet
+            CLASS_MARINE_HELMET(Customs,Code);
 
         /* Customs Helmet w/ visor illumination */
             #undef VISOR_MAT

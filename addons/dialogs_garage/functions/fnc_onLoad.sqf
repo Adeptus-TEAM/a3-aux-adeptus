@@ -26,7 +26,7 @@ uiNamespace setVariable [QGVAR(listVehicles), []]; // Set the list of vehicles t
 
 private _terminal = uiNamespace getVariable [QGVAR(garageObject), objNull]; // Get the garage terminal object
 
-private _spawnObject = (call compile (_terminalObject getVariable[QEGVAR(objects,garageSpawnObject),"objNull"])); // Get the spawn object from the terminal
+private _spawnObject = (call compile (_terminal getVariable[QEGVAR(objects,garageSpawnObject),"objNull"])); // Get the spawn object from the terminal
 private _areaSize = _terminal getVariable [QEGVAR(objects,garageAreaSize), 0]; // Get the area size from the terminal
 private _listVehiclesCombo = _terminal getVariable [QEGVAR(objects,garageVehiclesList), 0]; // Get the selected vehicles list from the terminal
 

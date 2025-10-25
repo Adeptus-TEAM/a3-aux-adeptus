@@ -36,7 +36,8 @@ class CfgPatches {
             QECVAR(Ankh,P2_Headgear),
             QECVAR(Archer,P1_Headgear),
             QECVAR(Archer,P2_Headgear),
-            QECVAR(Code,Scout_Headgear),
+            QECVAR(Code,P1_Headgear),
+            QECVAR(Code,Marine_Headgear),
             QECVAR(Dragon,P1_Headgear),
             QECVAR(Dragon,P2_Headgear),
             QECVAR(Gart,P1_Headgear),
@@ -63,7 +64,7 @@ class CfgPatches {
             QECVAR(Spearhead,P2_Headgear),
             QECVAR(Sting,scout_Headgear),
             QECVAR(Bragg,P1_Headgear),
-            QECVAR(Bragg,P2_Headgear)
+            QECVAR(Bragg,P2_Headgear),
         };
         weapons[] = {
             // Regs
@@ -92,7 +93,8 @@ class CfgPatches {
             QECVAR(Ankh,P2_helmet),
             QECVAR(Archer,P1_helmet),
             QECVAR(Archer,P2_helmet),
-            QECVAR(Code,scout_helmet),
+            QECVAR(Code,P1_Helmet),
+            QECVAR(Code,Marine_Helmet),
             QECVAR(Dragon,P1_helmet),
             QECVAR(Dragon,P2_helmet),
             QECVAR(Gart,P1_helmet),
