@@ -33,7 +33,7 @@ if (isDedicated) then {
 				[_unit,_uid] call FUNC(updatePlayerData);
 			} forEach allPlayers; // Ensure all players have their data updated
 		},
-		300, // every 300 seconds (5 minutes)
+		600, // every 600 seconds (10 minutes)
 		nil
 	] call CBA_fnc_addPerFrameHandler;
 

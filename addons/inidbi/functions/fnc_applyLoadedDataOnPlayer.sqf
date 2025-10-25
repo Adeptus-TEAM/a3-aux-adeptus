@@ -41,13 +41,15 @@ TRACE_1("fnc_applyLoadedDataOnPlayer",_this);
 			_player setUnitLoadout _playerLoadout;
 			INFO_1("[INIDBI] Loadout data has been applied for %1",_player);
 		};
-		private _ismedic = _data getOrDefault ["isMedic", false];
-		private _isengineer = _data getOrDefault ["isEngineer", false];
-		private _iseod = _data getOrDefault ["isEOD", false];
 
-		[_player, "medic", _ismedic] call EFUNC(missions,setUnitTrait);
-		[_player, "eod", _iseod] call EFUNC(missions,setUnitTrait);
-		[_player, "engineer", _isengineer] call EFUNC(missions,setUnitTrait);
+		// Apply traits to the player
+		private _isMedic = _data getOrDefault ["isMedic", false];
+		private _isEOD = _data getOrDefault ["isEOD", false];
+		private _isEngineer = _data getOrDefault ["isEngineer", false];
+
+		[_player, "medic", _isMedic] call EFUNC(missions,setUnitTrait);
+		[_player, "eod", _isEOD] call EFUNC(missions,setUnitTrait);
+		[_player, "engineer", _isEngineer] call EFUNC(missions,setUnitTrait);
 		INFO_1("[INIDBI] Traits data has been applied for %1",_player);
 	},
 	[_player, _data]
