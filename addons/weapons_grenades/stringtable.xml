@@ -3,8 +3,8 @@
     <Package name="Grenades">
         <Container name="EMP">
             <Key ID="str_ar_weapons_emp_displayName">
-                <English>EMP Grenade</English>
-                <French>Grenade IEM</French>
+                <English>[61st] EMP Grenade</English>
+                <French>[61st] Grenade IEM</French>
             </Key>
         </Container>
     </Package>
