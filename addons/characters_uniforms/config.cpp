@@ -42,9 +42,9 @@ class CfgPatches {
             // Regs
             QECVAR(V1,Uniform),
             QECVAR(V2,Uniform),
-            QECVAR(eng,Uniform),
+            QECVAR(Engineer,Uniform),
             QECVAR(Marine,Uniform),
-            QECVAR(Marine_co,Uniform),
+            QECVAR(Marine_CO,Uniform),
             QECVAR(ARF_desert,Uniform),
             QECVAR(ARF_forest,Uniform),
             QECVAR(Scout,Uniform),
