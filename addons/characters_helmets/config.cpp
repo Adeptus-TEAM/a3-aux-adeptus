@@ -64,7 +64,7 @@ class CfgPatches {
             QECVAR(Spearhead,P2_Headgear),
             QECVAR(Sting,scout_Headgear),
             QECVAR(Bragg,P1_Headgear),
-            QECVAR(Bragg,P2_Headgear),
+            QECVAR(Bragg,P2_Headgear)
         };
         weapons[] = {
             // Regs
@@ -119,7 +119,9 @@ class CfgPatches {
             QECVAR(SixOne,P2_helmet),
             QECVAR(Spearhead,P1_helmet),
             QECVAR(Spearhead,P2_helmet),
-            QECVAR(Sting,scout_helmet)
+            QECVAR(Sting,scout_helmet),
+            QECVAR(Bragg,P1_helmet),
+            QECVAR(Bragg,P2_helmet)
         };
         VERSION_CONFIG;
     };
