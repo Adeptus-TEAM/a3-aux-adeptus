@@ -43,7 +43,14 @@ publicVariable QGVAR(respawnButtonTimer);
 				_respawnButton ctrlEnable true; // Enable the respawn button
 			};
 		} else {
-			_unit setVariable [QGVAR(respawnButtonTimer), GVAR(respawnButtonTimer)]; // Reset the respawn timer if the button is not found
+			if (lifeState _unit == "INCAPACITATED") then { // If the unit is incapacitated but the respawn button is not found
+				if (_respawnButtonTimer > 0) then { // Decrease the timer anyway
+					SUB(_respawnButtonTimer,0.1); // Decrease the timer by 0.1 seconds
+					_unit setVariable [QGVAR(respawnButtonTimer), _respawnButtonTimer]; // Update the unit's respawn timer
+				};
+			} else {
+				_unit setVariable [QGVAR(respawnButtonTimer), GVAR(respawnButtonTimer)]; // Reset the respawn timer if the button is not found
+			};
 		};
 	},
 	0.1, // every 0.1 seconds
