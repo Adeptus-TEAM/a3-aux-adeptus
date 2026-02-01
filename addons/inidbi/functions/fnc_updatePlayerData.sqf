@@ -35,9 +35,9 @@ if (isNil "_inidbi") exitWith {
 // Get player data
 private _playerName = name _player;
 private _playerLoadout = getUnitLoadout _player;
-private _isMedic = _player getUnitTrait "Medic";
-private _isEngineer = _player getUnitTrait "Engineer";
-private _isEOD = _player getUnitTrait "ExplosiveSpecialist";
+private _isMedic = (_player getVariable ["ace_medical_medicclass", 0]) > 0;
+private _isEngineer = (_player getVariable ["ace_isEngineer", 0]) > 0;
+private _isEOD = _player getVariable ["ace_isExplosiveSpecialist", false];
 
 // Write player data to the INIDBI instance
 ["Write", ["GameData", "Name", _playerName]] call _inidbi;
