@@ -49,7 +49,7 @@ _x setVariable ["ShieldStatus", 0, true];
 _x animateSource ["ShieldLayer_BaseFront",1,true]; 
 _x setHitPointDamage ["HitShield",0,false];
 
-private _particleSource = "#particleSource" createVehicleLocal ASLToAGL getPosASL _x;
+private _particleSource = "#particleSource" createVehicle ASLToAGL getPosASL _x;
 _particleSource setParticleCircle [0,[0,0,0]];
 _particleSource setParticleParams [
 ["\A3\data_f\blesk1", 1, 0, 1,0],
@@ -81,7 +81,7 @@ _particleSource setDropInterval 0.05;
 {
 if(alive _x)then{
 
-private _particleSource = "#particleSource" createVehicleLocal ASLToAGL getPosASL _x;
+private _particleSource = "#particleSource" createVehicle ASLToAGL getPosASL _x;
 _particleSource setParticleCircle [0,[0,0,0]];
 _particleSource setParticleParams [
 ["\A3\data_f\blesk1", 1, 0, 1,0],
