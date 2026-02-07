@@ -27,19 +27,19 @@ private _serverName = "Default Server";
 
 switch (ctrlIDC _control) do { 
 	case 6101: {
-		_serverAddress = "training.adeptusrepublica.fr";
+		_serverAddress = "training.adeptus-team.eu";
 		_serverPort = 2332;
 		_serverName = LSUBLSTRING(name2);
 		INFO("Training Server selected");
 	};
 	case 6102: {
-		_serverAddress = "main.adeptusrepublica.fr";
+		_serverAddress = "main.adeptus-team.eu";
 		_serverPort = 2302;
 		_serverName = LSUBLSTRING(name1);
 		INFO("Main Server selected");
 	};
 	case 6103: {
-		_serverAddress = "opex.adeptusrepublica.fr";
+		_serverAddress = "opex.adeptus-team.eu";
 		_serverPort = 2302;
 		_serverName = LSUBLSTRING(name3);
 		INFO("OPEX Server selected");
