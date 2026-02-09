@@ -19,8 +19,8 @@ TAS_shieldTime = 30;
 TAS_SquadShieldTime = 240;
 
 // 3AS Lava
-TAS_Lava_Damage_Multiplier = 1;
-TAS_Lava_Enable_Handler_All_Maps = false;
+TAS_Lava_Damage_Multiplier = 10;
+TAS_Lava_Enable_Handler_All_Maps = true;
 
 // 3AS Shields
 TAS_DroidekaDisabledShieldTime = 1;
