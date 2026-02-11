@@ -12,7 +12,6 @@
 	 * <NONE>
 	 *
 	 * Example:
-	 * for init : [player] call ar_missions_fnc_setUnitTrait
 	 * for change : [player, "medic", true] call ar_missions_fnc_setUnitTrait
 	 *
 	 * Public: No
