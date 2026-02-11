@@ -1,7 +1,7 @@
 class CfgWeapons {
     class GrenadeLauncher;
     class Throw: GrenadeLauncher{
-        muzzles[] += {QSUBCVAR(emp_muzzle),};
+        muzzles[] += {QSUBCVAR(emp_muzzle)};
 
         class ThrowMuzzle;
 

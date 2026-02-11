@@ -67,7 +67,7 @@ _particleSource setParticleParams [
 /* randDirIntensity */	0,
 /* onTimerScript */		"",
 /* DestroyScript */		"",
-/* object */			_this
+/* object */			_x
 ];
 
 _particleSource setParticleRandom [0, [0.25, 0.25, 0], [0.175, 0.175, 0], 0, 0.25, [0, 0, 0, 0.1], 0, 0];
@@ -99,7 +99,7 @@ _particleSource setParticleParams [
 /* randDirIntensity */	0,
 /* onTimerScript */		"",
 /* DestroyScript */		"",
-/* object */			_this
+/* object */			_x
 ];
 
 _particleSource setParticleRandom [0, [0.25, 0.25, 0], [0.175, 0.175, 0], 0, 0.25, [0, 0, 0, 0.1], 0, 0];
