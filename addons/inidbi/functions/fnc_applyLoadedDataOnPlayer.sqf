@@ -53,7 +53,7 @@ TRACE_1("fnc_applyLoadedDataOnPlayer",_this);
 				[_player, "medic", _isMedic] call EFUNC(missions,setUnitTrait);
 				[_player, "eod", _isEOD] call EFUNC(missions,setUnitTrait);
 				[_player, "engineer", _isEngineer] call EFUNC(missions,setUnitTrait);
-				INFO_4("[INIDBI] Traits data has been applied for %1; isMedic: %2, isEOD: %3, isEngineer: %4",_player,_isMedic,_isEOD,_isEngineer);
+				INFO_4("[INIDBI] Traits data has been applied for %1; isMedic: %2, isEOD: %3, isEngineer: %4",name _player,_isMedic,_isEOD,_isEngineer);
 			},
 			[_player, _data],
 			5
