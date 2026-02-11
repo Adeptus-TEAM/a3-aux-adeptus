@@ -26,7 +26,7 @@ TRACE_1("fnc_applyLoadedDataOnPlayer",_this);
 [
 	{
 		params ["_player"];
-		(isPlayer _player) && (alive _player) && (!(isNull _player) && !didJIP);
+		(isPlayer _player) && (alive _player) && (!(isNull _player));
 	},
 	{
 		params ["_player", "_data"];
