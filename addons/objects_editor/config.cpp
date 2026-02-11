@@ -10,14 +10,11 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = { QUOTE(ADDON), "JLTS_weapons_crates", "3as_GNK_Prop" };
         units[] = {
-            QSUBCVAR(respawnBeacon_Active),
-            QSUBCVAR(respawnBeacon_GroundItem),
             QSUBCVAR(arsenalBox),
             QSUBCVAR(unitTraitTerminal),
             QSUBCVAR(garageTerminal)
         };
         weapons[] = {
-            QSUBCVAR(respawnBeacon_item)
         };
         VERSION_CONFIG;
     };
