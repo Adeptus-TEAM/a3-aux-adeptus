@@ -28,10 +28,10 @@ if (is3DEN) exitWith {
 if (!(QSUBCVAR(item) in (items _unit))) exitWith {
 	false
 };
-if (_unit getVariable [QGVAR(isBuilding), false]) exitWith {
+if ((_unit getVariable ["ace_isEngineer", 0]) == 0) exitWith {
 	false
 };
-if (_unit getUnitTrait 'Engineer' != true) exitWith {
+if (_unit getVariable [QGVAR(isBuilding), false]) exitWith {
 	false
 };
 

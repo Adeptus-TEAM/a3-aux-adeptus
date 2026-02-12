@@ -27,7 +27,7 @@ if ((_object animationSourcePhase "ramp") < 0.5) exitWith {
 };
 
 // Check if the unit has the required trait
-if (_unit getUnitTrait 'Engineer' != true) exitWith {
+if ((_unit getVariable ["ace_isEngineer", 0]) == 0) exitWith {
 	false
 };
 
