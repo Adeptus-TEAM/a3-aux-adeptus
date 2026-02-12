@@ -32,9 +32,9 @@ createDialog "RscLoadout";
 
 // get the player varialble
 private _loadout = getUnitLoadout _caller;
-private _isMedic = _caller getUnitTrait "Medic";
-private _isEngineer = _caller getUnitTrait "Engineer";
-private _isEOD = _caller getUnitTrait "ExplosiveSpecialist";
+private _isMedic = (_caller getVariable ["ace_medical_medicclass", 0]) > 0;
+private _isEngineer = (_caller getVariable ["ace_isEngineer", 0]) > 0;
+private _isEOD = _caller getVariable ["ace_isExplosiveSpecialist", false];
 
 // set the player variables
 private _playerData = [_caller, _target, _loadout, _isMedic, _isEngineer, _isEOD];

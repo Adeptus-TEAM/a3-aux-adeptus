@@ -6,6 +6,7 @@ hemtt.exe
 
 # Clés privées
 *.biprivatekey
+.hemttprivatekey
 
 # Répertoires de release
 releases

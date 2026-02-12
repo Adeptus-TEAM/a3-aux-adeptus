@@ -9,8 +9,13 @@ class CfgPatches {
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {QUOTE(ADDON), "JLTS_C_Credits", "ls_props"};
-        units[] = {};
-        weapons[] = {};
+        units[] = {
+            QSUBCVAR(Active),
+            QSUBCVAR(GroundItem)
+        };
+        weapons[] = {
+            QSUBCVAR(item)
+        };
         VERSION_CONFIG;
     };
 };

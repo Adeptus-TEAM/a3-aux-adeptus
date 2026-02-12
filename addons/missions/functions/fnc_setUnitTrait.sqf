@@ -12,7 +12,6 @@
 	 * <NONE>
 	 *
 	 * Example:
-	 * for init : [player] call ar_missions_fnc_setUnitTrait
 	 * for change : [player, "medic", true] call ar_missions_fnc_setUnitTrait
 	 *
 	 * Public: No
@@ -35,25 +34,18 @@ if (_isSpecialist) then {
 switch (_specToAssign) do {
 	case "medic" : {
 		_unit setVariable ["ace_medical_medicclass", _level, true];
-		_unit setUnitTrait ["Medic", _isSpecialist];
 	};
 	case "engineer" : {
 		_unit setVariable ["ace_isEngineer", _level, true];
-		_unit setUnitTrait ["Engineer", _isSpecialist];
 		_unit setVariable ["ace_isExplosiveSpecialist", _isSpecialist, true];
-		_unit setUnitTrait ["ExplosiveSpecialist", _isSpecialist];
 	};
 	case "eod" : {
 		_unit setVariable ["ace_isExplosiveSpecialist", _isSpecialist, true];
-		_unit setUnitTrait ["ExplosiveSpecialist", _isSpecialist];
 	};
 	case "all" : {
 		_unit setVariable ["ace_medical_medicclass", _level, true];
-		_unit setUnitTrait ["Medic", _isSpecialist];
 		_unit setVariable ["ace_isEngineer", _level, true];
-		_unit setUnitTrait ["Engineer", _isSpecialist];
 		_unit setVariable ["ace_isExplosiveSpecialist", _isSpecialist, true];
-		_unit setUnitTrait ["ExplosiveSpecialist", _isSpecialist];
 	};
 	default {
 		INFO_1("fnc_setUnitTrait - Unknown specialist role: %1",_specToAssign);

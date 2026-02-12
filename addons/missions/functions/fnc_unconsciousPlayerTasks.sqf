@@ -25,7 +25,7 @@ PUSH(GVAR(unconsciousPlayers),_unit);
 
 // Create the task for medics when a player is unconscious
 private _medics = allPlayers select {
-	(_x getUnitTrait "Medic")
+	((_x getVariable ["ace_medical_medicclass", 0]) > 0)
 };
 
 private _taskID = FORMAT_2(QGVAR(TRIPLES(unconsciousTask,%1,%2)),(round time),_unit);

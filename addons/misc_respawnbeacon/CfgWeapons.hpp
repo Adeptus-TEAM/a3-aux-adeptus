@@ -8,7 +8,7 @@ class CfgWeapons {
 
     class SUBCVAR(item) : JLTS_icecream_base {
         displayName = SUBCSTRING(item);
-        icon = QPATHTOF(data\icons\respawnBeacon_item_ca.paa);
+        icon = QPATHTOF(data\icons\item_ca.paa);
         descriptionShort = SUBCSTRING(item_desc);
         scope = 2;
         scopeArsenal = 2;
