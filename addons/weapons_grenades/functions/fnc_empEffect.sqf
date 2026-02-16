@@ -40,6 +40,7 @@ private _droidClassList = [
 "WBK_LS_B2_Baseclass"
 ];
 
+
 private _dekaInZone = (nearestObjects [_pos, ["3AS_Deka_Static_Base"],5,true]);
 private _droidInZone = (nearestObjects [_pos, _droidClassList,5,true]);
 

@@ -27,6 +27,8 @@ class CfgVehicles {
             MAG_XX(3AS_45Rnd_EC50_Mag,20);
             MAG_XX(3AS_60Rnd_EC30_mag,20);
             MAG_XX(3AS_60Rnd_EC50_Mag,20);
+            MAG_XX(3AS_10Rnd_EC100_Mag,20);
+            MAG_XX(3AS_10Rnd_EC80_Mag,20);
             MAG_XX(JLTS_DC17SA_mag,20);
         };
     };
@@ -174,6 +176,8 @@ class CfgVehicles {
             WEAP_XX(3AS_DC15A_GL,5);
             WEAP_XX(3AS_DC15L_F,5);
             WEAP_XX(3AS_DC17S_F,5);
+            WEAP_XX(3AS_DC15X_F,5);
+            WEAP_XX(3AS_Valken38X_F,5);
             WEAP_XX(Shovel_Russian_Rotated,5);
             WEAP_XX(AR_Z6,5);
         };
