@@ -638,7 +638,7 @@ diwako_dui_icon_style = "clones";
 diwako_dui_nametags_customRankStyle = "[[""PRIVATE"", ""CORPORAL"", ""SERGEANT"", ""LIEUTENANT"", ""CAPTAIN"", ""MAJOR"", ""COLONEL""], [""Pvt."", ""Cpl."", ""Sgt."", ""Lt."", ""Capt."", ""Maj."", ""Col.""]]";
 diwako_dui_nametags_deadRenderDistance = 3.5;
 diwako_dui_nametags_drawRank = true;
-diwako_dui_nametags_enabled = true;
+diwako_dui_nametags_enabled = false;
 diwako_dui_nametags_enableFOVBoost = true;
 diwako_dui_nametags_enableOcclusion = true;
 diwako_dui_nametags_fadeInTime = 0.05;
@@ -666,6 +666,7 @@ diwako_dui_radar_sortType = "fireteam";
 diwako_dui_radar_sqlFirst = true;
 diwako_dui_radar_syncGroup = true;
 diwako_dui_radar_vehicleCompassEnabled = false;
+diwako_dui_namelist_size = 1;
 
 // Fire support PLUS
 FSPLUS_105mmTrainingShell = true;
