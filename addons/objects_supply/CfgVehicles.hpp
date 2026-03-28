@@ -28,7 +28,7 @@ class CfgVehicles {
             MAG_XX(3AS_60Rnd_EC30_mag,20);
             MAG_XX(3AS_60Rnd_EC50_Mag,20);
             MAG_XX(3AS_10Rnd_EC100_Mag,20);
-            MAX_XX(3AS_10Rnd_EC100_DLT19X_Mag,20);
+            MAG_XX(3AS_10Rnd_EC100_DLT19X_Mag,20);
             MAG_XX(JLTS_DC17SA_mag,20);
         };
     };
@@ -130,7 +130,6 @@ class CfgVehicles {
             ITEM_XX(ACE_tourniquet,50);
             ITEM_XX(ace_filedDressing,50);
             ITEM_XX(kat_X_AED,5);
-            ITEM_XX(kat_bvm,5);
             ITEM_XX(kat_TXA,20);
             ITEM_XX(kat_EACA,20);
             ITEM_XX(kat_carbonate,20);
@@ -213,6 +212,7 @@ class CfgVehicles {
             ITEM_XX(3AS_DetPack,5);
             ITEM_XX(HX_AT_Mine_Mag,5);
             ITEM_XX(ACE_Clacker,5);
+            ITEM_XX(ls_explosive_demoCharge_magazine,5):
         };
     };
 
