@@ -212,7 +212,7 @@ class CfgVehicles {
             ITEM_XX(3AS_DetPack,5);
             ITEM_XX(HX_AT_Mine_Mag,5);
             ITEM_XX(ACE_Clacker,5);
-            ITEM_XX(ls_explosive_demoCharge_magazine,5):
+            ITEM_XX(ls_explosive_demoCharge_magazine,5);
         };
     };
 
