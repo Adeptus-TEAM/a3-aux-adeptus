@@ -28,6 +28,8 @@ TRACE_1("ar_objects_editor_fnc_addLimitedArsenal",_this);
 	_this distance _target < 5 // Check if the player is close enough
 }]] call BIS_fnc_arsenal;
 
+
+
 // list of items to include in the arsenal
 _availableWeapon = [
 	"3AS_DC15A_F",
