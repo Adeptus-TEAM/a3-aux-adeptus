@@ -635,7 +635,7 @@ diwako_dui_linecompass_showSpeaking = true;
 diwako_dui_icon_style = "clones";
 
 // DUI - Squad Radar - Nametags
-diwako_dui_nametags_customRankStyle = "[[""PRIVATE"", ""CORPORAL"", ""SERGEANT"", ""LIEUTENANT"", ""CAPTAIN"", ""MAJOR"", ""COLONEL""], [""Pvt."", ""Cpl."", ""Sgt."", ""Lt."", ""Capt."", ""Maj."", ""Col.""]]";
+diwako_dui_nametags_customRankStyle = "[[""PRIVATE"",""CORPORAL"",""SERGEANT"",""LIEUTENANT"",""CAPTAIN"",""MAJOR"",""COLONEL""],["""","""","""","""","""","""",""""]]";
 diwako_dui_nametags_deadRenderDistance = 3.5;
 diwako_dui_nametags_drawRank = true;
 diwako_dui_nametags_enabled = true;
@@ -645,8 +645,8 @@ diwako_dui_nametags_fadeInTime = 0.05;
 diwako_dui_nametags_fadeOutTime = 0.5;
 diwako_dui_nametags_groupFontShadow = 1;
 diwako_dui_nametags_nameFontShadow = 1;
-diwako_dui_nametags_rankNameStyle = "defaultLong";
-diwako_dui_nametags_renderDistance = 40;
+diwako_dui_nametags_rankNameStyle = "custom";
+diwako_dui_nametags_renderDistance = 20;
 diwako_dui_nametags_showUnconAsDead = true;
 diwako_dui_nametags_useLIS = true;
 diwako_dui_nametags_useSideIsFriendly = true;
@@ -666,7 +666,6 @@ diwako_dui_radar_sortType = "fireteam";
 diwako_dui_radar_sqlFirst = true;
 diwako_dui_radar_syncGroup = true;
 diwako_dui_radar_vehicleCompassEnabled = false;
-diwako_dui_namelist_size = 1;
 
 // Fire support PLUS
 FSPLUS_105mmTrainingShell = true;
