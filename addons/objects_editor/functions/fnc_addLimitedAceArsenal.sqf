@@ -49,9 +49,9 @@ private _allWeapons = [];
 
 {
 
-    _itemInfo = [_x] call BIS_fnc_itemType;
-    _itemCategory = _itemInfo select 0; // "Weapon"
-    _itemType = _itemInfo select 1; // "AssaultRifle", "Handgun", etc.
+    private _itemInfo = [_x] call BIS_fnc_itemType;
+    private _itemCategory = _itemInfo select 0; // "Weapon"
+    private _itemType = _itemInfo select 1; // "AssaultRifle", "Handgun", etc.
 
     // On vérifie si c'est une arme et on exclut les accessoires/objets
     if(_itemCategory == "Weapon" && !(_itemType in ["Magazine", "Throw"]))then{
@@ -60,6 +60,7 @@ private _allWeapons = [];
 
 }forEach _allVirtualItems;
 
-_blacklistedWeapons = _allWeapons - EGVAR(missions,allowedWeapons); // Substract are whitelist with all of the weapons to have the blacklisted ones
-
-[_crate, _blacklistedWeapons] call ace_arsenal_fnc_removeVirtualItems; // Remove blacklisted weapons from the crate, keeping magazines and other items intact.
+if (EGVAR(missions,allowedWeapons) != []) then {
+	private _blacklistedWeapons = _allWeapons - EGVAR(missions,allowedWeapons); // Substract are whitelist with all of the weapons to have the blacklisted ones
+	[_crate, _blacklistedWeapons] call ace_arsenal_fnc_removeVirtualItems; // Remove blacklisted weapons from the crate, keeping magazines and other items intact.
+};
