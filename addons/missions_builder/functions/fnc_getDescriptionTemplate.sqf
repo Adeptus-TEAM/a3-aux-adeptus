@@ -33,17 +33,17 @@ TRACE_1("ar_missions_builder_fnc_getDescriptionTemplate",_this);
 
 // Prepare replacement values
 private _replacements = createHashMap;
-_replacements set ["%MINIMAL_VERSION%", QUOTE(GVAR(minimalVersion))];
+_replacements set ["%MINIMAL_VERSION%", QGVAR(minimalVersion)];
 _replacements set ["%MINIMAL_VERSION_VALUE%", QUOTE(VERSION_AR)];
 _replacements set ["%LOADSCREEN_PATH%", QPATHTOEF(missions,data\loadscreen_co.paa)];
 _replacements set ["%AUTHOR%", str profileName];
 _replacements set ["%MISSION_NAME%", str _nameText];
 _replacements set ["%MISSION_DESCRIPTION%", str _descriptionText];
-_replacements set ["%COMBAT_TIME%", QUOTE(GVAR(combatTime))];
+_replacements set ["%COMBAT_TIME%", QGVAR(combatTime)];
 _replacements set ["%COMBAT_TIME_VALUE%", str _underfireTime];
-_replacements set ["%RESPAWN_BUTTON_TIMER%", QUOTE(GVAR(respawnButtonTimer))];
+_replacements set ["%RESPAWN_BUTTON_TIMER%", QGVAR(respawnButtonTimer)];
 _replacements set ["%RESPAWN_BUTTON_TIMER_VALUE%", str _respawnButtonTime];
-_replacements set ["%CLONE_PHASE%", QUOTE(GVAR(clonePhase))];
+_replacements set ["%CLONE_PHASE%", QGVAR(clonePhase)];
 _replacements set ["%CLONE_PHASE_VALUE%", str _phase];
 _replacements set ["%TERRESTRIAL_VEHICLES%", QGVAR(TerrestrialVehicles)];
 _replacements set ["%TRANSPORT_AERIAL_VEHICLES%", QGVAR(TransportAerialVehicles)];
