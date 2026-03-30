@@ -27,7 +27,8 @@ private _blackList = [
 	["SquadShieldMagazine", 2],
 	["ShieldGrenade_Mag", 4],
 	["ShieldGrenadePersonal_Mag", 0],
-	["JLTS_clone_comlink", 0]
+	["JLTS_clone_comlink", 0],
+	["OPTRE_FC_BubbleShield",0]
 ];
 
 {
