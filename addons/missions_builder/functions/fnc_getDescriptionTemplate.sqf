@@ -50,6 +50,7 @@ _replacements set ["%TRANSPORT_AERIAL_VEHICLES%", QGVAR(TransportAerialVehicles)
 _replacements set ["%ATTACK_AERIAL_VEHICLES%", QGVAR(AttackAerialVehicles)];
 _replacements set ["%SUPPLY_CRATE%", QGVAR(SupplyCrate)];
 _replacements set ["%RESPAWN_DELAY_VALUE%", str _respawnDelay];
+_replacements set ["%ALLOWED_WEAPONS%", QGVAR(AllowedWeapons)];
 
 // Load template from external file
 private _templatePath = QPATHTOF(data\description_template.inc);

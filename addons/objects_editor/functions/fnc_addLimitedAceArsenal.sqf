@@ -44,37 +44,6 @@ true,
 false
 ];
 
-// list of items to include in the arsenal
-_availableWeapon = [
-	"3AS_DC15A_F",
-	"3AS_DC15A_GL",
-	"3AS_DC15C_F",
-	"3AS_DC15C_GL",
-	"3AS_DC15L_F",
-	"3AS_DC15S_F",
-	"3AS_DC15S_GL",
-	"3AS_DC17S_F",
-	"3AS_DC17S_Dual_F",
-	"3AS_DC15X_F",
-	"3AS_DP23_F",
-	"3AS_DP23_GL",
-	"3AS_Flamer_Base",
-	"3AS_Valken38X_F",
-	"3AS_WestarM5_F",
-	"3AS_WestarM5_GL",
-	"AR_Weapons_Rifles_z6",
-	"Police_Bat",
-	"Shovel_Russian",
-	"Shovel_Russian_Rotated",
-	"UNSC_Knife",
-	"WBK_survival_weapon_3",
-	"WBK_survival_weapon_4",
-	"WBK_survival_weapon_4_r",
-	"Weap_melee_knife",
-	"AR_Weapons_Launchers_RPS6_F",
-	"3AS_PLX1_AA"
-];
-
 private _allVirtualItems = ((_crate call ace_arsenal_fnc_getVirtualItems) toArray true) select 0; // Get all virtual items currently in the crate and convert to array to get rid of quantity.
 private _allWeapons = [];
 
@@ -91,6 +60,6 @@ private _allWeapons = [];
 
 }forEach _allVirtualItems;
 
-_blacklistedWeapons = _allWeapons - _availableWeapon; // Substract are whitelist with all of the weapons to have the blacklisted ones
+_blacklistedWeapons = _allWeapons - EGVAR(missions,allowedWeapons); // Substract are whitelist with all of the weapons to have the blacklisted ones
 
 [_crate, _blacklistedWeapons] call ace_arsenal_fnc_removeVirtualItems; // Remove blacklisted weapons from the crate, keeping magazines and other items intact.
