@@ -25,7 +25,7 @@ TRACE_1("ar_objects_editor_fnc_addLimitedAceArsenal",_this);
 
 
 // Initialize the arsenal on the crate
-[_crate, true] call ace_arsenal_fnc_initBox;
+[_crate, true, true] call ace_arsenal_fnc_initBox;
 
 
 // Create an Arma Interaction System action on the crate
@@ -62,5 +62,5 @@ private _allWeapons = [];
 
 if (EGVAR(missions,allowedWeapons) != []) then {
 	private _blacklistedWeapons = _allWeapons - EGVAR(missions,allowedWeapons); // Substract are whitelist with all of the weapons to have the blacklisted ones
-	[_crate, _blacklistedWeapons] call ace_arsenal_fnc_removeVirtualItems; // Remove blacklisted weapons from the crate, keeping magazines and other items intact.
+	[_crate, _blacklistedWeapons, true] call ace_arsenal_fnc_removeVirtualItems; // Remove blacklisted weapons from the crate, keeping magazines and other items intact.
 };
