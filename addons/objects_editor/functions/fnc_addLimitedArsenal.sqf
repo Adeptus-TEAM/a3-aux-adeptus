@@ -35,8 +35,10 @@ TRACE_1("ar_objects_editor_fnc_addLimitedArsenal",_this);
 
 [_crate, ["%ALL"]] call BIS_fnc_addVirtualMagazineCargo;
 
-if (EGVAR(missions,allowedWeapons) != []) then {
-	[_crate, (EGVAR(missions,allowedWeapons))] call BIS_fnc_addVirtualWeaponCargo;
+private _allowedWeapons = getMissionConfigValue QEGVAR(missions,allowedWeapons);
+
+if (_allowedWeapons isNotEqualTo []) then {
+	[_crate, _allowedWeapons] call BIS_fnc_addVirtualWeaponCargo;
 } else {
 	[_crate, ["%ALL"]] call BIS_fnc_addVirtualWeaponCargo;
 };
