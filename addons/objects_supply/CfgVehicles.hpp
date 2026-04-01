@@ -27,6 +27,8 @@ class CfgVehicles {
             MAG_XX(3AS_45Rnd_EC50_Mag,20);
             MAG_XX(3AS_60Rnd_EC30_mag,20);
             MAG_XX(3AS_60Rnd_EC50_Mag,20);
+            MAG_XX(3AS_10Rnd_EC100_Mag,20);
+            MAG_XX(3AS_10Rnd_EC100_DLT19X_Mag,20);
             MAG_XX(JLTS_DC17SA_mag,20);
         };
     };
@@ -87,7 +89,7 @@ class CfgVehicles {
         class TransportMagazines {
             MAG_XX(3AS_BaridumCore,40);
             MAG_XX(3AS_ThermalDetonator,40);
-            MAG_XX(ACE_M84,40);
+            MAG_XX(AR_Weapons_Grenades_emp_mag,15);
             MAG_XX(OPTRE_M2_Smoke,40);
             MAG_XX(SmokeShellBlue,40);
             MAG_XX(SmokeShellGreen,40);
@@ -117,15 +119,19 @@ class CfgVehicles {
             ITEM_XX(ACE_packingBandage,50);
             ITEM_XX(ACE_personalAidKit,5);
             ITEM_XX(ACE_quikclot,30);
-            ITEM_XX(ACE_salineIV,50);
-            ITEM_XX(ACE_salineIV_250,50);
-            ITEM_XX(ACE_salineIV_500,50);
+            ITEM_XX(ACE_salineIV,25);
+            ITEM_XX(ACE_salineIV_250,25);
+            ITEM_XX(ACE_salineIV_500,25);
+            ITEM_XX(ACE_plasmaIV_250,25);
+            ITEM_XX(ACE_plasmaIV_500,25);
+            ITEM_XX(ACE_plasmaIV,25);
             ITEM_XX(ACE_splint,50);
             ITEM_XX(ACE_surgicalKit,5);
             ITEM_XX(ACE_tourniquet,50);
             ITEM_XX(ace_filedDressing,50);
             ITEM_XX(kat_X_AED,5);
-            ITEM_XX(kat_bvm,5);
+            ITEM_XX(kat_TXA,20);
+            ITEM_XX(kat_EACA,20);
             ITEM_XX(kat_carbonate,20);
             ITEM_XX(kat_nytroglycerin,20);
         };
@@ -174,8 +180,10 @@ class CfgVehicles {
             WEAP_XX(3AS_DC15A_GL,5);
             WEAP_XX(3AS_DC15L_F,5);
             WEAP_XX(3AS_DC17S_F,5);
+            WEAP_XX(3AS_DC15X_F,5);
+            WEAP_XX(3AS_Valken38X_F,5);
             WEAP_XX(Shovel_Russian_Rotated,5);
-            WEAP_XX(AR_Z6,5);
+            WEAP_XX(AR_Weapons_Rifles_z6,5);
         };
     };
     class SUBCVAR(Engineer) : JLTS_Ammobox_launchers_GAR {
@@ -192,12 +200,19 @@ class CfgVehicles {
         EMPTY_WEAPON;
         maximumLoad = 2000;
         class TransportItems {
+            ITEM_XX(ACE_UAVBattery,10);
+            ITEM_XX(ACE_wirecutter,5);
+            ITEM_XX(ACE_DefusalKit,5);
+            ITEM_XX(ToolKit,5);
+            ITEM_XX(MineDetector,5);
             ITEM_XX(ShieldGrenade_Mag,10);
             ITEM_XX(SquadShieldMagazine,5);
             ITEM_XX(AR_Misc_RespawnBeacon_item,5);
-            ITEM_XX(JLTS_grenade_emp_mag,5);
-            ITEM_XX(DemoCharge_Remote_Mag,5);
-            ITEM_XX(ACE_Clacker,2);
+            ITEM_XX(APERSMine_Range_Mag,5);
+            ITEM_XX(3AS_DetPack,5);
+            ITEM_XX(HX_AT_Mine_Mag,5);
+            ITEM_XX(ACE_Clacker,5);
+            ITEM_XX(ls_explosive_demoCharge_magazine,5);
         };
     };
 
