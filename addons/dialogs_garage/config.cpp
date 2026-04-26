@@ -21,5 +21,5 @@ class CfgPatches {
 class RscButton;
 class RscPicture;
 class RscText;
-class RscShortcutButton;
+class RscListBox;
 #include "rsc\RscGarage.hpp"
