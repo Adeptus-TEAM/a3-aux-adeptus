@@ -10,10 +10,6 @@
                 <English>Garage Terminal Spawn Object</English>
                 <French>Objet de réapparition du terminal de garage</French>
             </Key>
-            <Key ID="str_ar_objects_editor_garageVehiclesList">
-                <English>Garage Vehicles List</English>
-                <French>Liste des véhicules du garage</French>
-            </Key>
         </Container>
     </Package>
     <Package name="CfgVehicles">
@@ -33,26 +29,6 @@
             <Key ID="str_ar_objects_editor_unittraitterminal">
                 <English>Unit Trait Terminal</English>
                 <French>Terminal de spécialité</French>
-            </Key>
-        </Container>
-    </Package>
-    <Package name="ComboNames">
-        <Container name="Garage Terminal">
-            <Key ID="str_ar_objects_editor_attackaerialvehicles">
-                <English>Attack Aerial Vehicles</English>
-                <French>Véhicules aériens d'attaque</French>
-            </Key>
-            <Key ID="str_ar_objects_editor_supplycrate">
-                <English>Supply Crates</English>
-                <French>Caisses de ravitaillement</French>
-            </Key>
-            <Key ID="str_ar_objects_editor_terrestrialvehicles">
-                <English>Terrestrial Vehicles</English>
-                <French>Véhicules terrestres</French>
-            </Key>
-            <Key ID="str_ar_objects_editor_transportaerialvehicles">
-                <English>Transport Aerial Vehicles</English>
-                <French>Véhicules aériens de transport</French>
             </Key>
         </Container>
     </Package>
@@ -97,10 +73,6 @@
             <Key ID="str_ar_objects_editor_garageSpawnObjectTooltip">
                 <English>Write the var of the object you wish the objects to spawn on.</English>
                 <French>Ecrivez la variable de l'objet sur lequel vous souhaitez que les objets apparaissent</French>
-            </Key>
-            <Key ID="str_ar_objects_editor_garageVehiclesListTooltip">
-                <English>Choose from which list you want the garage to pick from. (Those are established in the mission's description.ext)</English>
-                <French>Choisissez la liste à partir de laquelle vous souhaitez que le garage effectue la sélection. (Celles-ci sont définies dans le fichier description.ext de la mission.)</French>
             </Key>
         </Container>
     </Package>
