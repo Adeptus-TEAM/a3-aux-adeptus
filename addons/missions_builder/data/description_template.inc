@@ -45,6 +45,8 @@ onLoadMission = %MISSION_DESCRIPTION%;
 	"AR_Vehicles_LAAT_i_Mk2Lights",
 	"3AS_LAATC",
 	"3AS_Nu_REP_F",
+	"3AS_Rep_LAS_F",
+	"3AS_Rep_LAS_Z6_F",
 	"3AS_ARC_170_Yellow",
 	"3AS_Z95_Yellow",
 	"3AS_BTLB_Bomber_ShadowLeader"
