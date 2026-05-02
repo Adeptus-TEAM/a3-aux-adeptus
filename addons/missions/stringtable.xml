@@ -53,6 +53,12 @@
                 <French>Attendez %1 secondes. (Respawn)</French>
             </Key>
         </Container>
+        <Container name="flipVehicle">
+            <Key ID="str_ar_missions_flipVehicle">
+                <English>Flip Vehicle</English>
+                <French>Retourner le véhicule</French>
+            </Key>
+        </Container>
         <Container name="initWelcome">
             <Key ID="str_ar_missions_welcomeMSG_Line1">
                 <English>Welcome to the server:</English>

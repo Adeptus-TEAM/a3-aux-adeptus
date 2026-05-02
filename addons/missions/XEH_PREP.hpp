@@ -1,4 +1,5 @@
 PREP(consciousPlayerTasks);
+PREP(flipVehicle);
 PREP(initCheckVersion);
 PREP(initFortify);
 PREP(initMedicalTask);
