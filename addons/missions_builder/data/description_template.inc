@@ -37,19 +37,21 @@ onLoadMission = %MISSION_DESCRIPTION%;
 	"3AS_Saber_M1G",
 	"3AS_Saber_Super"
 };
-%TRANSPORT_AERIAL_VEHICLES%[] = {
+
+%AERIAL_VEHICLES%[] = {
 	"AR_Vehicles_LAAT_i_Mk1",
 	"AR_Vehicles_LAAT_i_Mk1Lights",
 	"AR_Vehicles_LAAT_i_Mk2",
 	"AR_Vehicles_LAAT_i_Mk2Lights",
 	"3AS_LAATC",
-	"3AS_Nu_REP_F"
-};
-%ATTACK_AERIAL_VEHICLES%[] = {
+	"3AS_Nu_REP_F",
+	"3AS_Rep_LAS_F",
+	"3AS_Rep_LAS_Z6_F",
 	"3AS_ARC_170_Yellow",
 	"3AS_Z95_Yellow",
 	"3AS_BTLB_Bomber_ShadowLeader"
 };
+
 %SUPPLY_CRATE%[] = {
 	"AR_Objects_Supply_Ammo",
 	"AR_Objects_Supply_AT",

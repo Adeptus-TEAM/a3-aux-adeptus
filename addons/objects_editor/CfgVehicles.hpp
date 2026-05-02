@@ -78,37 +78,6 @@ class CfgVehicles {
                 defaultValue = 10;
                 typeName = "NUMBER";
             };
-            class CVAR(garageVehiclesList) {
-                displayName = SUBCSTRING(garageVehiclesList);
-                tooltip = SUBCSTRING(garageVehiclesListTooltip);
-                property = QGVAR(garageVehiclesList);
-                control = "Combo";
-                expression = "_this setVariable ['%s', _value,true];";
-                defaultValue = 0;
-                typeName = "NUMBER";
-                class Values {
-                    class CVAR(TerrestrialVehicles) {
-                        name = SUBCSTRING(TerrestrialVehicles);
-                        value = 0;
-                        pictureRight = "3AS\3AS_ATTE\data\ui\atte_top_ca.paa";
-                    };
-                    class CVAR(TransportAerialVehicles) {
-                        name = SUBCSTRING(TransportAerialVehicles);
-                        value = 1;
-                        pictureRight = "3AS\3AS_LAAT\laati\data\ui\map_laat_ca.paa";
-                    };
-                    class CVAR(AttackAerialVehicles) {
-                        name = SUBCSTRING(AttackAerialVehicles);
-                        value = 2;
-                        pictureRight = "3AS\3AS_ARC170\data\ui\arc_top_ca.paa";
-                    };
-                    class CVAR(SupplyCrate) {
-                        name = SUBCSTRING(SupplyCrate);
-                        value = 3;
-                        pictureRight = "a3\ui_f\data\map\vehicleicons\iconcrateammo_ca.paa";
-                    };
-                };
-            };
         };
         class EventHandlers {
             class SUBADDON {

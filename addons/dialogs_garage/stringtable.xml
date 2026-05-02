@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Dialogs (Garage)">
     <Package name="rsc">
+        <Key ID="str_ar_dialogs_garage_btnAerial">
+            <English>Aerial</English>
+            <French>Aérien</French>
+        </Key>
         <Key ID="str_ar_dialogs_garage_btnDelete">
             <English>Delete</English>
             <French>Supprimer</French>
@@ -16,6 +20,14 @@
         <Key ID="str_ar_dialogs_garage_btnSpawn">
             <English>Spawn</English>
             <French>Déployer</French>
+        </Key>
+        <Key ID="str_ar_dialogs_garage_btnSupply">
+            <English>Supply</English>
+            <French>Ravitaillements</French>
+        </Key>
+        <Key ID="str_ar_dialogs_garage_btnTerrestrial">
+            <English>Terrestrial</English>
+            <French>Terrestres</French>
         </Key>
         <Key ID="str_ar_dialogs_garage_header">
             <English>Garage Terminal</English>

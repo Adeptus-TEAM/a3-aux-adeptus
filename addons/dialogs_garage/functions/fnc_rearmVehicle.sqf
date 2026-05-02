@@ -7,10 +7,10 @@
  * None
  *
  * Return Value:
- * None
+ * <BOOL>
  *
  * Example:
- * [] call ar_dialogs_garage_fnc_rearmVehicle
+ * 0 call ar_dialogs_garage_fnc_rearmVehicle
  *
  * Public: No
  */
@@ -18,27 +18,19 @@
 params [];
 TRACE_1("ar_dialogs_garage_fnc_rearmVehicle",_this);
 
-private _terminalObject = uiNamespace getVariable [QGVAR(garageObject), objNull];
-
-if(isNull _terminalObject)exitWith{
-	WARNING("Terminal Object not found");
+private _terminalData = 0 call SUBFUNC(getTerminalData);
+if (_terminalData isEqualTo []) exitWith {
+	WARNING("Failed to retrieve terminal data");
+	false
 };
 
-private _spawnObject = (call compile (_terminalObject getVariable[QEGVAR(objects,garageSpawnObject),"objNull"]));
-private _areaSize = _terminalObject getVariable[QEGVAR(objects,garageAreaSize),0];
-private _listVehicles = uiNamespace getVariable[QGVAR(listVehicles),[]];
-
-if(isNull _spawnObject)exitWith{
-	WARNING("Spawn Object not found");
-};
-
-private _spawnObjectPos = getPosATL _spawnObject;
-private _spawnObjectDir = getDir _spawnObject;
+_terminalData params ["_spawnObjectPos", "_spawnObjectDir", "_areaSize"];
 
 {
-	if (!(isNull _x) && ((typeOf _x) in _listVehicles)) then {
+	if (!(isNull _x)) then {
 		_x setFuel 1;
 		_x setVehicleAmmo 1;
 	};
-	
 } forEach (vehicles inAreaArray [_spawnObjectPos,_areaSize, _areaSize, _spawnObjectDir, true]);
+
+true
