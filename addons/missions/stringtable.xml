@@ -95,6 +95,16 @@
                 <French>&lt;t color='#FFFFFF' size= '1.25'&gt;Maximum autorisé de %1 atteint. (Max: %2)&lt;/t&gt;</French>
             </Key>
         </Container>
+        <Container name="waitingQueue">
+            <Key ID="str_ar_missions_waitingQueue">
+                <English>%1/%2 (Min %3)</English>
+                <French>%1/%2 (Min %3)</French>
+            </Key>
+            <Key ID="str_ar_missions_waitingQueueStart">
+                <English>Mission starting in %1 second(s)</English>
+                <French>Démarrage de la mission dans %1 seconde(s)</French>
+            </Key>
+        </Container>
     </Package>
     <Package name="Loadout">
         <Container name="class">

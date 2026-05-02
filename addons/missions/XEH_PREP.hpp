@@ -15,3 +15,4 @@ PREP(setServerName);
 PREP(setUnitTrait);
 PREP(unconsciousPlayerTasks);
 PREP(verifyLoadout);
+PREP(waitingQueue);
