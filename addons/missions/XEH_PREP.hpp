@@ -1,4 +1,5 @@
 PREP(consciousPlayerTasks);
+PREP(flipVehicle);
 PREP(initCheckVersion);
 PREP(initFortify);
 PREP(initMedicalTask);
@@ -14,3 +15,4 @@ PREP(setServerName);
 PREP(setUnitTrait);
 PREP(unconsciousPlayerTasks);
 PREP(verifyLoadout);
+PREP(waitingQueue);

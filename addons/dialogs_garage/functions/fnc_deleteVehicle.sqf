@@ -4,40 +4,31 @@
  * Description : Deletes all vehicles of specified types within the garage area.
  *
  * Arguments:
- * 0: Argument (optional, default: value) <OBJECT>
+ * <NONE>
  *
  * Return Value:
- * Return description <NONE>
+ * <BOOL>
  *
  * Example:
- * [params] call ar_dialogs_garage_fnc_deleteVehicle
+ * 0 call ar_dialogs_garage_fnc_deleteVehicle
  *
  * Public: No
  */
 
 params [];
 TRACE_1("ar_dialogs_garage_fnc_deleteVehicle",_this);
-private _terminalObject = uiNamespace getVariable [QGVAR(garageObject), objNull];
 
-if(isNull _terminalObject)exitWith{
-	WARNING("Terminal Object not found");
+private _terminalData = 0 call SUBFUNC(getTerminalData);
+if (_terminalData isEqualTo []) exitWith {
+	WARNING("Failed to retrieve terminal data");
+	false
 };
 
-private _spawnObject = (call (compile (_terminalObject getVariable[QEGVAR(objects,garageSpawnObject),"objNull"])));
-private _areaSize = _terminalObject getVariable[QEGVAR(objects,garageAreaSize),0];
-private _listVehicles = uiNamespace getVariable[QGVAR(listVehicles),[]];
-
-if(isNull _spawnObject)exitWith{
-	WARNING("Spawn Object not found");
-};
-
-private _spawnObjectPos = getPosATL _spawnObject;
-private _spawnObjectDir = getDir _spawnObject;
+_terminalData params ["_spawnObjectPos", "_spawnObjectDir", "_areaSize"];
 
 {
-	if((typeOf _x) in _listVehicles)then{
-		deleteVehicle _x;
-	};
-	
+	deleteVehicle _x;
+	INFO("Deleted vehicle: " + typeOf _x);
 } forEach (vehicles inAreaArray [_spawnObjectPos,_areaSize, _areaSize, _spawnObjectDir, true]);
 
+true

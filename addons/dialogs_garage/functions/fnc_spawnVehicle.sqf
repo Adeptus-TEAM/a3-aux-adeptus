@@ -7,10 +7,10 @@
  * None
  *
  * Return Value:
- * None
+ * <BOOL>
  *
  * Example:
- * [] call ar_dialogs_garage_fnc_spawnVehicle
+ * 0 call ar_dialogs_garage_fnc_spawnVehicle
  *
  * Public: No
  */
@@ -18,23 +18,26 @@
 params [];
 TRACE_1("ar_dialogs_garage_fnc_spawnVehicle",_this);
 
-private _terminalObject = uiNamespace getVariable [QGVAR(garageObject), objNull];
-
-if(isNull _terminalObject)exitWith{
-	WARNING("Terminal Object not found");
+private _terminalData = 0 call SUBFUNC(getTerminalData);
+if (_terminalData isEqualTo []) exitWith {
+	WARNING("Failed to retrieve terminal data");
+	false
 };
-private _spawnObject = call (compile (_terminalObject getVariable[QEGVAR(objects,garageSpawnObject),"objNull"]));
-private _counter = uiNamespace getVariable[QGVAR(selectionCounter),0];
+
+_terminalData params ["_spawnObjectPos", "_spawnObjectDir", "_areaSize"];
+
+// Get selected vehicle class from UI variables
+private _selectedIndex = uiNamespace getVariable[QGVAR(selectionCounter),0];
 private _listVehicles = uiNamespace getVariable[QGVAR(listVehicles),[]];
 
-if(isNull _spawnObject)exitWith{
-	WARNING("Spawn Object not found");
+if (_selectedIndex >= count _listVehicles) exitWith {
+	WARNING("Index out of bounds");
+	false;
 };
 
-private _vehicleClass = _listVehicles select _counter;
-private _spawnObjectPos = getPosATL _spawnObject;
-private _spawnObjectDir = getDir _spawnObject;
+private _vehicleClass = _listVehicles select _selectedIndex;
 
+// Delete existing vehicles in the spawn area before spawning a new one
 0 call SUBFUNC(deleteVehicle);
 
 [
@@ -47,3 +50,5 @@ private _spawnObjectDir = getDir _spawnObject;
 	[_vehicleClass,_spawnObjectPos,_spawnObjectDir],
 	0.5
 ] call CBA_fnc_waitAndExecute;
+
+true

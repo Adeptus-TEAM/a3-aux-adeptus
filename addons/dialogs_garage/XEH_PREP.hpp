@@ -1,9 +1,10 @@
 PREP(deleteVehicle);
-PREP(displayVehicle);
+PREP(getTerminalData);
 PREP(onLoad);
 PREP(openInterface);
 PREP(pylonsVehicle);
 PREP(rearmVehicle);
-PREP(selectionLeftButton);
-PREP(selectionRightButton);
 PREP(spawnVehicle);
+PREP(typeSelection);
+PREP(updateDisplayVehicle);
+PREP(updateVehicleList);

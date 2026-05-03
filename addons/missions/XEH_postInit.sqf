@@ -19,3 +19,15 @@ if (hasInterface) then {
 	[_unit] call FUNC(initVerifyLoadout);
 	["InitializePlayer",[_unit]] call BIS_fnc_dynamicGroups;
 };
+
+[
+"AllVehicles",
+"init",
+{
+	params ["_vehicle"];
+	[_vehicle] call FUNC(flipVehicle);
+},
+true,
+[],
+true
+] call CBA_fnc_addClassEventHandler;
