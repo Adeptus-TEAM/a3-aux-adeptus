@@ -162,6 +162,10 @@
                 <English>DC-15A</English>
                 <French>DC-15A</French>
             </Key>
+            <Key ID="str_ar_missions_loadout_dc15l">
+                <English>DC-15L</English>
+                <French>DC-15L</French>
+            </Key>
             <Key ID="str_ar_missions_loadout_dc15s">
                 <English>DC-15S</English>
                 <French>DC-15S</French>
@@ -170,13 +174,9 @@
                 <English>DC-15X</English>
                 <French>DC-15X</French>
             </Key>
-            <Key ID="str_ar_missions_loadout_dc17sa">
-                <English>DC-17SA</English>
-                <French>DC-17SA</French>
-            </Key>
-            <Key ID="str_ar_missions_loadout_z6">
-                <English>Z-6</English>
-                <French>Z-6</French>
+            <Key ID="str_ar_missions_loadout_dp23">
+                <English>DP-23</English>
+                <French>DP-23</French>
             </Key>
         </Container>
     </Package>
