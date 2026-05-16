@@ -171,8 +171,8 @@ ace_frag_spallEnabled = false;
 ace_frag_spallIntensity = 0.1;
 
 // ACE G-Forces
-ace_gforces_coef = 0.5;
-ace_gforces_enabledFor = 1;
+ace_gforces_coef = 0;
+ace_gforces_enabledFor = 0;
 
 // ACE Goggles
 ace_goggles_drawOverlay = true;
