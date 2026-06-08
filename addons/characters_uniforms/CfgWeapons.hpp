@@ -14,18 +14,14 @@ class cfgWeapons {
     /* END Regs */
 
     /* Customs */
-        CLASS_UNIFORM(Customs,Ankh);
         CLASS_UNIFORM(Customs,Archer);
         CLASS_UNIFORM(Customs,Bragg);
         CLASS_UNIFORM(Customs,Code);
         CLASS_UNIFORM(Customs,Dragon);
         CLASS_UNIFORM(Customs,Gart);
-        CLASS_UNIFORM(Customs,Liberty);
         CLASS_UNIFORM(Customs,Magic);
-        CLASS_UNIFORM(Customs,Nek);
         CLASS_UNIFORM(Customs,Ozy);
         CLASS_UNIFORM(Customs,Phantom);
-        CLASS_UNIFORM(Customs,Puce);
         CLASS_UNIFORM(Customs,Red);
         CLASS_UNIFORM(Customs,Sight);
         CLASS_UNIFORM(Customs,SixOne);

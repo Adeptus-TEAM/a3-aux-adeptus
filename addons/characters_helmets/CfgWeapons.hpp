@@ -65,27 +65,21 @@ class cfgWeapons {
 
     /* Customs */
         // Engineer Helmet P1
-            CLASS_ENGINEER_P1_HELMET(Customs,Liberty);
 
         // Engineer Helmet P2
-            CLASS_ENGINEER_P2_HELMET(Customs,Liberty);
-            CLASS_ENGINEER_P2_HELMET(Customs,Nek);
 
         // Phase 1 Helmet
-            CLASS_P1_HELMET(Customs,Ankh);
             CLASS_P1_HELMET(Customs,Archer);
             CLASS_P1_HELMET(Customs,Code);
             CLASS_P1_HELMET(Customs,Dragon);
             CLASS_P1_HELMET(Customs,Magic);
             CLASS_P1_HELMET(Customs,Phantom);
-            CLASS_P1_HELMET(Customs,Puce);
             CLASS_P1_HELMET(Customs,Red);
             CLASS_P1_HELMET(Customs,SixOne);
             CLASS_P1_HELMET(Customs,Spearhead);
             CLASS_P1_HELMET_CUSTOMVISOR(Customs,Gart);
 
         // Phase 2 Helmet
-            CLASS_P2_HELMET(Customs,Ankh);
             CLASS_P2_HELMET(Customs,Dragon);
             CLASS_P2_HELMET(Customs,Ozy);
             CLASS_P2_HELMET(Customs,Phantom);
@@ -96,7 +90,6 @@ class cfgWeapons {
             CLASS_PILOT_P1_HELMET(Customs,Sight);
 
         // Pilot Helmet P2
-            CLASS_PILOT_P2_HELMET(Customs,Nek);
             CLASS_PILOT_P2_HELMET(Customs,Sight);
 
         // Rex Helmet
@@ -115,7 +108,6 @@ class cfgWeapons {
             #define VISOR_MAT ILLUM_MAT
 
             // BARC Helmet w/ visor illumination
-                CLASS_BARC_HELMET_CUSTOMVISOR(Customs,Puce);
             
             // Phase 1 Helmet w/ visor illumination
                 CLASS_P1_HELMET_CUSTOMVISOR(Customs,Bragg);
