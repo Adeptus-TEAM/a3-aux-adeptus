@@ -8,7 +8,6 @@ class EditorData
 	toggles=42;
 	mods[]=
 	{
-		"WBK_Zombies_AdvancedEditorSettings",
 		"3denEnhanced"
 	};
 	class ItemIDProvider
@@ -17,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1031;
+		nextID=1109;
 	};
 	class Camera
 	{
-		pos[]={426.33023,347.2121,576.55725};
-		dir[]={0.60881782,-0.49116907,0.62298238};
-		up[]={0.34329635,0.87106055,0.3512826};
-		aside[]={0.71519446,-1.8905848e-07,-0.69893545};
+		pos[]={445.25778,334.64108,583.20575};
+		dir[]={-0.0037998261,-0.46179849,-0.88698334};
+		up[]={-0.0019782146,0.88698149,-0.46180251};
+		aside[]={-0.99999607,1.7718776e-07,0.0042833718};
 	};
 };
 binarizationWanted=0;
@@ -70,14 +69,21 @@ addons[]=
 	"A3_Modules_F",
 	"lsb_modules",
 	"AR_Characters_Units",
+	"ace_parachute",
+	"ls_radios",
 	"AR_Characters_Helmets",
+	"AR_Characters_Uniforms",
+	"3AS_Weapons",
+	"3AS_Equipment",
+	"AR_Characters_Vests",
+	"ls_weapons_grenades",
 	"ls_weapons_dcseries"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=35;
+		items=39;
 		class Item0
 		{
 			className="VI_objects";
@@ -294,6 +300,31 @@ class AddonsMetaData
 		};
 		class Item34
 		{
+			className="ace_parachute";
+			name="ACE3 - Parachute";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
+		class Item35
+		{
+			className="ls_radios";
+			name="Legion Studios: Core - Radios";
+			author="Legion Studios";
+		};
+		class Item36
+		{
+			className="3AS_Weapons";
+			name="3AS_Weapons";
+			author="3rd Army Studios";
+		};
+		class Item37
+		{
+			className="3AS_Equipment";
+			name="3AS_Equipment";
+			author="3rd Army Studios";
+		};
+		class Item38
+		{
 			className="ls_weapons";
 			name="Legion Studios: Core - Weapons";
 			author="Legion Studios";
@@ -303,7 +334,8 @@ class AddonsMetaData
 dlcs[]=
 {
 	"ORANGE",
-	"OPTRE"
+	"OPTRE",
+	"Expansion"
 };
 randomSeed=2389025;
 class ScenarioData
@@ -58093,6 +58125,90 @@ class Mission
 										description="Game Master@Zeus";
 										isPlayer=1;
 										isPlayable=1;
+										class Inventory
+										{
+											class uniform
+											{
+												typeName="AR_V2_Uniform";
+												isBackpack=0;
+												class MagazineCargo
+												{
+													items=5;
+													class Item0
+													{
+														name="3AS_60Rnd_EC30_mag";
+														count=7;
+														ammoLeft=60;
+													};
+													class Item1
+													{
+														name="3AS_16Rnd_EC20_Mag";
+														count=2;
+														ammoLeft=16;
+													};
+													class Item2
+													{
+														name="3AS_ThermalDetonator";
+														count=2;
+														ammoLeft=1;
+													};
+													class Item3
+													{
+														name="SmokeShellRed";
+														count=2;
+														ammoLeft=1;
+													};
+													class Item4
+													{
+														name="SmokeShellGreen";
+														count=1;
+														ammoLeft=1;
+													};
+												};
+												class ItemCargo
+												{
+													items=1;
+													class Item0
+													{
+														name="FirstAidKit";
+														count=3;
+													};
+												};
+											};
+											class vest
+											{
+												typeName="AR_Base_Clone_Vest";
+												isBackpack=0;
+												class MagazineCargo
+												{
+													items=3;
+													class Item0
+													{
+														name="SmokeShellGreen";
+														count=1;
+														ammoLeft=1;
+													};
+													class Item1
+													{
+														name="SmokeShell";
+														count=2;
+														ammoLeft=1;
+													};
+													class Item2
+													{
+														name="ls_grenade_n20_magazine";
+														count=1;
+														ammoLeft=1;
+													};
+												};
+											};
+											map="ItemMap";
+											compass="ItemCompass";
+											watch="ACE_Altimeter";
+											radio="ls_radios_cwp8";
+											gps="ItemGPS";
+											headgear="AR_V2_P2_Helmet";
+										};
 									};
 									id=9772;
 									type="AR_UnArmed_V2_P2_Unit";
