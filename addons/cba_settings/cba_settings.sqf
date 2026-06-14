@@ -1453,6 +1453,11 @@ tts_beam_vaporiseBodies = true;
 WBK_Droid_b1_damage = "4";
 WBK_Droid_b2_damage = "30";
 
+// WBK Droids
+force force WBK_Droids_B1_Health = "50";
+force force WBK_Droids_B2_Health = "150";
+force force WBK_Droids_BX_Health = "100";
+
 // WebKnight HeadLamps
 WBK_HeadLamps_IsAIActivateHeadlamps = false;
 WBK_HeadLamps_IsVolumetricAppearOnAIParam = false;
