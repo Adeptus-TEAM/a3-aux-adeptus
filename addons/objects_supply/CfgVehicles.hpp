@@ -182,6 +182,8 @@ class CfgVehicles {
             WEAP_XX(3AS_DC17S_F,5);
             WEAP_XX(3AS_DC15X_F,5);
             WEAP_XX(3AS_Valken38X_F,5);
+            WEAP_XX(3AS_Z6_F,5);
+            WEAP_XX(JMSLLTE_DLT19xRifle,5);
             WEAP_XX(Shovel_Russian_Rotated,5);
             WEAP_XX(AR_Weapons_Rifles_z6,5);
         };
