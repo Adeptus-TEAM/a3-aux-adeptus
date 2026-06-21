@@ -360,15 +360,15 @@ ace_medical_treatment_treatmentTimeBodyBag = 15;
 ace_medical_treatment_treatmentTimeCoeffZeus = 1;
 ace_medical_treatment_treatmentTimeCPR = 15;
 ace_medical_treatment_treatmentTimeGrave = 30;
-ace_medical_treatment_treatmentTimeIV = 7;
+ace_medical_treatment_treatmentTimeIV = 5;
 ace_medical_treatment_treatmentTimeSplint = 7;
 ace_medical_treatment_treatmentTimeTourniquet = 5;
 ace_medical_treatment_treatmentTimeTrainedAutoinjector = 2;
-ace_medical_treatment_treatmentTimeTrainedIV = 7;
+ace_medical_treatment_treatmentTimeTrainedIV = 3;
 ace_medical_treatment_treatmentTimeTrainedSplint = 7;
 ace_medical_treatment_treatmentTimeTrainedTourniquet = 3;
 ace_medical_treatment_woundReopenChance = 1;
-ace_medical_treatment_woundStitchTime = 4;
+ace_medical_treatment_woundStitchTime = 3;
 
 // ACE Name Tags
 ace_nametags_ambientBrightnessAffectViewDist = 1;
