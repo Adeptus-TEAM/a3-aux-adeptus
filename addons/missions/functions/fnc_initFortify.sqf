@@ -20,7 +20,16 @@ params [
 ];
 TRACE_1("fnc_initFortify",_this);
 
-[west, 1000, [
+/*
+Short : 1 - 15
+Medium : 16 - 40
+Long : 40 - 80
+Very Long : > 80
+
+*/
+
+
+[west, 2000, [
     ["Land_BagFence_Corner_F", 10, LLSTRING(fortify_lightcover)],
     ["Land_BagFence_Long_F", 10, LLSTRING(fortify_lightcover)],
     ["Land_BagFence_Round_F", 10, LLSTRING(fortify_lightcover)],
@@ -47,5 +56,30 @@ TRACE_1("fnc_initFortify",_this);
     ["Land_Plank_01_8m_F", 6, LLSTRING(fortify_structure)],
     ["Land_Plank_01_4m_F", 6, LLSTRING(fortify_structure)],
     ["3AS_HeavyRepeater_Unarmoured", 110, LLSTRING(fortify_weaponry)],
-    ["3AS_Republic_Mortar", 125, LLSTRING(fortify_weaponry)]
+    ["3AS_Republic_Mortar", 125, LLSTRING(fortify_weaponry)],
+    ["3as_hbarrier_bunker", 80, LLSTRING(fortify_heavycover)],
+    ["3as_hbarrierwall_4r", 80, LLSTRING(fortify_heavycover)],
+    ["Land_lsb_fob_hBarrier_5", 80, LLSTRING(fortify_heavycover)],
+    ["3as_hbarrierwall_4r", 80, LLSTRING(fortify_heavycover)],
+    ["Land_lsb_fob_hBarrier_3",80,LLSTRING(fortify_heavycover)],
+    ["Land_lsb_fob_hBarrier_3",80,LLSTRING(fortify_heavycover)],
+    ["Land_CamoNetVar_NATO_EP1",10,LLSTRING(fortify_lightcover)],
+    ["Land_CamoNetB_NATO_EP1",10,LLSTRING(fortify_lightcover)],
+    ["Land_CamoNetVar_NATO",10,LLSTRING(fortify_lightcover)],
+    ["Land_CamoNetB_NATO",10,LLSTRING(fortify_lightcover)],
+    ["Land_BagFence_Short_F",5,LLSTRING(fortify_lightcover)],
+    ["Land_BagFence_Round_F",5,LLSTRING(fortify_lightcover)],
+    ["Land_BagFence_Long_F",5,LLSTRING(fortify_lightcover)],
+    ["Land_BagFence_Corner_F",5,LLSTRING(fortify_lightcover)],
+    ["Land_SandbagBarricade_01_half_F",20,LLSTRING(fortify_mediumcover)],
+    ["Land_SandbagBarricade_01_F",20,LLSTRING(fortify_mediumcover)],
+    ["Land_SandbagBarricade_01_hole_F",20,LLSTRING(fortify_mediumcover)],
+    ["SFA_Imp_tent_open",20,LLSTRING(fortify_mediumcover)],
+    ["SFA_Imp_tent_open",20,LLSTRING(fortify_mediumcover)],
+    ["3AS_Shield_3_Prop",16,LLSTRING(fortify_mediumcover)],
+    ["3AS_Shield_5_Prop",20,LLSTRING(fortify_mediumcover)],
+    ["3AS_Shield_C_Prop",30,LLSTRING(fortify_mediumcover)],
+    ["Land_JMSLLTE_roadblockbarrier",10,LLSTRING(fortify_lightcover)],
+    ["Land_fort_bagfence_round",20,LLSTRING(fortify_mediumcover)],
+    ["land_ReachWallBarrier",10,LLSTRING(fortify_lightcover)]
 ]] call acex_fortify_fnc_registerObjects;
