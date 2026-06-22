@@ -20,15 +20,6 @@ params [
 ];
 TRACE_1("fnc_initFortify",_this);
 
-/*
-Short : 1 - 15
-Medium : 16 - 40
-Long : 40 - 80
-Very Long : > 80
-
-*/
-
-
 [west, 2000, [
     ["Land_BagFence_Corner_F", 10, LLSTRING(fortify_lightcover)],
     ["Land_BagFence_Long_F", 10, LLSTRING(fortify_lightcover)],
