@@ -90,7 +90,7 @@ class CfgVehicles {
         class TransportMagazines {
             MAG_XX(3AS_BaridumCore,40);
             MAG_XX(3AS_ThermalDetonator,40);
-            MAG_XX(AR_Weapons_Grenades_emp_mag,15);
+            MAG_XX(AR_Weapons_Grenades_emp_mag,40);
             MAG_XX(OPTRE_M2_Smoke,40);
             MAG_XX(SmokeShellBlue,40);
             MAG_XX(SmokeShellGreen,40);
