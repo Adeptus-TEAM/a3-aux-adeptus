@@ -30,6 +30,7 @@ class CfgVehicles {
             MAG_XX(3AS_10Rnd_EC100_Mag,20);
             MAG_XX(3AS_10Rnd_EC100_DLT19X_Mag,20);
             MAG_XX(JLTS_DC17SA_mag,20);
+            MAG_XX(3AS_300Rnd_EC60_Mag,20);
         };
     };
 
