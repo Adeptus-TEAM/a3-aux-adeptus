@@ -102,6 +102,14 @@
                 <English>[61st] Sting Scout Helmet</English>
                 <French>[61st] Casque Scout Sting</French>
             </Key>
+            <Key ID="str_ar_characters_helmets_customs_taiga_p1_helmet">
+                <English>[61st] Taiga Helmet P1</English>
+                <French>[61st] Casque Taiga P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_taiga_p2_helmet">
+                <English>[61st] Taiga Helmet P2</English>
+                <French>[61st] Casque Taiga P2</French>
+            </Key>
         </Container>
         <Container name="regs">
             <Key ID="str_ar_characters_helmets_regs_base_arc_helmet">

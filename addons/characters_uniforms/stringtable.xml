@@ -54,6 +54,10 @@
                 <English>[61st] Sting Uniform</English>
                 <French>[61st] Uniforme Sting</French>
             </Key>
+            <Key ID="str_ar_characters_uniforms_customs_taiga">
+                <English>[61st] Taiga Uniform</English>
+                <French>[61st] Uniforme Taiga</French>
+            </Key>
         </Container>
         <Container name="regs">
             <Key ID="str_ar_characters_uniforms_regs_arf_desert">

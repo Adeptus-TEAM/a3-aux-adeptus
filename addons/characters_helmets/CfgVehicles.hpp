@@ -69,6 +69,7 @@ class cfgVehicles {
             CLASS_HEADGEAR(Customs,SixOne,P1);
             CLASS_HEADGEAR(Customs,Spearhead,P1);
             CLASS_HEADGEAR(Customs,Code,P1);
+            CLASS_HEADGEAR(Customs,Taiga,P1);
 
         // Phase 2 Helmet
             CLASS_HEADGEAR(Customs,Archer,P2);
@@ -80,6 +81,7 @@ class cfgVehicles {
             CLASS_HEADGEAR(Customs,Phantom,P2);
             CLASS_HEADGEAR(Customs,SixOne,P2);
             CLASS_HEADGEAR(Customs,Spearhead,P2);
+            CLASS_HEADGEAR(Customs,Taiga,P2);
 
         // Pilot Helmet P1
             CLASS_HEADGEAR(Customs,Sight,Pilot_P1);

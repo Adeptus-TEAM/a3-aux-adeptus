@@ -77,6 +77,7 @@ class cfgWeapons {
             CLASS_P1_HELMET(Customs,Red);
             CLASS_P1_HELMET(Customs,SixOne);
             CLASS_P1_HELMET(Customs,Spearhead);
+            CLASS_P1_HELMET(Customs,Taiga);
             CLASS_P1_HELMET_CUSTOMVISOR(Customs,Gart);
 
         // Phase 2 Helmet
@@ -84,6 +85,7 @@ class cfgWeapons {
             CLASS_P2_HELMET(Customs,Ozy);
             CLASS_P2_HELMET(Customs,Phantom);
             CLASS_P2_HELMET(Customs,SixOne);
+            CLASS_P2_HELMET(Customs,Taiga);
             CLASS_P2_HELMET_CUSTOMVISOR(Customs,Gart);
 
         // Pilot Helmet P1

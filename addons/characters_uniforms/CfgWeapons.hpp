@@ -27,5 +27,6 @@ class cfgWeapons {
         CLASS_UNIFORM(Customs,SixOne);
         CLASS_UNIFORM(Customs,Spearhead);
         CLASS_UNIFORM(Customs,Sting);
+        CLASS_UNIFORM(Customs,Taiga);
     /* END Customs */
 };
