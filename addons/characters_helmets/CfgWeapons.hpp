@@ -78,6 +78,7 @@ class cfgWeapons {
             CLASS_P1_HELMET(Customs,SixOne);
             CLASS_P1_HELMET(Customs,Spearhead);
             CLASS_P1_HELMET(Customs,Taiga);
+            CLASS_P1_HELMET(Customs,Akaan);
             CLASS_P1_HELMET_CUSTOMVISOR(Customs,Gart);
 
         // Phase 2 Helmet
@@ -96,6 +97,7 @@ class cfgWeapons {
 
         // Rex Helmet
             CLASS_REX_HELMET(Customs,Red);
+            CLASS_REX_HELMET(Customs,Akaan);
 
         // Scout Helmet
            // CLASS_SCOUT_HELMET(Customs,COde);

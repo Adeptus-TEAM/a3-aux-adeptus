@@ -32,6 +32,7 @@ class cfgVehicles {
             CLASS_UNIFORM_V(Customs,Sting);
             CLASS_UNIFORM_V(Customs,Bragg);
             CLASS_UNIFORM_V(Customs,Taiga);
+            CLASS_UNIFORM_V(Customs,Akaan);
             CLASS_UNIFORM_V_CUSTOMUNDERSUIT(Customs,Phantom);
 
         // insulated

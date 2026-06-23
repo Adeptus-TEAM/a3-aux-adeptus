@@ -33,7 +33,8 @@ class CfgPatches {
             QECVAR(Spearhead,U),
             QECVAR(Sting,U),
             QECVAR(Bragg,U),
-            QECVAR(Taiga,U)
+            QECVAR(Taiga,U),
+            QECVAR(Akaan,U)
         };
         weapons[] = {
             // Regs
@@ -59,7 +60,8 @@ class CfgPatches {
             QECVAR(Spearhead,Uniform),
             QECVAR(Sting,Uniform),
             QECVAR(Bragg,Uniform),
-            QECVAR(Taiga,Uniform)
+            QECVAR(Taiga,Uniform),
+            QECVAR(Akaan,Uniform)
         };
         VERSION_CONFIG;
     };

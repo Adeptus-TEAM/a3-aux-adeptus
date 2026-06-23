@@ -2,6 +2,14 @@
 <Project name="Characters (Helmets)">
     <Package name="CfgWeapons">
         <Container name="customs">
+            <Key ID="str_ar_characters_helmets_customs_akaan_p1_helmet">
+                <English>[61st] Akaan Helmet P1</English>
+                <French>[61st] Casque Akaan P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_akaan_rex_helmet">
+                <English>[61st] Akaan Rex Helmet</English>
+                <French>[61st] Casque Akaan Rex</French>
+            </Key>
             <Key ID="str_ar_characters_helmets_customs_archer_p1_helmet">
                 <English>[61st] Archer Helmet P1</English>
                 <French>[61st] Casque Archer P1</French>

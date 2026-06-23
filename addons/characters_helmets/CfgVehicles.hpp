@@ -70,6 +70,7 @@ class cfgVehicles {
             CLASS_HEADGEAR(Customs,Spearhead,P1);
             CLASS_HEADGEAR(Customs,Code,P1);
             CLASS_HEADGEAR(Customs,Taiga,P1);
+            CLASS_HEADGEAR(Customs,Akaan,P1);
 
         // Phase 2 Helmet
             CLASS_HEADGEAR(Customs,Archer,P2);
@@ -91,6 +92,7 @@ class cfgVehicles {
 
         // Rex Helmet
             CLASS_HEADGEAR(Customs,Red,Rex);
+            CLASS_HEADGEAR(Customs,Akaan,Rex);
 
         // Scout Helmet
            //CLASS_HEADGEAR(Customs,Code,Scout);

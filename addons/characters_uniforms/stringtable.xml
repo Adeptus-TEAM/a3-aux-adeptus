@@ -2,6 +2,10 @@
 <Project name="Characters (Uniforms)">
     <Package name="CfgWeapons">
         <Container name="customs">
+            <Key ID="str_ar_characters_uniforms_customs_akaan">
+                <English>[61st] Akaan Uniform</English>
+                <French>[61st] Uniforme Akaan</French>
+            </Key>
             <Key ID="str_ar_characters_uniforms_customs_archer">
                 <English>[61st] Archer Uniform</English>
                 <French>[61st] Uniforme Archer</French>
