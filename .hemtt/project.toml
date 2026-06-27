@@ -49,6 +49,7 @@ parameters = [
     "-noPauseAudio",
 ]
 
+mission = "TestMission.VR"
 executable = "arma3_x64"
 file_patching = false
 binarize = true
@@ -56,7 +57,7 @@ rapify = true
 
 [hemtt.launch.release]
 presets = [
-    "Adeptus_Release_Preset_0625",
+    "Arma_SW_0126",
 ]
 
 parameters = [

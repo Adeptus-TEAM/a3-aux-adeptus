@@ -20,21 +20,19 @@ class cfgVehicles {
 
     /* Customs */
         // standard
-            CLASS_UNIFORM_V(Customs,Ankh);
             CLASS_UNIFORM_V(Customs,Archer);
             CLASS_UNIFORM_V(Customs,Dragon);
             CLASS_UNIFORM_V(Customs,Gart);
-            CLASS_UNIFORM_V(Customs,Liberty);
             CLASS_UNIFORM_V(Customs,Magic);
-            CLASS_UNIFORM_V(Customs,Nek);
             CLASS_UNIFORM_V(Customs,Ozy);
-            CLASS_UNIFORM_V(Customs,Puce);
             CLASS_UNIFORM_V(Customs,Red);
             CLASS_UNIFORM_V(Customs,Sight);
             CLASS_UNIFORM_V(Customs,SixOne);
             CLASS_UNIFORM_V(Customs,Spearhead);
             CLASS_UNIFORM_V(Customs,Sting);
             CLASS_UNIFORM_V(Customs,Bragg);
+            CLASS_UNIFORM_V(Customs,Taiga);
+            CLASS_UNIFORM_V(Customs,Akaan);
             CLASS_UNIFORM_V_CUSTOMUNDERSUIT(Customs,Phantom);
 
         // insulated

@@ -32,8 +32,6 @@ class CfgPatches {
             QECVAR(Base,arc_Headgear),
 
             // Customs
-            QECVAR(Ankh,P1_Headgear),
-            QECVAR(Ankh,P2_Headgear),
             QECVAR(Archer,P1_Headgear),
             QECVAR(Archer,P2_Headgear),
             QECVAR(Code,P1_Headgear),
@@ -42,18 +40,12 @@ class CfgPatches {
             QECVAR(Dragon,P2_Headgear),
             QECVAR(Gart,P1_Headgear),
             QECVAR(Gart,P2_Headgear),
-            QECVAR(Liberty,engineer_P1_Headgear),
-            QECVAR(Liberty,engineer_P2_Headgear),
             QECVAR(Magic,P1_Headgear),
             QECVAR(Magic,P2_Headgear),
-            QECVAR(Nek,engineer_P2_Headgear),
-            QECVAR(Nek,pilot_P2_Headgear),
             QECVAR(Ozy,P2_Headgear),
             QECVAR(Ozy,scout_Headgear),
             QECVAR(Phantom,P1_Headgear),
             QECVAR(Phantom,P2_Headgear),
-            QECVAR(Puce,barc_Headgear),
-            QECVAR(Puce,P1_Headgear),
             QECVAR(Red,P1_Headgear),
             QECVAR(Red,rex_Headgear),
             QECVAR(Sight,pilot_P1_Headgear),
@@ -64,7 +56,11 @@ class CfgPatches {
             QECVAR(Spearhead,P2_Headgear),
             QECVAR(Sting,scout_Headgear),
             QECVAR(Bragg,P1_Headgear),
-            QECVAR(Bragg,P2_Headgear)
+            QECVAR(Bragg,P2_Headgear),
+            QECVAR(Taiga,P1_Headgear),
+            QECVAR(Taiga,P2_Headgear),
+            QECVAR(Akaan,P1_Headgear),
+            QECVAR(Akaan,rex_Headgear)
         };
         weapons[] = {
             // Regs
@@ -89,8 +85,6 @@ class CfgPatches {
             QECVAR(Base,arc_helmet),
 
             // Customs
-            QECVAR(Ankh,P1_helmet),
-            QECVAR(Ankh,P2_helmet),
             QECVAR(Archer,P1_helmet),
             QECVAR(Archer,P2_helmet),
             QECVAR(Code,P1_Helmet),
@@ -99,18 +93,12 @@ class CfgPatches {
             QECVAR(Dragon,P2_helmet),
             QECVAR(Gart,P1_helmet),
             QECVAR(Gart,P2_helmet),
-            QECVAR(Liberty,engineer_P1_helmet),
-            QECVAR(Liberty,engineer_P2_helmet),
             QECVAR(Magic,P1_helmet),
             QECVAR(Magic,P2_helmet),
-            QECVAR(Nek,engineer_P2_helmet),
-            QECVAR(Nek,pilot_P2_helmet),
             QECVAR(Ozy,P2_helmet),
             QECVAR(Ozy,scout_helmet),
             QECVAR(Phantom,P1_helmet),
             QECVAR(Phantom,P2_helmet),
-            QECVAR(Puce,barc_helmet),
-            QECVAR(Puce,P1_helmet),
             QECVAR(Red,P1_helmet),
             QECVAR(Red,rex_helmet),
             QECVAR(Sight,pilot_P1_helmet),
@@ -121,7 +109,11 @@ class CfgPatches {
             QECVAR(Spearhead,P2_helmet),
             QECVAR(Sting,scout_helmet),
             QECVAR(Bragg,P1_helmet),
-            QECVAR(Bragg,P2_helmet)
+            QECVAR(Bragg,P2_helmet),
+            QECVAR(Taiga,P1_Helmet),
+            QECVAR(Taiga,P2_Helmet),
+            QECVAR(Akaan,P1_Helmet),
+            QECVAR(Akaan,rex_helmet)
         };
         VERSION_CONFIG;
     };

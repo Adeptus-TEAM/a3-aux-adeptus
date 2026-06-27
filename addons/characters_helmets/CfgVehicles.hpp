@@ -53,31 +53,26 @@ class cfgVehicles {
 
     /* Customs */
         // BARC Helmet
-            CLASS_HEADGEAR(Customs,Puce,BARC);
 
         // Engineer Helmet P1
-            CLASS_HEADGEAR(Customs,Liberty,Engineer_P1);
 
         // Engineer Helmet P2
-            CLASS_HEADGEAR(Customs,Liberty,Engineer_P2);
-            CLASS_HEADGEAR(Customs,Nek,Engineer_P2);
 
         // Phase 1 Helmet
-            CLASS_HEADGEAR(Customs,Ankh,P1);
             CLASS_HEADGEAR(Customs,Archer,P1);
             CLASS_HEADGEAR(Customs,Bragg,P1);
             CLASS_HEADGEAR(Customs,Dragon,P1);
             CLASS_HEADGEAR(Customs,Gart,P1);
             CLASS_HEADGEAR(Customs,Magic,P1);
             CLASS_HEADGEAR(Customs,Phantom,P1);
-            CLASS_HEADGEAR(Customs,Puce,P1);
             CLASS_HEADGEAR(Customs,Red,P1);
             CLASS_HEADGEAR(Customs,SixOne,P1);
             CLASS_HEADGEAR(Customs,Spearhead,P1);
             CLASS_HEADGEAR(Customs,Code,P1);
+            CLASS_HEADGEAR(Customs,Taiga,P1);
+            CLASS_HEADGEAR(Customs,Akaan,P1);
 
         // Phase 2 Helmet
-            CLASS_HEADGEAR(Customs,Ankh,P2);
             CLASS_HEADGEAR(Customs,Archer,P2);
             CLASS_HEADGEAR(Customs,Bragg,P2);
             CLASS_HEADGEAR(Customs,Dragon,P2);
@@ -87,16 +82,17 @@ class cfgVehicles {
             CLASS_HEADGEAR(Customs,Phantom,P2);
             CLASS_HEADGEAR(Customs,SixOne,P2);
             CLASS_HEADGEAR(Customs,Spearhead,P2);
+            CLASS_HEADGEAR(Customs,Taiga,P2);
 
         // Pilot Helmet P1
             CLASS_HEADGEAR(Customs,Sight,Pilot_P1);
 
         // Pilot Helmet P2
-            CLASS_HEADGEAR(Customs,Nek,Pilot_P2);
             CLASS_HEADGEAR(Customs,Sight,Pilot_P2);
 
         // Rex Helmet
             CLASS_HEADGEAR(Customs,Red,Rex);
+            CLASS_HEADGEAR(Customs,Akaan,Rex);
 
         // Scout Helmet
            //CLASS_HEADGEAR(Customs,Code,Scout);

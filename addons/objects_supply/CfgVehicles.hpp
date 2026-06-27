@@ -30,6 +30,8 @@ class CfgVehicles {
             MAG_XX(3AS_10Rnd_EC100_Mag,20);
             MAG_XX(3AS_10Rnd_EC100_DLT19X_Mag,20);
             MAG_XX(JLTS_DC17SA_mag,20);
+            MAG_XX(3AS_300Rnd_EC60_Mag,20);
+            MAG_XX(JMSLLTE_DLT19x_10Rnd_Mag,20);
         };
     };
 
@@ -89,7 +91,7 @@ class CfgVehicles {
         class TransportMagazines {
             MAG_XX(3AS_BaridumCore,40);
             MAG_XX(3AS_ThermalDetonator,40);
-            MAG_XX(AR_Weapons_Grenades_emp_mag,15);
+            MAG_XX(AR_Weapons_Grenades_emp_mag,40);
             MAG_XX(OPTRE_M2_Smoke,40);
             MAG_XX(SmokeShellBlue,40);
             MAG_XX(SmokeShellGreen,40);
@@ -182,6 +184,8 @@ class CfgVehicles {
             WEAP_XX(3AS_DC17S_F,5);
             WEAP_XX(3AS_DC15X_F,5);
             WEAP_XX(3AS_Valken38X_F,5);
+            WEAP_XX(3AS_Z6_F,5);
+            WEAP_XX(JMSLLTE_DLT19xRifle,5);
             WEAP_XX(Shovel_Russian_Rotated,5);
             WEAP_XX(AR_Weapons_Rifles_z6,5);
         };
