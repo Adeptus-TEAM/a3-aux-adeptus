@@ -2,13 +2,13 @@
 <Project name="Characters (Helmets)">
     <Package name="CfgWeapons">
         <Container name="customs">
-            <Key ID="str_ar_characters_helmets_customs_ankh_p1_helmet">
-                <English>[61st] Ankh Helmet P1</English>
-                <French>[61st] Casque Ankh P1</French>
+            <Key ID="str_ar_characters_helmets_customs_akaan_p1_helmet">
+                <English>[61st] Akaan Helmet P1</English>
+                <French>[61st] Casque Akaan P1</French>
             </Key>
-            <Key ID="str_ar_characters_helmets_customs_ankh_p2_helmet">
-                <English>[61st] Ankh Helmet P2</English>
-                <French>[61st] Casque Ankh P2</French>
+            <Key ID="str_ar_characters_helmets_customs_akaan_rex_helmet">
+                <English>[61st] Akaan Rex Helmet</English>
+                <French>[61st] Casque Akaan Rex</French>
             </Key>
             <Key ID="str_ar_characters_helmets_customs_archer_p1_helmet">
                 <English>[61st] Archer Helmet P1</English>
@@ -50,14 +50,6 @@
                 <English>[61st] Gart Helmet P2</English>
                 <French>[61st] Casque Gart P2</French>
             </Key>
-            <Key ID="str_ar_characters_helmets_customs_liberty_engineer_p1_helmet">
-                <English>[61st] Liberty Engineer Helmet P1</English>
-                <French>[61st] Casque Ingénieur Liberty P1</French>
-            </Key>
-            <Key ID="str_ar_characters_helmets_customs_liberty_engineer_p2_helmet">
-                <English>[61st] Liberty Engineer Helmet P2</English>
-                <French>[61st] Casque Ingénieur Liberty P2</French>
-            </Key>
             <Key ID="str_ar_characters_helmets_customs_magic_p1_helmet">
                 <English>[61st] Magic Helmet P1</English>
                 <French>[61st] Casque Magic P1</French>
@@ -65,14 +57,6 @@
             <Key ID="str_ar_characters_helmets_customs_magic_p2_helmet">
                 <English>[61st] Magic Helmet P2</English>
                 <French>[61st] Casque Magic P2</French>
-            </Key>
-            <Key ID="str_ar_characters_helmets_customs_nek_engineer_p2_helmet">
-                <English>[61st] Nek Engineer Helmet P2</English>
-                <French>[61st] Casque Ingénieur Nek P2</French>
-            </Key>
-            <Key ID="str_ar_characters_helmets_customs_nek_pilot_p2_helmet">
-                <English>[61st] Nek Pilot Helmet P2</English>
-                <French>[61st] Casque Pilote Nek P2</French>
             </Key>
             <Key ID="str_ar_characters_helmets_customs_ozy_p2_helmet">
                 <English>[61st] Ozy Helmet P2</English>
@@ -89,14 +73,6 @@
             <Key ID="str_ar_characters_helmets_customs_phantom_p2_helmet">
                 <English>[61st] Phantom Helmet P2</English>
                 <French>[61st] Casque Phantom P2</French>
-            </Key>
-            <Key ID="str_ar_characters_helmets_customs_puce_barc_helmet">
-                <English>[61st] Puce Barc Helmet</English>
-                <French>[61st] Casque Barc Puce</French>
-            </Key>
-            <Key ID="str_ar_characters_helmets_customs_puce_p1_helmet">
-                <English>[61st] Puce Helmet P1</English>
-                <French>[61st] Casque Puce P1</French>
             </Key>
             <Key ID="str_ar_characters_helmets_customs_red_p1_helmet">
                 <English>[61st] Red Helmet P1</English>
@@ -133,6 +109,14 @@
             <Key ID="str_ar_characters_helmets_customs_sting_scout_helmet">
                 <English>[61st] Sting Scout Helmet</English>
                 <French>[61st] Casque Scout Sting</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_taiga_p1_helmet">
+                <English>[61st] Taiga Helmet P1</English>
+                <French>[61st] Casque Taiga P1</French>
+            </Key>
+            <Key ID="str_ar_characters_helmets_customs_taiga_p2_helmet">
+                <English>[61st] Taiga Helmet P2</English>
+                <French>[61st] Casque Taiga P2</French>
             </Key>
         </Container>
         <Container name="regs">

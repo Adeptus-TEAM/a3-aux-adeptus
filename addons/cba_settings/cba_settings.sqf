@@ -279,7 +279,7 @@ ace_maptools_rotateModifierKey = 1;
 // ACE Medical
 ace_medical_ai_enabledFor = 0;
 ace_medical_ai_requireItems = 0;
-ace_medical_AIDamageThreshold = 2.5;
+ace_medical_AIDamageThreshold = 1;
 ace_medical_alternateArmorPenetration = true;
 ace_medical_bleedingCoefficient = 1;
 ace_medical_blood_bloodLifetime = 300;
@@ -300,10 +300,10 @@ ace_medical_painUnconsciousThreshold = 0.5;
 ace_medical_playerDamageThreshold = 10;
 ace_medical_spontaneousWakeUpChance = 0.9;
 ace_medical_spontaneousWakeUpEpinephrineBoost = 15;
-ace_medical_statemachine_AIUnconsciousness = true;
+ace_medical_statemachine_AIUnconsciousness = false;
 ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 ace_medical_statemachine_cardiacArrestTime = 300;
-ace_medical_statemachine_fatalInjuriesAI = 0;
+ace_medical_statemachine_fatalInjuriesAI = 2;
 ace_medical_statemachine_fatalInjuriesPlayer = 0;
 ace_medical_useLimbDamage = 2;
 ace_medical_vitals_simulateSpO2 = false;
@@ -360,15 +360,15 @@ ace_medical_treatment_treatmentTimeBodyBag = 15;
 ace_medical_treatment_treatmentTimeCoeffZeus = 1;
 ace_medical_treatment_treatmentTimeCPR = 15;
 ace_medical_treatment_treatmentTimeGrave = 30;
-ace_medical_treatment_treatmentTimeIV = 7;
+ace_medical_treatment_treatmentTimeIV = 5;
 ace_medical_treatment_treatmentTimeSplint = 7;
 ace_medical_treatment_treatmentTimeTourniquet = 5;
 ace_medical_treatment_treatmentTimeTrainedAutoinjector = 2;
-ace_medical_treatment_treatmentTimeTrainedIV = 7;
+ace_medical_treatment_treatmentTimeTrainedIV = 3;
 ace_medical_treatment_treatmentTimeTrainedSplint = 7;
 ace_medical_treatment_treatmentTimeTrainedTourniquet = 3;
 ace_medical_treatment_woundReopenChance = 1;
-ace_medical_treatment_woundStitchTime = 4;
+ace_medical_treatment_woundStitchTime = 3;
 
 // ACE Name Tags
 ace_nametags_ambientBrightnessAffectViewDist = 1;
@@ -1452,6 +1452,11 @@ tts_beam_vaporiseBodies = true;
 // WebKnight Droids
 WBK_Droid_b1_damage = "4";
 WBK_Droid_b2_damage = "30";
+
+// WBK Droids
+force force WBK_Droids_B1_Health = "50";
+force force WBK_Droids_B2_Health = "150";
+force force WBK_Droids_BX_Health = "100";
 
 // WebKnight HeadLamps
 WBK_HeadLamps_IsAIActivateHeadlamps = false;

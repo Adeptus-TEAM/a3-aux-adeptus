@@ -20,23 +20,21 @@ class CfgPatches {
             QECVAR(ARF_forest,U),
             QECVAR(Scout,U),
             // Customs
-            QECVAR(Ankh,U),
             QECVAR(Archer,U),
             QECVAR(Code,U),
             QECVAR(Dragon,U),
             QECVAR(Gart,U),
-            QECVAR(Liberty,U),
             QECVAR(Magic,U),
-            QECVAR(Nek,U),
             QECVAR(Ozy,U),
             QECVAR(Phantom,U),
-            QECVAR(Puce,U),
             QECVAR(Red,U),
             QECVAR(Sight,U),
             QECVAR(SixOne,U),
             QECVAR(Spearhead,U),
             QECVAR(Sting,U),
-            QECVAR(Bragg,U)
+            QECVAR(Bragg,U),
+            QECVAR(Taiga,U),
+            QECVAR(Akaan,U)
         };
         weapons[] = {
             // Regs
@@ -49,23 +47,21 @@ class CfgPatches {
             QECVAR(ARF_forest,Uniform),
             QECVAR(Scout,Uniform),
             // Customs
-            QECVAR(Ankh,Uniform),
             QECVAR(Archer,Uniform),
             QECVAR(Code,Uniform),
             QECVAR(Dragon,Uniform),
             QECVAR(Gart,Uniform),
-            QECVAR(Liberty,Uniform),
             QECVAR(Magic,Uniform),
-            QECVAR(Nek,Uniform),
             QECVAR(Ozy,Uniform),
             QECVAR(Phantom,Uniform),
-            QECVAR(Puce,Uniform),
             QECVAR(Red,Uniform),
             QECVAR(Sight,Uniform),
             QECVAR(SixOne,Uniform),
             QECVAR(Spearhead,Uniform),
             QECVAR(Sting,Uniform),
-            QECVAR(Bragg,Uniform)
+            QECVAR(Bragg,Uniform),
+            QECVAR(Taiga,Uniform),
+            QECVAR(Akaan,Uniform)
         };
         VERSION_CONFIG;
     };

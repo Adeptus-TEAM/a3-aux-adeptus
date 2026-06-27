@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Missions">
+    <Package name="FortifyCategories">
+        <Container name="class">
+            <Key ID="str_ar_missions_fortify_heavycover">
+                <English>Heavy Covers</English>
+                <French>Couvertures Lourdes</French>
+            </Key>
+            <Key ID="str_ar_missions_fortify_lightcover">
+                <English>Light Covers</English>
+                <French>Couvertures Légères</French>
+            </Key>
+            <Key ID="str_ar_missions_fortify_lights">
+                <English>Lights</English>
+                <French>Éclairage</French>
+            </Key>
+            <Key ID="str_ar_missions_fortify_mediumcover">
+                <English>Medium Covers</English>
+                <French>Couvertures Moyennes</French>
+            </Key>
+            <Key ID="str_ar_missions_fortify_structure">
+                <English>Structures</English>
+                <French>Structures</French>
+            </Key>
+            <Key ID="str_ar_missions_fortify_weaponry">
+                <English>Weaponry</English>
+                <French>Armement</French>
+            </Key>
+        </Container>
+    </Package>
     <Package name="Functions">
         <Container name="CheckVersion">
             <Key ID="str_ar_missions_missingdescriptionext_description">
