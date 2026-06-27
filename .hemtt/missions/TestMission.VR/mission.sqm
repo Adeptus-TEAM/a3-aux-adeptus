@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1109;
+		nextID=1187;
 	};
 	class Camera
 	{
-		pos[]={445.25778,334.64108,583.20575};
-		dir[]={-0.0037998261,-0.46179849,-0.88698334};
-		up[]={-0.0019782146,0.88698149,-0.46180251};
-		aside[]={-0.99999607,1.7718776e-07,0.0042833718};
+		pos[]={445.33289,334.64108,582.66846};
+		dir[]={-0.63384378,-0.3901509,-0.66786188};
+		up[]={-0.26858371,0.92074764,-0.28299853};
+		aside[]={-0.7253437,2.3900066e-07,0.68839639};
 	};
 };
 binarizationWanted=0;
@@ -341,9 +341,6 @@ randomSeed=2389025;
 class ScenarioData
 {
 	author="Krayne Radion_Wave";
-};
-class CustomAttributes
-{
 };
 class Mission
 {
@@ -16701,6 +16698,7 @@ class Mission
 									flags=1;
 									class Attributes
 									{
+										init="this addAction [""Lancer le briefing"",{" \n "[""Alarm""]remoteExec [""playSound"",0,false];" \n "[[""<t color='#FF0000'><t size= '1.5'><t font='PuristaBold'>Le briefing va commencer.</t></t></t>"", ""PLAIN DOWN"", -1,false, true]] remoteExec [""cutText"",0,false];" \n "},nil,1,true,true,"""",""true"",2];";
 										disableSimulation=1;
 									};
 									id=8527;
