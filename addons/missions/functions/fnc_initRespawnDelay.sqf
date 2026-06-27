@@ -33,7 +33,6 @@ if(_handle > 0)then{ // If the handle already exist delete it.
 _handle = [
 	{
 		_this#0 params ["_unit"];
-		systemChat str _unit;
 		private _respawnButton = (findDisplay 49) displayCtrl 1010; // get the respawn button control
 		private _respawnButtonTimer = _unit getVariable [QGVAR(respawnButtonTimer), GVAR(respawnButtonTimer)]; // Get the current respawn timer for the unit
 		if (!isNull _respawnButton) then { // Check if the respawn button exists
