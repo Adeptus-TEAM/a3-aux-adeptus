@@ -24,9 +24,16 @@ TRACE_1("fnc_initRespawnDelay",_this);
 GVAR(respawnButtonTimer) = getMissionConfigValue [QGVAR(respawnButtonTimer), 60]; // Default respawn button timer is 60 seconds if not set in the mission config
 publicVariable QGVAR(respawnButtonTimer);
 
-[
+private _handle = _unit getVariable[QGVAR(respawnButtonHandlerID),0];
+
+if(_handle > 0)then{ // If the handle already exist delete it.
+	[_handle] call CBA_fnc_removePerFrameHandler; 
+};
+
+_handle = [
 	{
 		_this#0 params ["_unit"];
+		systemChat str _unit;
 		private _respawnButton = (findDisplay 49) displayCtrl 1010; // get the respawn button control
 		private _respawnButtonTimer = _unit getVariable [QGVAR(respawnButtonTimer), GVAR(respawnButtonTimer)]; // Get the current respawn timer for the unit
 		if (!isNull _respawnButton) then { // Check if the respawn button exists
@@ -56,3 +63,5 @@ publicVariable QGVAR(respawnButtonTimer);
 	0.1, // every 0.1 seconds
 	[_unit]
 ] call CBA_fnc_addPerFrameHandler;
+
+_unit setVariable[QGVAR(respawnButtonHandlerID),_handle];

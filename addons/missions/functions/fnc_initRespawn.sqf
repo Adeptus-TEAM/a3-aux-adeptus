@@ -28,6 +28,7 @@ TRACE_1("ar_missions_fnc_initRespawn",_this);
 	"Respawn",
 	{
 		_this remoteExec [QFUNC(onRespawn), _this#0, false];
+		[_this#0] call FUNC(initRespawnDelay);
 	},
 	nil
 ] call CBA_fnc_addBISEventHandler;
