@@ -8,7 +8,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { QUOTE(ADDON) , "A3_Data_F_Enoch_Loadorder", "OPTRE_Loadorder"};
+        requiredAddons[] = { QUOTE(ADDON) , "A3_Data_F_Enoch_Loadorder", "OPTRE_Loadorder", "ls_compat_tas_terrains"};
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;
