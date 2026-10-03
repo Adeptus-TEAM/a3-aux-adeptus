@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Misc (Respawn Beacon)">
-    <Package name="cfgVehicles">
+    <Package name="CfgVehicles">
         <Key ID="str_ar_misc_respawnbeacon_active">
             <English>Respawn Beacon Active</English>
             <French>Balise de réapparition active</French>
@@ -18,7 +18,7 @@
             <French>Supprimer la balise de réapparition</French>
         </Key>
     </Package>
-    <Package name="cfgWeapons">
+    <Package name="CfgWeapons">
         <Key ID="str_ar_misc_respawnbeacon_item">
             <English>Respawn Beacon</English>
             <French>Balise de réapparition</French>

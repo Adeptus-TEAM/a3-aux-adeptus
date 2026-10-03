@@ -1,4 +1,4 @@
-/* Macro for cfgWeapons */
+/* Macro for CfgWeapons */
 #define VISOR_MAT ""
 
 // BARC Helmet
@@ -829,7 +829,7 @@
         };                                                                          \
     }
 
-/* Macro for cfgVehicles */
+/* Macro for CfgVehicles */
 /**
  * @name CLASS_HEADGEAR
  * @brief Macro to define a headgear class in the config.

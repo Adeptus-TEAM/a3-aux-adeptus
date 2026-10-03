@@ -1,4 +1,4 @@
-/* Macro for cfgVehicles */
+/* Macro for CfgVehicles */
 
 /**
  * @name CLASS_HEAVYMEDIC_BACKPACK

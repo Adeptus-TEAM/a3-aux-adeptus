@@ -1,4 +1,4 @@
-/* Macro for cfgWeapons */
+/* Macro for CfgWeapons */
 
 /**
  * @name CLASS_ARF_VEST

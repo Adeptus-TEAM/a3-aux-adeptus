@@ -1,4 +1,4 @@
-class cfgVehicles {
+class CfgVehicles {
     // Imported classes
     class Headgear_Base_F;
 

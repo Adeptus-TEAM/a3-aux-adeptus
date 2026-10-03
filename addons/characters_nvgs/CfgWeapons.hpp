@@ -1,4 +1,4 @@
-class cfgWeapons {
+class CfgWeapons {
     // Imported classes
     class lsd_gar_P1Standard_nvg;
     class lsd_gar_P1Commander_nvg;

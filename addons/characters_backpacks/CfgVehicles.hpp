@@ -1,4 +1,4 @@
-class cfgVehicles {
+class CfgVehicles {
     // Imported classes
     class ls_gar_heavyMedic_backpack;
     class ls_gar_heavy_backpack;

@@ -34,7 +34,7 @@
             <French>Définir la Hauteur :</French>
         </Key>
     </Package>
-    <Package name="cfgVehicles">
+    <Package name="CfgVehicles">
         <Key ID="str_ar_zeus_laatairdrop">
             <English>Laat Air Drop</English>
             <French>Largage Aérien Laat</French>

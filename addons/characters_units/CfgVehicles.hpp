@@ -1,4 +1,4 @@
-class cfgVehicles {
+class CfgVehicles {
     // Imported classes
     class lsd_gar_phase2_Base;
     class lsd_gar_phase2Insulated_Base;
