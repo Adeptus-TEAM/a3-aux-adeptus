@@ -12,7 +12,7 @@ if (isServer) then {
 };
 
 if (hasInterface) then {
-	private _unit = player;
+	private _unit = [] call CBA_fnc_currentUnit;
 	[_unit] call FUNC(initUnderfire);
 	[_unit] call FUNC(initWelcome);
 	[_unit] call FUNC(initRespawn);
