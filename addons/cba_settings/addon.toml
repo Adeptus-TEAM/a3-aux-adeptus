@@ -1,0 +1,2 @@
+# Utilisé pour ignorer l'erreur cas CBA attend quelque chose de différent.
+ignore_pboprefix = true
