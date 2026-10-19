@@ -1,4 +1,4 @@
-class cfgVehicles {
+class CfgVehicles {
     // Imported classes
     class lsd_gar_phase2_Base;
     class lsd_gar_phase2Insulated_Base;
@@ -251,8 +251,8 @@ class cfgVehicles {
                     displayName = SUBCSTRING(TRIPLES(AT,P1,Unit));
                     EDITORPREVIEW(ECVAR(DOUBLES(AT,P1),Unit));
                     backpack = "AR_Base_Rocket_Backpack";
-                    weapons[] = WEAPONS(DC15S,DC17S,RPS6);
-                    respawnWeapons[] = WEAPONS(DC15S,DC17S,RPS6);
+                    weapons[] = WEAPONS2(DC15S,DC17S,RPS6);
+                    respawnWeapons[] = WEAPONS2(DC15S,DC17S,RPS6);
                     magazines[] = {MAGAZINE_DEFAULT, MAGS_X6(RPS6_MAG)};
                     respawnMagazines[] = {MAGAZINE_DEFAULT, MAGS_X6(RPS6_MAG)};
                 };
@@ -262,8 +262,8 @@ class cfgVehicles {
                     displayName = SUBCSTRING(TRIPLES(AT,P2,Unit));
                     EDITORPREVIEW(ECVAR(DOUBLES(AT,P2),Unit));
                     backpack = "AR_Base_Rocket_Backpack";
-                    weapons[] = WEAPONS(DC15S,DC17S,RPS6);
-                    respawnWeapons[] = WEAPONS(DC15S,DC17S,RPS6);
+                    weapons[] = WEAPONS2(DC15S,DC17S,RPS6);
+                    respawnWeapons[] = WEAPONS2(DC15S,DC17S,RPS6);
                     magazines[] = {MAGAZINE_DEFAULT, MAGS_X6(RPS6_MAG)};
                     respawnMagazines[] = {MAGAZINE_DEFAULT, MAGS_X6(RPS6_MAG)};
                 };
@@ -299,8 +299,8 @@ class cfgVehicles {
                     backpack = "AR_Base_Heavy_Backpack";
                     linkedItems[] = {LINKED_ITEMS_DEFAULT, "AR_V1_P1_Helmet", "AR_Base_Heavy_Vest"};
                     respawnlinkedItems[] = {LINKED_ITEMS_DEFAULT, "AR_V1_P1_Helmet", "AR_Base_Heavy_Vest"};
-                    weapons[] = WEAPONS(Z6,DC17S,"");
-                    respawnWeapons[] = WEAPONS(Z6,DC17S,"");
+                    weapons[] = WEAPONS(Z6,DC17S);
+                    respawnWeapons[] = WEAPONS(Z6,DC17S);
                     magazines[] = {MAGS_X6(Z6_MAG),MAGS_X2(DC17S_MAG),MAGS_X2(DETONATOR),MAGS_X2("SmokeShellRed"),MAGS_X2("SmokeShellGreen"),MAGS_X2("SmokeShell"),CTBI};
                     respawnMagazines[] = {MAGS_X6(Z6_MAG),MAGS_X2(DC17S_MAG),MAGS_X2(DETONATOR),MAGS_X2("SmokeShellRed"),MAGS_X2("SmokeShellGreen"),MAGS_X2("SmokeShell"),CTBI};
                 };
@@ -312,8 +312,8 @@ class cfgVehicles {
                     backpack = "AR_Base_Heavy_Backpack";
                     linkedItems[] = {LINKED_ITEMS_DEFAULT, "AR_V1_P2_Helmet", "AR_Base_Heavy_Vest"};
                     respawnlinkedItems[] = {LINKED_ITEMS_DEFAULT, "AR_V1_P2_Helmet", "AR_Base_Heavy_Vest"};
-                    weapons[] = WEAPONS(Z6,DC17S,"");
-                    respawnWeapons[] = WEAPONS(Z6,DC17S,"");
+                    weapons[] = WEAPONS(Z6,DC17S);
+                    respawnWeapons[] = WEAPONS(Z6,DC17S);
                     magazines[] = {MAGS_X6(Z6_MAG),MAGS_X2(DC17S_MAG),MAGS_X2(DETONATOR),MAGS_X2("SmokeShellRed"),MAGS_X2("SmokeShellGreen"),MAGS_X2("SmokeShell"),CTBI};
                     respawnMagazines[] = {MAGS_X6(Z6_MAG),MAGS_X2(DC17S_MAG),MAGS_X2(DETONATOR),MAGS_X2("SmokeShellRed"),MAGS_X2("SmokeShellGreen"),MAGS_X2("SmokeShell"),CTBI};
                 };

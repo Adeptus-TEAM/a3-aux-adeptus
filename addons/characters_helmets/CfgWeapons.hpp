@@ -1,4 +1,4 @@
-class cfgWeapons {
+class CfgWeapons {
     // Imported classes
     CLASS_INHERITANCE(ls_gar_barc_helmet);
     CLASS_INHERITANCE(ls_gar_engineer_helmet);

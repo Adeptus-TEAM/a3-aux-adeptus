@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Zeus (Laat Air Drop)">
+    <Package name="CfgVehicles">
+        <Key ID="str_ar_zeus_laatairdrop">
+            <English>Laat Air Drop</English>
+            <French>Largage Aérien Laat</French>
+        </Key>
+    </Package>
     <Package name="Functions">
         <Key ID="str_ar_zeus_laatairdrop_btnaddsupply">
             <English>Add Supply</English>
@@ -32,12 +38,6 @@
         <Key ID="str_ar_zeus_laatairdrop_titlesetheight">
             <English>Set Height :</English>
             <French>Définir la Hauteur :</French>
-        </Key>
-    </Package>
-    <Package name="cfgVehicles">
-        <Key ID="str_ar_zeus_laatairdrop">
-            <English>Laat Air Drop</English>
-            <French>Largage Aérien Laat</French>
         </Key>
     </Package>
 </Project>

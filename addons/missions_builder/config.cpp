@@ -21,6 +21,6 @@ class RscText;
 class RscEdit;
 class RscCombo;
 class RscButton;
-#include "rsc/MissionParameters.hpp"
+#include "rsc\MissionParameters.hpp"
 
 #include "Display3den.hpp"

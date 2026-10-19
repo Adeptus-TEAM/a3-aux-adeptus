@@ -1,4 +1,4 @@
-/* Macro for cfgWeapons */
+/* Macro for CfgWeapons */
 /**
  * @name CLASS_UNIFORM
  * @brief Macro to define a uniform class.
@@ -22,10 +22,10 @@
     }
 
 
-/* Macro for cfgVehicles */
+/* Macro for CfgVehicles */
 /**
  * @name CLASS_UNIFORM_V
- * @brief Macro to define a uniform class for cfgVehicles.
+ * @brief Macro to define a uniform class for CfgVehicles.
  * @param var1 Name of the faction (regs or customs)
  * @param var2 Name of the variant (e.g., base, arf_desert, arf_forest)
  */
@@ -44,7 +44,7 @@
 
 /**
  * @name CLASS_UNIFORM_V_CUSTOMUNDERSUIT
- * @brief Macro to define a uniform class with a custom undersuit for cfgVehicles.
+ * @brief Macro to define a uniform class with a custom undersuit for CfgVehicles.
  * @param var1 Name of the faction (regs or customs)
  * @param var2 Name of the variant (e.g., base, arf_desert, arf_forest)
  */
@@ -63,7 +63,7 @@
 
 /**
  * @name CLASS_UNIFORM_V_INSULATED
- * @brief Macro to define an insulated uniform class for cfgVehicles.
+ * @brief Macro to define an insulated uniform class for CfgVehicles.
  * @param var1 Name of the faction (regs or customs)
  * @param var2 Name of the variant (e.g., marine, marine_co)
  */
@@ -82,7 +82,7 @@
 
 /**
  * @name CLASS_UNIFORM_V_CUSTOMUNDERSUIT_INSULATED
- * @brief Macro to define an insulated uniform class with a custom undersuit for cfgVehicles.
+ * @brief Macro to define an insulated uniform class with a custom undersuit for CfgVehicles.
  * @param var1 Name of the faction (regs or customs)
  * @param var2 Name of the variant (e.g., marine, marine_co)
  */

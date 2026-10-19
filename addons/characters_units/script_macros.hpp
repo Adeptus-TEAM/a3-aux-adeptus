@@ -11,7 +11,10 @@
 #define MAGS_X30(var1) MAGS_X20(var1),MAGS_X10(var1)
 #define MAGS_X40(var1) MAGS_X30(var1),MAGS_X10(var1)
 
-#define WEAPONS(var1,var2,var3) \
+#define WEAPONS(var1,var2) \
+{ var1,var2,"JLTS_CloneBinocular","Throw","Put" }
+
+#define WEAPONS2(var1,var2,var3) \
 { var1,var2,var3,"JLTS_CloneBinocular","Throw","Put" }
 
 #define DC17S "3AS_DC17S_F"
@@ -31,7 +34,7 @@
 #define DETONATOR "3AS_ThermalDetonator"
 
 #define WEAPON_DEFAULT \
-WEAPONS(DC15S,DC17S,"")
+WEAPONS(DC15S,DC17S)
 
 #define MAGAZINE_DEFAULT \
 MAGS_X7(DC15S_MAG),MAGS_X2(DC17S_MAG),MAGS_X2(DETONATOR),MAGS_X2("SmokeShellRed"),MAGS_X2("SmokeShellGreen"),MAGS_X2("SmokeShell"),CTBI

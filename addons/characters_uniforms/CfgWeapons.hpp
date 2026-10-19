@@ -1,4 +1,4 @@
-class cfgWeapons {
+class CfgWeapons {
     // Imported classes
     CLASS_INHERITANCE(ls_gar_phase2_uniform);
 
