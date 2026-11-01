@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1265;
+		nextID=1304;
 	};
 	class Camera
 	{
@@ -6844,7 +6844,7 @@ class Mission
 						};
 					};
 					id=8205;
-					atlOffset=2.4991455;
+					atlOffset=-5;
 				};
 				class Item2
 				{
@@ -41241,7 +41241,7 @@ class Mission
 									};
 									id=9236;
 									type="3as_Venator_Frame_Right_Prop";
-									atlOffset=9.6539001;
+									atlOffset=12.052551;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -41269,14 +41269,14 @@ class Mission
 										angles[]={0,2.8705456,0};
 									};
 									side="Empty";
-									flags=1;
+									flags=5;
 									class Attributes
 									{
 										disableSimulation=1;
 									};
 									id=9237;
 									type="land_3as_Orto_Hangar_Door";
-									atlOffset=6.4281311;
+									atlOffset=0.018218994;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -41297,7 +41297,7 @@ class Mission
 								};
 							};
 							id=9235;
-							atlOffset=8.2585144;
+							atlOffset=1.6986084;
 						};
 						class Item2
 						{
@@ -56897,7 +56897,7 @@ class Mission
 						};
 					};
 					id=9614;
-					atlOffset=0.40899658;
+					atlOffset=162.27246;
 				};
 				class Item8
 				{
@@ -58251,7 +58251,7 @@ class Mission
 						};
 					};
 					id=9709;
-					atlOffset=328.3403;
+					atlOffset=-5;
 				};
 				class Item10
 				{
@@ -65925,7 +65925,7 @@ class Mission
 				};
 			};
 			id=9775;
-			atlOffset=3.6929016;
+			atlOffset=286.13824;
 		};
 	};
 	class Connections
