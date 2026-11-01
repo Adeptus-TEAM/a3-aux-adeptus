@@ -41,7 +41,7 @@ archive = true
 
 [hemtt.launch.default]
 presets = [
-    "Adeptus_Dev_Preset",
+    "Adeptus_Dev_Preset_Profiler",
 ]
 
 parameters = [
