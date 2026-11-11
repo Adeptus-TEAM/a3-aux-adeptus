@@ -25,7 +25,7 @@ a3-aux-adeptus/
 │  ├─ compositions/             # Addon     | ar_compositions         | Compositions 3den
 │  ├─ dialogs/                  # Addon     | ar_dialogs
 │  ├─ dialogs_*/                # Sub-addon | ar_dialogs_*            | Configurations de dialogues spécifiques (e.g. main menu, etc.)
-│  ├─ inidbi/                   # Addon     | ar_inidbi               | Configuration de inidbi
+│  ├─ database/                 # Addon     | ar_database             | Sauvegarde des joueurs en MySQL (extDB3)
 │  ├─ main/                     # Addon     | ar_main                 | Fichiers principaux du mod
 │  ├─ misc/                     # Addon     | ar_misc
 │  ├─ misc_*/                   # Sub-addon | ar_misc_*               | Autres configurations
@@ -71,7 +71,7 @@ Pour garantir la qualité et la cohérence du code, veuillez suivre les [coding 
 ## 📜 Licence
 
 <a href="https://www.bohemia.net/community/licenses/arma-public-license-share-alike">
-  <img src="https://www.bohemia.net/assets/img/licenses/APL-SA.png" alt="licence">
+  <img src="https://files.bistudio.com/public/2d36aa7e-6a0e-4ae8-bdab-dfeb2273f731-1" alt="licence">
 </a>
 
 Le code source et les ressources **originales** de ce projet sont disponibles sous licence [APL-SA](https://www.bohemia.net/community/licenses/arma-public-license-share-alike).  

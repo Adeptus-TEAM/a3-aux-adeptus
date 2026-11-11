@@ -7,7 +7,7 @@ class CfgPatches {
         url = ECSTRING(main,url);
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "ar_main", "ar_missions" };
+        requiredAddons[] = { "cba_main", "ar_main", "ar_missions" };
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;

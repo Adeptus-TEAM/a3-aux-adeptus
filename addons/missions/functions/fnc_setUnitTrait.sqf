@@ -51,3 +51,7 @@ switch (_specToAssign) do {
 		INFO_1("fnc_setUnitTrait - Unknown specialist role: %1",_specToAssign);
 	};
 };
+
+
+// Save the new traits to the database (ignored by the server while the profile is still loading)
+[QEGVAR(database,requestSave), [_unit]] call CBA_fnc_serverEvent;

@@ -19,3 +19,5 @@ releases
 .adc/.adc
 .adc/**/*.backup
 .adc/**/*.h
+# Page profil web : configuration locale (contient les identifiants MySQL)
+tools/profil-web/config.php
