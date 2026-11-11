@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Dialogs (Garage)">
     <Package name="rsc">
+        <Key ID="str_ar_dialogs_garage_ModuleGarageSpawn">
+            <English>Garage Spawn</English>
+            <French>Spawn de garage</French>
+        </Key>
+        <Key ID="str_ar_dialogs_garage_ModuleGarageSpawn_Description">
+            <English>Garage spawn point. Vehicles spawn at the module position and direction, inside its area. Synchronize it with one or more terminals. A terminal must only be synchronized with one garage module.</English>
+            <French>Point de spawn du garage. Les véhicules apparaissent à la position et dans la direction du module, à l'intérieur de sa zone. Synchroniser avec un ou plusieurs terminaux. Un terminal ne doit être synchronisé qu'à un seul module garage.</French>
+        </Key>
         <Key ID="str_ar_dialogs_garage_btnAerial">
             <English>Aerial</English>
             <French>Aérien</French>
@@ -36,6 +44,18 @@
         <Key ID="str_ar_dialogs_garage_vehicleOccupied">
             <English>An occupied vehicle is blocking the garage area.</English>
             <French>Un véhicule occupé bloque la zone du garage.</French>
+        </Key>
+        <Key ID="str_ar_objects_editor_garageAerialEnabled">
+            <English>Aerial vehicles</English>
+            <French>Véhicules aériens</French>
+        </Key>
+        <Key ID="str_ar_objects_editor_garageSupplyEnabled">
+            <English>Supplies</English>
+            <French>Ravitaillements</French>
+        </Key>
+        <Key ID="str_ar_objects_editor_garageTerrestrialEnabled">
+            <English>Terrestrial vehicles</English>
+            <French>Véhicules terrestres</French>
         </Key>
     </Package>
 </Project>
