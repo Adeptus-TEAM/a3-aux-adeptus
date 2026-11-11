@@ -1,13 +1,14 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Adeptus TEAM
- * Description : Deletes all vehicles of specified types within the garage area.
+ * Description : Deletes all empty vehicles within the garage area.
+ *               Vehicles with a living crew are kept, so nobody gets deleted with their vehicle.
  *
  * Arguments:
  * <NONE>
  *
  * Return Value:
- * <BOOL>
+ * <BOOL> - true if the area is clear, false if occupied vehicles are still in it (or no terminal data)
  *
  * Example:
  * 0 call ar_dialogs_garage_fnc_deleteVehicle
@@ -26,9 +27,19 @@ if (_terminalData isEqualTo []) exitWith {
 
 _terminalData params ["_spawnObjectPos", "_spawnObjectDir", "_areaSize"];
 
+private _isAreaClear = true;
 {
-	deleteVehicle _x;
-	INFO("Deleted vehicle: " + typeOf _x);
+	if ((crew _x) findIf {alive _x} != -1) then {
+		_isAreaClear = false;
+		INFO_1("Kept occupied vehicle: %1",typeOf _x);
+	} else {
+		INFO_1("Deleted vehicle: %1",typeOf _x);
+		deleteVehicle _x;
+	};
 } forEach (vehicles inAreaArray [_spawnObjectPos,_areaSize, _areaSize, _spawnObjectDir, true]);
 
-true
+if (!_isAreaClear) then {
+	hint LSUBLSTRING(vehicleOccupied);
+};
+
+_isAreaClear

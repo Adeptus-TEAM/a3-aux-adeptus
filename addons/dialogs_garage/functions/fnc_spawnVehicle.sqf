@@ -37,8 +37,12 @@ if (_selectedIndex >= count _listVehicles) exitWith {
 
 private _vehicleClass = _listVehicles select _selectedIndex;
 
-// Delete existing vehicles in the spawn area before spawning a new one
-0 call SUBFUNC(deleteVehicle);
+// Delete existing vehicles in the spawn area before spawning a new one.
+// Abort if an occupied vehicle is still there, to avoid spawning on top of it.
+if !(0 call SUBFUNC(deleteVehicle)) exitWith {
+	WARNING("Spawn area is not clear, vehicle not spawned");
+	false
+};
 
 [
 	{

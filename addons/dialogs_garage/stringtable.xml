@@ -33,5 +33,9 @@
             <English>Garage Terminal</English>
             <French>Terminal de Garage</French>
         </Key>
+        <Key ID="str_ar_dialogs_garage_vehicleOccupied">
+            <English>An occupied vehicle is blocking the garage area.</English>
+            <French>Un véhicule occupé bloque la zone du garage.</French>
+        </Key>
     </Package>
 </Project>
