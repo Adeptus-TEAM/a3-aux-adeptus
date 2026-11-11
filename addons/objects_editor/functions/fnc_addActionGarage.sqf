@@ -26,6 +26,7 @@ _terminal addAction[
 	LSUBLSTRING(terminal),
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"];
+		// Target in this context is the terminal with the Garage Action
 		[_target] call EFUNC(dialogs_garage,openInterface);
 	},
 	nil,

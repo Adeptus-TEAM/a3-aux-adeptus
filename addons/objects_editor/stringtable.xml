@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Object (Editor)">
-    <Package name="Attributes">
-        <Container name="Garage Terminal">
-            <Key ID="str_ar_objects_editor_garageAreaSize">
-                <English>Garage Terminal Area Size</English>
-                <French>Taille de la zone du terminal de garage</French>
-            </Key>
-            <Key ID="str_ar_objects_editor_garageSpawnObject">
-                <English>Garage Terminal Spawn Object</English>
-                <French>Objet de réapparition du terminal de garage</French>
-            </Key>
-        </Container>
-    </Package>
+    <Package name="Attributes"></Package>
     <Package name="CfgVehicles">
         <Container name="Arsenal Box">
             <Key ID="str_ar_objects_editor_arsenalbox">
@@ -61,18 +50,6 @@
             <Key ID="str_ar_objects_deactivatetraitmedic">
                 <English>&lt;t color='#FF0000'&gt;Deactivate Medical Qualification&lt;/t&gt;</English>
                 <French>&lt;t color='#FF0000'&gt;Désactiver Qualification Médicale&lt;/t&gt;</French>
-            </Key>
-        </Container>
-    </Package>
-    <Package name="tooltips">
-        <Container name="Garage Terminal">
-            <Key ID="str_ar_objects_editor_garageAreaSizeTooltip">
-                <English>Write the size of the area you wish the garage to check to delete objects.</English>
-                <French>Ecrivez la taille de la zone que vous souhaitez que le garage vérifie pour supprimer les objets</French>
-            </Key>
-            <Key ID="str_ar_objects_editor_garageSpawnObjectTooltip">
-                <English>Write the var of the object you wish the objects to spawn on.</English>
-                <French>Ecrivez la variable de l'objet sur lequel vous souhaitez que les objets apparaissent</French>
             </Key>
         </Container>
     </Package>

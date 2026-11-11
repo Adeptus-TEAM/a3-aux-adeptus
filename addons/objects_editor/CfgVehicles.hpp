@@ -50,39 +50,44 @@ class CfgVehicles {
     };
     class 3AS_T_Screen_F : 3AS_T_Screen {};
 
-    class SUBCVAR(garageTerminal) : 3AS_T_Screen_F {
-        displayName = SUBCSTRING(garageTerminal);
-        scope = 2;
-        scopeCurator = 1;
-        CATEGORY_AR;
-        SUBCATEGORY_EDITOR;
-        EDITORPREVIEW(SUBCVAR(garageTerminal));
-        class Attributes : Attributes {
-            class ObjectTextureCustom0 : ObjectTextureCustom0 { };
-            class CVAR(garageSpawnObject) {
-                displayName = SUBCSTRING(garageSpawnObject);
-                tooltip = SUBCSTRING(garageSpawnObjectTooltip);
-                property = QGVAR(garageSpawnObject);
-                control = "Edit";
-                expression = "_this setVariable ['%s', _value,true]";
-                defaultValue = "objNull";
-                unique = 0;
-                typeName = "STRING";
-            };
-            class CVAR(garageAreaSize) {
-                displayName = SUBCSTRING(garageAreaSize);
-                tooltip = SUBCSTRING(garageAreaSizeTooltip);
-                property = QGVAR(garageAreaSize);
-                control = "Edit";
-                expression = "_this setVariable ['%s', _value,true];";
-                defaultValue = 10;
-                typeName = "NUMBER";
-            };
+class SUBCVAR(garageTerminal) : 3AS_T_Screen_F {
+    displayName = SUBCSTRING(garageTerminal);
+    scope = 2;
+    scopeCurator = 1;
+    CATEGORY_AR;
+    SUBCATEGORY_EDITOR;
+    EDITORPREVIEW(SUBCVAR(garageTerminal));
+    class Attributes : Attributes {
+        class ObjectTextureCustom0 : ObjectTextureCustom0 { };
+        class CVAR(garageTerrestrialEnabled) {
+            displayName = SUBCSTRING(garageTerrestrialEnabled);
+            property = QGVAR(garageTerrestrialEnabled);
+            control = "Checkbox";
+            expression = "_this setVariable ['%s', _value, true];";
+            defaultValue = "true";
+            typeName = "BOOL";
         };
-        class EventHandlers {
-            class SUBADDON {
-                postInit = QUOTE(_this call SUBFUNC(addActionGarage));
-            };
+        class CVAR(garageAerialEnabled) {
+            displayName = SUBCSTRING(garageAerialEnabled);
+            property = QGVAR(garageAerialEnabled);
+            control = "Checkbox";
+            expression = "_this setVariable ['%s', _value, true];";
+            defaultValue = "true";
+            typeName = "BOOL";
+        };
+        class CVAR(garageSupplyEnabled) {
+            displayName = SUBCSTRING(garageSupplyEnabled);
+            property = QGVAR(garageSupplyEnabled);
+            control = "Checkbox";
+            expression = "_this setVariable ['%s', _value, true];";
+            defaultValue = "true";
+            typeName = "BOOL";
         };
     };
+    class EventHandlers {
+        class SUBADDON {
+            postInit = QUOTE(_this call SUBFUNC(addActionGarage));
+        };
+    };
+};
 };

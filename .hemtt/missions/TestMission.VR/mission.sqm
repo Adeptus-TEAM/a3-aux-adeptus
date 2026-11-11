@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=9777;
+		nextID=9786;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1304;
+		nextID=1538;
 	};
 	class Camera
 	{
-		pos[]={390.41226,340.79614,596.20673};
-		dir[]={0.34504527,-0.25754374,0.90258294};
-		up[]={0.091970123,0.96626097,0.24057892};
-		aside[]={0.93409133,4.5029446e-07,-0.35708559};
+		pos[]={457.69571,346.06186,638.72278};
+		dir[]={-0.079117283,-0.69920444,-0.71057612};
+		up[]={-0.077374831,0.7149179,-0.69491357};
+		aside[]={-0.99388653,9.0282629e-07,0.11066318};
 	};
 };
 binarizationWanted=0;
@@ -77,13 +77,14 @@ addons[]=
 	"3AS_Equipment",
 	"AR_Characters_Vests",
 	"ls_weapons_grenades",
-	"ls_weapons_dcseries"
+	"ls_weapons_dcseries",
+	"ar_dialogs_garage"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=39;
+		items=40;
 		class Item0
 		{
 			className="VI_objects";
@@ -329,6 +330,13 @@ class AddonsMetaData
 			name="Legion Studios: Core - Weapons";
 			author="Legion Studios";
 		};
+		class Item39
+		{
+			className="AR_Dialogs";
+			name="Adeptus Auxiliaires - Dialogs";
+			author="Adeptus Team";
+			url="https://www.adeptusrepublica.com";
+		};
 	};
 };
 dlcs[]=
@@ -365,7 +373,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1;
+		items=8;
 		class Item0
 		{
 			dataType="Layer";
@@ -6844,7 +6852,7 @@ class Mission
 						};
 					};
 					id=8205;
-					atlOffset=-5;
+					atlOffset=2.4991455;
 				};
 				class Item2
 				{
@@ -40938,19 +40946,18 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={387.74432,334.4353,583.80103};
-												angles[]={0,4.7123909,0};
+												position[]={387.74399,334.43558,583.80103};
+												angles[]={0,4.712389,0};
 											};
 											side="Empty";
 											flags=1;
 											class Attributes
 											{
-												name="LEFT_HANGAR_SPAWN_LEFT";
 												disableSimulation=1;
 											};
 											id=9230;
 											type="VR_Area_01_square_4x4_yellow_F";
-											atlOffset=0.00390625;
+											atlOffset=0.0041809082;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -40987,19 +40994,18 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={387.97504,334.43445,608.97632};
-												angles[]={0,4.7123909,0};
+												position[]={387.97501,334.43457,608.97601};
+												angles[]={0,4.712389,0};
 											};
 											side="Empty";
 											flags=1;
 											class Attributes
 											{
-												name="LEFT_HANGAR_SPAWN_RIGHT";
 												disableSimulation=1;
 											};
 											id=9231;
 											type="VR_Area_01_square_4x4_yellow_F";
-											atlOffset=0.0030517578;
+											atlOffset=0.0031738281;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -41036,8 +41042,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={417.11542,334.86313,604.14526};
-												angles[]={0,4.7123909,0};
+												position[]={417.11499,334.86298,604.14502};
+												angles[]={0,4.712389,0};
 											};
 											side="Empty";
 											class Attributes
@@ -41046,7 +41052,7 @@ class Mission
 											};
 											id=9232;
 											type="AR_Objects_Editor_garageTerminal";
-											atlOffset=329.31915;
+											atlOffset=329.319;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -41064,27 +41070,27 @@ class Mission
 												};
 												class Attribute1
 												{
-													property="AR_Objects_garageAreaSize";
-													expression="_this setVariable ['AR_Objects_garageAreaSize', _value,true];";
+													property="AR_Objects_garageAerialEnabled";
+													expression="_this setVariable ['AR_Objects_garageAerialEnabled', _value, true];";
 													class Value
 													{
 														class data
 														{
-															singleType="SCALAR";
-															value=5;
+															singleType="BOOL";
+															value=0;
 														};
 													};
 												};
 												class Attribute2
 												{
-													property="AR_Objects_garageSpawnObject";
-													expression="_this setVariable ['AR_Objects_garageSpawnObject', _value,true]";
+													property="AR_Objects_garageTerrestrialEnabled";
+													expression="_this setVariable ['AR_Objects_garageTerrestrialEnabled', _value, true];";
 													class Value
 													{
 														class data
 														{
-															singleType="STRING";
-															value="supplySpawn2";
+															singleType="BOOL";
+															value=0;
 														};
 													};
 												};
@@ -41096,8 +41102,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={397.58392,334.99289,583.7478};
-												angles[]={0,3.1415949,0};
+												position[]={397.58401,334.99298,583.74799};
+												angles[]={0,3.1415927,0};
 											};
 											side="Empty";
 											flags=4;
@@ -41106,7 +41112,7 @@ class Mission
 											};
 											id=9233;
 											type="AR_Objects_Editor_garageTerminal";
-											atlOffset=0.018096924;
+											atlOffset=0.018188477;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -41124,27 +41130,27 @@ class Mission
 												};
 												class Attribute1
 												{
-													property="AR_Objects_garageAreaSize";
-													expression="_this setVariable ['AR_Objects_garageAreaSize', _value,true];";
+													property="AR_Objects_garageTerrestrialEnabled";
+													expression="_this setVariable ['AR_Objects_garageTerrestrialEnabled', _value, true];";
 													class Value
 													{
 														class data
 														{
-															singleType="SCALAR";
-															value=15;
+															singleType="BOOL";
+															value=0;
 														};
 													};
 												};
 												class Attribute2
 												{
-													property="AR_Objects_garageSpawnObject";
-													expression="_this setVariable ['AR_Objects_garageSpawnObject', _value,true]";
+													property="AR_Objects_garageSupplyEnabled";
+													expression="_this setVariable ['AR_Objects_garageSupplyEnabled', _value, true];";
 													class Value
 													{
 														class data
 														{
-															singleType="STRING";
-															value="LEFT_HANGAR_SPAWN_LEFT";
+															singleType="BOOL";
+															value=0;
 														};
 													};
 												};
@@ -41156,8 +41162,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={397.61859,334.99313,608.92163};
-												angles[]={0,3.1415961,0};
+												position[]={397.61899,334.99298,608.922};
+												angles[]={0,3.1415927,0};
 											};
 											side="Empty";
 											flags=4;
@@ -41166,7 +41172,7 @@ class Mission
 											};
 											id=9234;
 											type="AR_Objects_Editor_garageTerminal";
-											atlOffset=0.018341064;
+											atlOffset=0.018188477;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -41184,40 +41190,53 @@ class Mission
 												};
 												class Attribute1
 												{
-													property="AR_Objects_garageAreaSize";
-													expression="_this setVariable ['AR_Objects_garageAreaSize', _value,true];";
+													property="AR_Objects_garageAerialEnabled";
+													expression="_this setVariable ['AR_Objects_garageAerialEnabled', _value, true];";
 													class Value
 													{
 														class data
 														{
-															singleType="SCALAR";
-															value=15;
+															singleType="BOOL";
+															value=1;
 														};
 													};
 												};
 												class Attribute2
 												{
-													property="AR_Objects_garageSpawnObject";
-													expression="_this setVariable ['AR_Objects_garageSpawnObject', _value,true]";
+													property="AR_Objects_garageTerrestrialEnabled";
+													expression="_this setVariable ['AR_Objects_garageTerrestrialEnabled', _value, true];";
 													class Value
 													{
 														class data
 														{
-															singleType="STRING";
-															value="LEFT_HANGAR_SPAWN_RIGHT";
+															singleType="BOOL";
+															value=0;
 														};
 													};
 												};
-												nAttributes=3;
+												class Attribute3
+												{
+													property="AR_Objects_garageSupplyEnabled";
+													expression="_this setVariable ['AR_Objects_garageSupplyEnabled', _value, true];";
+													class Value
+													{
+														class data
+														{
+															singleType="BOOL";
+															value=0;
+														};
+													};
+												};
+												nAttributes=4;
 											};
 										};
 									};
 									id=9228;
-									atlOffset=0.00051879883;
+									atlOffset=0.00045776367;
 								};
 							};
 							id=9101;
-							atlOffset=4.0869141;
+							atlOffset=4.0868835;
 						};
 						class Item1
 						{
@@ -41241,7 +41260,7 @@ class Mission
 									};
 									id=9236;
 									type="3as_Venator_Frame_Right_Prop";
-									atlOffset=12.052551;
+									atlOffset=9.6539001;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -41269,14 +41288,14 @@ class Mission
 										angles[]={0,2.8705456,0};
 									};
 									side="Empty";
-									flags=5;
+									flags=1;
 									class Attributes
 									{
 										disableSimulation=1;
 									};
 									id=9237;
 									type="land_3as_Orto_Hangar_Door";
-									atlOffset=0.018218994;
+									atlOffset=6.4281311;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -41297,7 +41316,7 @@ class Mission
 								};
 							};
 							id=9235;
-							atlOffset=1.6986084;
+							atlOffset=8.2585144;
 						};
 						class Item2
 						{
@@ -52915,19 +52934,17 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={481.47064,334.56061,651.83423};
-												angles[]={0,1.1920929e-07,0};
+												position[]={481.47101,334.56058,651.83398};
 											};
 											side="Empty";
 											flags=1;
 											class Attributes
 											{
-												name="MAIN_HANGAR_SPAWN";
 												disableSimulation=1;
 											};
 											id=9578;
 											type="VR_Area_01_square_4x4_yellow_F";
-											atlOffset=0.043426514;
+											atlOffset=0.043395996;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -52964,8 +52981,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={481.49213,335.03287,642.17554};
-												angles[]={0,4.7123909,0};
+												position[]={481.492,335.03299,642.17603};
+												angles[]={0,4.712389,0};
 											};
 											side="Empty";
 											class Attributes
@@ -52974,7 +52991,7 @@ class Mission
 											};
 											id=9579;
 											type="AR_Objects_Editor_garageTerminal";
-											atlOffset=329.48889;
+											atlOffset=329.48901;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -52992,31 +53009,18 @@ class Mission
 												};
 												class Attribute1
 												{
-													property="AR_Objects_garageAreaSize";
-													expression="_this setVariable ['AR_Objects_garageAreaSize', _value,true];";
+													property="AR_Objects_garageSupplyEnabled";
+													expression="_this setVariable ['AR_Objects_garageSupplyEnabled', _value, true];";
 													class Value
 													{
 														class data
 														{
-															singleType="SCALAR";
-															value=15;
+															singleType="BOOL";
+															value=0;
 														};
 													};
 												};
-												class Attribute2
-												{
-													property="AR_Objects_garageSpawnObject";
-													expression="_this setVariable ['AR_Objects_garageSpawnObject', _value,true]";
-													class Value
-													{
-														class data
-														{
-															singleType="STRING";
-															value="MAIN_HANGAR_SPAWN";
-														};
-													};
-												};
-												nAttributes=3;
+												nAttributes=2;
 											};
 										};
 										class Item3
@@ -53024,8 +53028,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={457.93134,335.10007,627.34937};
-												angles[]={0,1.570797,0};
+												position[]={457.931,335.09998,627.349};
+												angles[]={0,1.5707964,0};
 											};
 											side="Empty";
 											flags=4;
@@ -53035,7 +53039,7 @@ class Mission
 											};
 											id=9580;
 											type="AR_Objects_Editor_garageTerminal";
-											atlOffset=0.039489746;
+											atlOffset=0.039398193;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -53053,27 +53057,27 @@ class Mission
 												};
 												class Attribute1
 												{
-													property="AR_Objects_garageAreaSize";
-													expression="_this setVariable ['AR_Objects_garageAreaSize', _value,true];";
+													property="AR_Objects_garageAerialEnabled";
+													expression="_this setVariable ['AR_Objects_garageAerialEnabled', _value, true];";
 													class Value
 													{
 														class data
 														{
-															singleType="SCALAR";
-															value=5;
+															singleType="BOOL";
+															value=0;
 														};
 													};
 												};
 												class Attribute2
 												{
-													property="AR_Objects_garageSpawnObject";
-													expression="_this setVariable ['AR_Objects_garageSpawnObject', _value,true]";
+													property="AR_Objects_garageTerrestrialEnabled";
+													expression="_this setVariable ['AR_Objects_garageTerrestrialEnabled', _value, true];";
 													class Value
 													{
 														class data
 														{
-															singleType="STRING";
-															value="supplySpawn1";
+															singleType="BOOL";
+															value=0;
 														};
 													};
 												};
@@ -53085,23 +53089,34 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={425.41522,334.68134,650.6355};
-												angles[]={0,1.5707977,0};
+												position[]={425.41501,334.68158,650.63501};
+												angles[]={0,1.5707964,0};
 											};
 											side="Empty";
 											flags=1;
 											class Attributes
 											{
-												init="[this,anchor] call BIS_fnc_attachToRelative;" \n "this setObjectScale 4;";
-												name="MAIN_HANGAR_SPAWN_1";
 												disableSimulation=1;
 											};
 											id=9581;
 											type="VR_Area_01_square_4x4_yellow_F";
-											atlOffset=0.017974854;
+											atlOffset=0.018218994;
 											class CustomAttributes
 											{
 												class Attribute0
+												{
+													property="PHEN_MP_ObjectScale";
+													expression="if ((_value != 1) && (local _this)) then { _this set3DENAttribute ['PHEN_MP_ObjectScale', _value]; [_this, _value] call PHEN_MP_ObjectScaler_fnc_ApplyScale; };";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=4;
+														};
+													};
+												};
+												class Attribute1
 												{
 													property="allowDamage";
 													expression="_this allowdamage _value;";
@@ -53114,7 +53129,7 @@ class Mission
 														};
 													};
 												};
-												nAttributes=1;
+												nAttributes=2;
 											};
 										};
 										class Item5
@@ -53122,8 +53137,7 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={415.75653,335.14017,650.61353};
-												angles[]={0,1.0728836e-06,0};
+												position[]={415.75699,335.13998,650.61401};
 											};
 											side="Empty";
 											class Attributes
@@ -53132,7 +53146,7 @@ class Mission
 											};
 											id=9582;
 											type="AR_Objects_Editor_garageTerminal";
-											atlOffset=329.59619;
+											atlOffset=329.59601;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -53150,31 +53164,18 @@ class Mission
 												};
 												class Attribute1
 												{
-													property="AR_Objects_garageAreaSize";
-													expression="_this setVariable ['AR_Objects_garageAreaSize', _value,true];";
+													property="AR_Objects_garageSupplyEnabled";
+													expression="_this setVariable ['AR_Objects_garageSupplyEnabled', _value, true];";
 													class Value
 													{
 														class data
 														{
-															singleType="SCALAR";
-															value=15;
+															singleType="BOOL";
+															value=0;
 														};
 													};
 												};
-												class Attribute2
-												{
-													property="AR_Objects_garageSpawnObject";
-													expression="_this setVariable ['AR_Objects_garageSpawnObject', _value,true]";
-													class Value
-													{
-														class data
-														{
-															singleType="STRING";
-															value="MAIN_HANGAR_SPAWN_1";
-														};
-													};
-												};
-												nAttributes=3;
+												nAttributes=2;
 											};
 										};
 										class Item6
@@ -53182,23 +53183,34 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={537.57001,334.56219,650.6355};
-												angles[]={0,4.7123933,0};
+												position[]={537.57001,334.56259,650.63501};
+												angles[]={0,4.712389,0};
 											};
 											side="Empty";
 											flags=1;
 											class Attributes
 											{
-												init="[this,anchor] call BIS_fnc_attachToRelative;" \n "this setObjectScale 4;";
-												name="MAIN_HANGAR_SPAWN_2";
 												disableSimulation=1;
 											};
 											id=9583;
 											type="VR_Area_01_square_4x4_yellow_F";
-											atlOffset=0.035430908;
+											atlOffset=0.035827637;
 											class CustomAttributes
 											{
 												class Attribute0
+												{
+													property="PHEN_MP_ObjectScale";
+													expression="if ((_value != 1) && (local _this)) then { _this set3DENAttribute ['PHEN_MP_ObjectScale', _value]; [_this, _value] call PHEN_MP_ObjectScaler_fnc_ApplyScale; };";
+													class Value
+													{
+														class data
+														{
+															singleType="SCALAR";
+															value=4;
+														};
+													};
+												};
+												class Attribute1
 												{
 													property="allowDamage";
 													expression="_this allowdamage _value;";
@@ -53211,7 +53223,7 @@ class Mission
 														};
 													};
 												};
-												nAttributes=1;
+												nAttributes=2;
 											};
 										};
 										class Item7
@@ -53219,8 +53231,8 @@ class Mission
 											dataType="Object";
 											class PositionInfo
 											{
-												position[]={547.22797,334.96317,650.65698};
-												angles[]={0,3.1415961,0};
+												position[]={547.22803,334.96298,650.65698};
+												angles[]={0,3.1415927,0};
 											};
 											side="Empty";
 											class Attributes
@@ -53229,7 +53241,7 @@ class Mission
 											};
 											id=9584;
 											type="AR_Objects_Editor_garageTerminal";
-											atlOffset=329.41919;
+											atlOffset=329.41901;
 											class CustomAttributes
 											{
 												class Attribute0
@@ -53247,27 +53259,27 @@ class Mission
 												};
 												class Attribute1
 												{
-													property="AR_Objects_garageAreaSize";
-													expression="_this setVariable ['AR_Objects_garageAreaSize', _value,true];";
+													property="AR_Objects_garageTerrestrialEnabled";
+													expression="_this setVariable ['AR_Objects_garageTerrestrialEnabled', _value, true];";
 													class Value
 													{
 														class data
 														{
-															singleType="SCALAR";
-															value=15;
+															singleType="BOOL";
+															value=0;
 														};
 													};
 												};
 												class Attribute2
 												{
-													property="AR_Objects_garageSpawnObject";
-													expression="_this setVariable ['AR_Objects_garageSpawnObject', _value,true]";
+													property="AR_Objects_garageSupplyEnabled";
+													expression="_this setVariable ['AR_Objects_garageSupplyEnabled', _value, true];";
 													class Value
 													{
 														class data
 														{
-															singleType="STRING";
-															value="MAIN_HANGAR_SPAWN_2";
+															singleType="BOOL";
+															value=0;
 														};
 													};
 												};
@@ -53284,7 +53296,7 @@ class Mission
 						};
 					};
 					id=9100;
-					atlOffset=7.6286621;
+					atlOffset=7.6286316;
 				};
 				class Item6
 				{
@@ -56897,7 +56909,7 @@ class Mission
 						};
 					};
 					id=9614;
-					atlOffset=162.27246;
+					atlOffset=0.40899658;
 				};
 				class Item8
 				{
@@ -58251,7 +58263,7 @@ class Mission
 						};
 					};
 					id=9709;
-					atlOffset=-5;
+					atlOffset=328.3403;
 				};
 				class Item10
 				{
@@ -65925,18 +65937,123 @@ class Mission
 				};
 			};
 			id=9775;
-			atlOffset=286.13824;
+			atlOffset=3.6929016;
+		};
+		class Item1
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={388,335,608.875};
+				angles[]={0,4.712389,0};
+			};
+			areaSize[]={8.0066528,10,8.0066528};
+			areaIsRectangle=1;
+			flags=1;
+			id=9779;
+			type="AR_Dialogs_ModuleGarageSpawn";
+			atlOffset=0.56918335;
+		};
+		class Item2
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={418.75,334.625,603.625};
+				angles[]={0,3.1415935,-0};
+			};
+			areaSize[]={1,1,1};
+			areaIsRectangle=1;
+			flags=1;
+			id=9780;
+			type="AR_Dialogs_ModuleGarageSpawn";
+			atlOffset=0.19418335;
+		};
+		class Item3
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={388,335,583.875};
+				angles[]={0,4.7123895,-0};
+			};
+			areaSize[]={8.0066528,10,8.0066528};
+			areaIsRectangle=1;
+			flags=1;
+			id=9781;
+			type="AR_Dialogs_ModuleGarageSpawn";
+			atlOffset=0.56918335;
+		};
+		class Item4
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={481.375,334.82593,651.84351};
+				angles[]={0,1.3113417e-07,-0};
+			};
+			areaSize[]={8.0066528,10,8.0066528};
+			areaIsRectangle=1;
+			flags=1;
+			id=9782;
+			type="AR_Dialogs_ModuleGarageSpawn";
+			atlOffset=0.30932617;
+		};
+		class Item5
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={537.43939,334.72369,650.64282};
+				angles[]={0,4.7123895,-0};
+			};
+			areaSize[]={8.0066528,10,8.0066528};
+			areaIsRectangle=1;
+			flags=1;
+			id=9783;
+			type="AR_Dialogs_ModuleGarageSpawn";
+			atlOffset=0.19750977;
+		};
+		class Item6
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={425.44986,335.07751,650.5589};
+				angles[]={0,1.5707966,-0};
+			};
+			areaSize[]={8.0066528,10,8.0066528};
+			areaIsRectangle=1;
+			flags=1;
+			id=9784;
+			type="AR_Dialogs_ModuleGarageSpawn";
+			atlOffset=0.41473389;
+		};
+		class Item7
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={456.35733,334.62741,627.89984};
+				angles[]={0,1.3113417e-07,-0};
+			};
+			areaSize[]={1,1,1};
+			areaIsRectangle=1;
+			flags=1;
+			id=9785;
+			type="AR_Dialogs_ModuleGarageSpawn";
+			atlOffset=0.11080933;
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=2;
+			nextID=9;
 		};
 		class Links
 		{
-			items=2;
+			items=9;
 			class Item0
 			{
 				linkID=0;
@@ -65952,6 +66069,76 @@ class Mission
 				linkID=1;
 				item0=8207;
 				item1=9706;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item2
+			{
+				linkID=2;
+				item0=9234;
+				item1=9779;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item3
+			{
+				linkID=3;
+				item0=9232;
+				item1=9780;
+				class CustomData
+				{
+					type="TriggerOwner";
+				};
+			};
+			class Item4
+			{
+				linkID=4;
+				item0=9781;
+				item1=9233;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item5
+			{
+				linkID=5;
+				item0=9579;
+				item1=9782;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item6
+			{
+				linkID=6;
+				item0=9584;
+				item1=9783;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item7
+			{
+				linkID=7;
+				item0=9784;
+				item1=9582;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item8
+			{
+				linkID=8;
+				item0=9785;
+				item1=9580;
 				class CustomData
 				{
 					type="Sync";
