@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://adeptusrepublica.fr">
+  <a href="https://adeptus-team.eu">
     <img src="https://arma3.com/assets/img/wallpapers/artofwardlc/2/thumb.jpg" alt="logoBanner" width=512px/>
   </a>
 </div>
@@ -61,7 +61,7 @@ Pour garantir la qualité et la cohérence du code, veuillez suivre les [coding 
 ## 🤝 Contributeurs
 
 <div align="center">
-  <a href="https://github.com/Admors/adeptusAuxiliaire/graphs/contributors">
+  <a href="https://github.com/Adeptus-TEAM/a3-aux-adeptus/graphs/contributors">
     <img src="https://contrib.rocks/image?repo=Adeptus-TEAM/a3-aux-adeptus"/>
   </a>
   <br/><br/>
