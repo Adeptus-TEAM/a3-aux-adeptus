@@ -25,6 +25,12 @@ params [
 
 TRACE_1("fnc_updatePlayerData",_this);
 
+// Never write an empty profile (e.g. a player who disconnects from the lobby has no unit)
+if (isNull _player || {_uid isEqualTo ""}) exitWith {
+	WARNING_1("[INIDBI] Skipping update, no unit or UID for %1",_uid);
+	false
+};
+
 private _inidbi = [_uid] call FUNC(createInstance); // Create a new INIDBI instance for the player
 
 if (isNil "_inidbi") exitWith {
@@ -35,9 +41,13 @@ if (isNil "_inidbi") exitWith {
 // Get player data
 private _playerName = name _player;
 private _playerLoadout = getUnitLoadout _player;
-private _isMedic = (_player getVariable ["ace_medical_medicclass", 0]) > 0;
-private _isEngineer = (_player getVariable ["ace_isEngineer", 0]) > 0;
-private _isEOD = _player getVariable ["ace_isExplosiveSpecialist", false];
+// ACE accepts either a number or a boolean for these variables
+private _fnc_toBool = {
+	if (_this isEqualType true) then {_this} else {_this > 0}
+};
+private _isMedic = (_player getVariable ["ace_medical_medicclass", 0]) call _fnc_toBool;
+private _isEngineer = (_player getVariable ["ace_isEngineer", 0]) call _fnc_toBool;
+private _isEOD = (_player getVariable ["ace_isExplosiveSpecialist", false]) call _fnc_toBool;
 
 // Write player data to the INIDBI instance
 ["Write", ["GameData", "Name", _playerName]] call _inidbi;

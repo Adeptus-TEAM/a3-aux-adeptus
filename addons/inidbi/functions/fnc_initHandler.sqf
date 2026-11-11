@@ -19,20 +19,30 @@ params [];
 TRACE_1("fnc_initHandler",_this);
 
 if (isDedicated) then {
+	// UIDs whose profile has been loaded (or created) this session.
+	// Only these are saved, so a mission default loadout never overwrites a saved one
+	// when a player disconnects (or the periodic save runs) before their profile is applied.
+	GVAR(loadedUIDs) = createHashMap;
+
 	addMissionEventHandler ["HandleDisconnect", {
 		params ["_unit", "_id", "_uid", "_name"];
-		[_unit,_uid] call FUNC(updatePlayerData);
-		false; 
+		if (_uid in GVAR(loadedUIDs)) then {
+			[_unit,_uid] call FUNC(updatePlayerData);
+			GVAR(loadedUIDs) deleteAt _uid;
+		};
+		false;
 	}];
-	
+
 	[
-		{ 
+		{
 			[
 				{
 					{
 						private _unit = _x;
 						private _uid = getPlayerUID _unit; // Get the player's unique identifier (UID)
-						[_unit,_uid] call FUNC(updatePlayerData);
+						if (_uid in GVAR(loadedUIDs)) then {
+							[_unit,_uid] call FUNC(updatePlayerData);
+						};
 					} forEach allPlayers; // Ensure all players have their data updated
 				},
 				600, // every 600 seconds (10 minutes)

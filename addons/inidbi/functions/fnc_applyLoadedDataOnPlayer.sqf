@@ -37,7 +37,7 @@ TRACE_1("fnc_applyLoadedDataOnPlayer",_this);
 
 				// Apply loadout to the player
 				private _playerLoadout = _data getOrDefault ["Loadout", []];
-				if (isNil "_playerLoadout") then {
+				if (!(_playerLoadout isEqualType []) || {_playerLoadout isEqualTo []}) then {
 					ERROR_1("[INIDBI] No loadout data found for %1",_player);
 				} else {
 					TRACE_1("[INIDBI] Applying loadout data for %1",_player);
@@ -54,6 +54,9 @@ TRACE_1("fnc_applyLoadedDataOnPlayer",_this);
 				[_player, "eod", _isEOD] call EFUNC(missions,setUnitTrait);
 				[_player, "engineer", _isEngineer] call EFUNC(missions,setUnitTrait);
 				INFO_4("[INIDBI] Traits data has been applied for %1; isMedic: %2, isEOD: %3, isEngineer: %4",name _player,_isMedic,_isEOD,_isEngineer);
+
+				// From now on the player's data can be saved (see fnc_initHandler)
+				GVAR(loadedUIDs) set [getPlayerUID _player, true];
 			},
 			[_player, _data],
 			5
