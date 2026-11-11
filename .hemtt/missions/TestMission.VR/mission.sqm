@@ -12,18 +12,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=9786;
+		nextID=9787;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1538;
+		nextID=1577;
 	};
 	class Camera
 	{
-		pos[]={457.69571,346.06186,638.72278};
-		dir[]={-0.079117283,-0.69920444,-0.71057612};
-		up[]={-0.077374831,0.7149179,-0.69491357};
-		aside[]={-0.99388653,9.0282629e-07,0.11066318};
+		pos[]={367.17563,346.96088,613.1228};
+		dir[]={0.81139165,-0.36850139,-0.45372427};
+		up[]={0.32163236,0.92962581,-0.17985402};
+		aside[]={-0.48806912,-2.5946065e-07,-0.87281311};
 	};
 };
 binarizationWanted=0;
@@ -65960,7 +65960,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={418.75,334.625,603.625};
-				angles[]={0,3.1415935,-0};
+				angles[]={0,3.1415935,0};
 			};
 			areaSize[]={1,1,1};
 			areaIsRectangle=1;
@@ -65975,7 +65975,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={388,335,583.875};
-				angles[]={0,4.7123895,-0};
+				angles[]={0,4.7123895,0};
 			};
 			areaSize[]={8.0066528,10,8.0066528};
 			areaIsRectangle=1;
@@ -65990,7 +65990,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={481.375,334.82593,651.84351};
-				angles[]={0,1.3113417e-07,-0};
+				angles[]={0,1.3113417e-07,0};
 			};
 			areaSize[]={8.0066528,10,8.0066528};
 			areaIsRectangle=1;
@@ -66005,7 +66005,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={537.43939,334.72369,650.64282};
-				angles[]={0,4.7123895,-0};
+				angles[]={0,4.7123895,0};
 			};
 			areaSize[]={8.0066528,10,8.0066528};
 			areaIsRectangle=1;
@@ -66020,7 +66020,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={425.44986,335.07751,650.5589};
-				angles[]={0,1.5707966,-0};
+				angles[]={0,1.5707966,0};
 			};
 			areaSize[]={8.0066528,10,8.0066528};
 			areaIsRectangle=1;
@@ -66035,7 +66035,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={456.35733,334.62741,627.89984};
-				angles[]={0,1.3113417e-07,-0};
+				angles[]={0,1.3113417e-07,0};
 			};
 			areaSize[]={1,1,1};
 			areaIsRectangle=1;
@@ -66087,18 +66087,18 @@ class Mission
 			class Item3
 			{
 				linkID=3;
-				item0=9232;
-				item1=9780;
+				item0=9781;
+				item1=9233;
 				class CustomData
 				{
-					type="TriggerOwner";
+					type="Sync";
 				};
 			};
 			class Item4
 			{
 				linkID=4;
-				item0=9781;
-				item1=9233;
+				item0=9579;
+				item1=9782;
 				class CustomData
 				{
 					type="Sync";
@@ -66107,8 +66107,8 @@ class Mission
 			class Item5
 			{
 				linkID=5;
-				item0=9579;
-				item1=9782;
+				item0=9584;
+				item1=9783;
 				class CustomData
 				{
 					type="Sync";
@@ -66117,8 +66117,8 @@ class Mission
 			class Item6
 			{
 				linkID=6;
-				item0=9584;
-				item1=9783;
+				item0=9784;
+				item1=9582;
 				class CustomData
 				{
 					type="Sync";
@@ -66127,8 +66127,8 @@ class Mission
 			class Item7
 			{
 				linkID=7;
-				item0=9784;
-				item1=9582;
+				item0=9785;
+				item1=9580;
 				class CustomData
 				{
 					type="Sync";
@@ -66137,8 +66137,8 @@ class Mission
 			class Item8
 			{
 				linkID=8;
-				item0=9785;
-				item1=9580;
+				item0=9232;
+				item1=9780;
 				class CustomData
 				{
 					type="Sync";
