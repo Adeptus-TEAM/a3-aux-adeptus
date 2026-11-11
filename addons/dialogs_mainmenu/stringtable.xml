@@ -1,31 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Dialogs (Main Menu)">
-    <Package name="Functions (Main Menu)">
-        <Key ID="str_ar_dialogs_mainmenu_connect">
-            <English>Connect</English>
-            <French>Se connecter</French>
+    <Package name="Main Menu">
+        <Key ID="str_ar_dialogs_mainmenu_deploy">
+            <English>DEPLOYMENT</English>
+            <French>DÉPLOIEMENT</French>
         </Key>
-        <Key ID="str_ar_dialogs_mainmenu_name1">
-            <English>Training Server</English>
-            <French>Serveur de formation</French>
+        <Key ID="str_ar_dialogs_mainmenu_deploySub">
+            <English>Choose your server</English>
+            <French>Choisissez votre serveur</French>
         </Key>
-        <Key ID="str_ar_dialogs_mainmenu_name2">
-            <English>Main Server</English>
-            <French>Serveur Principal</French>
+        <Key ID="str_ar_dialogs_mainmenu_join">
+            <English>JOIN</English>
+            <French>REJOINDRE</French>
         </Key>
-        <Key ID="str_ar_dialogs_mainmenu_name3">
-            <English>OPEX Server</English>
-            <French>Serveur OPEX</French>
+        <Key ID="str_ar_dialogs_mainmenu_linkDiscord">
+            <English>DISCORD</English>
+            <French>DISCORD</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_linkSite">
+            <English>WEBSITE</English>
+            <French>SITE</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_linkTeamspeak">
+            <English>TEAMSPEAK</English>
+            <French>TEAMSPEAK</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_linkWiki">
+            <English>WIKI</English>
+            <French>WIKI</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_navEditor">
+            <English>EDITOR</English>
+            <French>ÉDITEUR</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_navMods">
+            <English>MODS</English>
+            <French>MODS</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_navOptions">
+            <English>OPTIONS</English>
+            <French>OPTIONS</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_navQuit">
+            <English>QUIT</English>
+            <French>QUITTER</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_newsFallback">
+            <English>Announcements and the operations schedule are on the website and the Discord.</English>
+            <French>Annonces et planning des opérations sur le site et le Discord.</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_newsLabel">
+            <English>NEWS</English>
+            <French>ACTUALITÉS</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_optionsAudio">
+            <English>AUDIO</English>
+            <French>AUDIO</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_optionsControls">
+            <English>CONTROLS</English>
+            <French>CONTRÔLES</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_optionsGame">
+            <English>GAME</English>
+            <French>JEU</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_optionsVideo">
+            <English>VIDEO</English>
+            <French>VIDÉO</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_profileHint">
+            <English>PROFILE</English>
+            <French>PROFIL</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_tagline1">
+            <English>STEP OUT OF YOUR</English>
+            <French>SORTEZ DE VOTRE CUVE DE</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_tagline2">
+            <English>TANK AND GET READY TO DEPLOY</English>
+            <French>ET PRÉPAREZ-VOUS À VOUS DÉPLOYER</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_taglineBacta">
+            <English>BACTA</English>
+            <French>BACTA</French>
         </Key>
     </Package>
-    <Package name="Functions (passwordCheck)">
-        <Key ID="str_ar_dialogs_mainmenu_header">
-            <English>Password Check: %1</English>
-            <French>Vérification du mot de passe: %1</French>
+    <Package name="Password">
+        <Key ID="str_ar_dialogs_mainmenu_passwordCancel">
+            <English>CANCEL</English>
+            <French>ANNULER</French>
         </Key>
-        <Key ID="str_ar_dialogs_mainmenu_info">
-            <English>Please enter your password to continue:</English>
-            <French>Veuillez entrer votre mot de passe pour continuer:</French>
+        <Key ID="str_ar_dialogs_mainmenu_passwordConnect">
+            <English>CONNECT</English>
+            <French>SE CONNECTER</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_passwordLabel">
+            <English>Server password</English>
+            <French>Mot de passe du serveur</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_passwordRemember">
+            <English>Remember the password</English>
+            <French>Se souvenir du mot de passe</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_passwordTag">
+            <English>SERVER CONNECTION</English>
+            <French>CONNEXION AU SERVEUR</French>
+        </Key>
+    </Package>
+    <Package name="Servers">
+        <Key ID="str_ar_dialogs_mainmenu_descMain">
+            <English>The unit's regular missions and operations.</English>
+            <French>Missions et opérations régulières de l'unité.</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_descOpex">
+            <English>External operations and campaigns.</English>
+            <French>Opérations extérieures et campagnes.</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_descTraining">
+            <English>Training, qualifications and mission tests.</English>
+            <French>Entraînements, qualifications et tests de mission.</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_nameMain">
+            <English>MAIN SERVER</English>
+            <French>SERVEUR PRINCIPAL</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_nameOpex">
+            <English>OPEX SERVER</English>
+            <French>SERVEUR OPEX</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_nameTraining">
+            <English>TRAINING SERVER</English>
+            <French>SERVEUR DE FORMATION</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_tagMain">
+            <English>MAIN</English>
+            <French>PRINCIPAL</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_tagOpex">
+            <English>OPEX</English>
+            <French>OPEX</French>
+        </Key>
+        <Key ID="str_ar_dialogs_mainmenu_tagTraining">
+            <English>TRAINING</English>
+            <French>FORMATION</French>
         </Key>
     </Package>
 </Project>

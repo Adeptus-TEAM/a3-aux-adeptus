@@ -1,71 +1,138 @@
+// Server password dialog, opened from a server row of the main menu (fnc_selectServer)
 class RscCheckPassword {
-    idd = 6100;
+    idd = IDD_PASSWORD;
     movingEnable = 0;
     enableSimulation = 1;
-    onLoad = QUOTE(_this execvm '\x\ar\addons\dialogs_mainmenu\scripts\onLoadCheckPassword.sqf');
-    onUnload = QUOTE(_this execvm '\x\ar\addons\dialogs_mainmenu\scripts\onUnloadCheckPassword.sqf');
+    onLoad = "_this call (uiNamespace getVariable 'AR_Dialogs_MainMenu_fnc_onLoadPassword')";
+    onUnload = "_this call (uiNamespace getVariable 'AR_Dialogs_MainMenu_fnc_onUnloadPassword')";
+
     class ControlsBackground {
-        class fullscreenBackground : RscText {
-            x = SAFEZONE_X;
-            y = SAFEZONE_Y;
-            w = SAFEZONE_W;
-            h = SAFEZONE_H;
-            colorBackground[] = CA_UI_background;
+        class overlay : RscText {
+            x = "safezoneX";
+            y = "safezoneY";
+            w = "safezoneW";
+            h = "safezoneH";
+            colorBackground[] = CO_OVERLAY;
         };
-        class background : RscText {
-            x = X_COORD(0.33489584);
-            y = Y_COORD(0.40370371);
-            w = W_COORD(0.33020834);
-            h = H_COORD(0.16481482);
-            colorBackground[] = GUI_BCG_MENU;
+        class panel : RscText {
+            x = MX(530);
+            y = MY(300);
+            w = MW(540);
+            h = MH(300);
+            colorBackground[] = CO_PANEL;
         };
-        class frame : background {
+        class panelFrame : panel {
             style = ST_FRAME;
-            colorText[] = GUI_BCG_COLOR;
+            colorBackground[] = CO_NONE;
+            colorText[] = CO_BORDER;
         };
-        class info : RscText {
-            x = X_COORD(0.3453125);
-            y = Y_COORD(0.44537038);
-            w = W_COORD(0.309375);
-            h = GUI_STD_HEIGHT;
-            text = SUBCSTRING(info);
-            colorBackground[] = CA_UI_transparent;
-            colorText[] = GUI_TEXT_COLOR;
+        class topBar : RscText {
+            x = MX(530);
+            y = MY(300);
+            w = MW(540);
+            h = MH(3);
+            colorBackground[] = CO_YELLOW;
+        };
+        class tag : RscText {
+            x = MX(558);
+            y = MY(322);
+            w = MW(480);
+            h = MH(22);
+            font = FONT_BOLD;
+            sizeEx = MH(13);
+            shadow = 0;
+            colorText[] = CO_YELLOW;
+            text = SUBCSTRING(passwordTag);
+        };
+        class label : tag {
+            y = MY(396);
+            font = FONT_REG;
+            sizeEx = MH(16);
+            colorText[] = CO_MUTED;
+            text = SUBCSTRING(passwordLabel);
+        };
+        class rememberLabel : label {
+            x = MX(588);
+            y = MY(480);
+            w = MW(300);
+            h = MH(26);
+            text = SUBCSTRING(passwordRemember);
+        };
+        class cancelImage : RscPicture {
+            idc = IDC_PWD_CANCEL_IMG;
+            x = MX(722);
+            y = MY(526);
+            w = MW(150);
+            h = MH(48);
+            text = TEX(btn_fill_ca.paa);
+            colorText[] = CO_BTN2;
+        };
+        class cancelOutline : cancelImage {
+            idc = -1;
+            text = TEX(btn_outline_ca.paa);
+            colorText[] = CO_BTN2_BORDER;
+        };
+        class confirmImage : cancelImage {
+            idc = IDC_PWD_CONFIRM_IMG;
+            x = MX(890);
+            colorText[] = CO_BTN;
         };
     };
+
     class Controls {
-        class header : RscText {
-            idc = 1000;
-            x = X_COORD(0.33489584);
-            y = Y_COORD(0.40370371);
-            w = W_COORD(0.33020834);
-            h = GUI_STD_HEIGHT;
-            text = SUBCSTRING(header);
-            colorBackground[] = GUI_BCG_COLOR;
-            colorText[] = GUI_TITLETEXT_COLOR;
+        class title : RscText {
+            idc = IDC_PWD_TITLE;
+            x = MX(558);
+            y = MY(344);
+            w = MW(484);
+            h = MH(40);
+            font = FONT_BOLD;
+            sizeEx = MH(30);
+            shadow = 0;
+            colorText[] = CO_WHITE;
+            text = "";
         };
         class passwordInput : RscEdit {
-            idc = 1234;
-            x = X_COORD(0.3453125);
-            y = Y_COORD(0.48611112);
-            w = W_COORD(0.309375);
-            h = GUI_STD_HEIGHT;
+            idc = IDC_PWD_INPUT;
+            x = MX(558);
+            y = MY(424);
+            w = MW(484);
+            h = MH(44);
+            font = FONT_REG;
+            sizeEx = MH(18);
+            shadow = 0;
+            colorBackground[] = CO_BG;
+            colorText[] = CO_WHITE;
+            colorSelection[] = CO_YELLOW;
             text = "";
-            onEditChanged = QUOTE(profileNamespace setVariable [ARR_2('ar_dialogs_PasswordSaved',ARG_1(_this,1))]);
         };
-        class btnCancel : RscButtonMenuCancel {
-            x = X_COORD(0.43802084);
-            y = Y_COORD(0.52777778);
-            w = GUI_STD_WIDTH;
-            h = GUI_STD_HEIGHT;
-            onButtonClick = QUOTE((findDisplay 6100) closeDisplay 2;);
+        class rememberBox : RscCheckBox {
+            idc = IDC_PWD_REMEMBER;
+            x = MX(558);
+            y = MY(482);
+            w = MW(22);
+            h = MH(22);
         };
-        class btnConfirm : RscButtonMenuOK {
-            x = X_COORD(0.5515625);
-            y = Y_COORD(0.52777778);
-            w = GUI_STD_WIDTH;
-            h = GUI_STD_HEIGHT;
-            onButtonClick = QUOTE((findDisplay 6100) closeDisplay 1;);
+        class btnCancel : RscButton {
+            idc = IDC_PWD_CANCEL;
+            x = MX(722);
+            y = MY(526);
+            w = MW(150);
+            h = MH(48);
+            style = ST_CENTER;
+            font = FONT_BOLD;
+            sizeEx = MH(16);
+            text = SUBCSTRING(passwordCancel);
+            BTN_FLAT(CO_TEXT);
+            onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 2";
+        };
+        class btnConfirm : btnCancel {
+            idc = IDC_PWD_CONFIRM;
+            x = MX(890);
+            default = 1; // Enter in the password field connects
+            text = SUBCSTRING(passwordConnect);
+            colorText[] = CO_WHITE;
+            onButtonClick = "(ctrlParent (_this select 0)) closeDisplay 1";
         };
     };
 };

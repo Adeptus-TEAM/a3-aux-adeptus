@@ -1,0 +1,12 @@
+PREP(cacheLoadout);
+PREP(exportWorlds);
+PREP(initScene);
+PREP(introTick);
+PREP(onLoad);
+PREP(onLoadPassword);
+PREP(onUnloadPassword);
+PREP(openVanilla);
+PREP(playIntro);
+PREP(selectServer);
+PREP(setHover);
+PREP(spawnSoldier);

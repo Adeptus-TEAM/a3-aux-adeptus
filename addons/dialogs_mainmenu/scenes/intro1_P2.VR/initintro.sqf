@@ -19,3 +19,6 @@ addMusicEventHandler ["MusicStop", {
 	0 fadeMusic 1;
 	playMusic (selectRandom _musiclist);
 }];
+
+// Player soldier, fade-in of the scene and cleanup of other mods UI (see fnc_initScene)
+["AR_V1_P2_Unit"] call (uiNamespace getVariable "AR_Dialogs_MainMenu_fnc_initScene");
