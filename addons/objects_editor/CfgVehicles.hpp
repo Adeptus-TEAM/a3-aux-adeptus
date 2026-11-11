@@ -22,7 +22,7 @@ class CfgVehicles {
         };
         class EventHandlers {
             class SUBADDON {
-                init = QUOTE(_this spawn SUBFUNC(addLimitedArsenal); _this spawn SUBFUNC(addLimitedAceArsenal));
+                init = QUOTE(_this call SUBFUNC(addLimitedArsenal); _this call SUBFUNC(addLimitedAceArsenal));
             };
         };
     };
