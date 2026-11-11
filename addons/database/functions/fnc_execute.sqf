@@ -11,7 +11,7 @@
  * <BOOL> - true if extDB3 accepted the query
  *
  * Example:
- * ["savePlayer", [_uid, _name, _loadout, 1, 0, 0]] call ar_database_fnc_execute
+ * ["savePlayer", ["Main", _uid, _name, _loadout, 1, 0, 0]] call ar_database_fnc_execute
  *
  * Public: No
  */

@@ -15,5 +15,8 @@
 
 // Sauvegarde : délai avant écriture après un changement (laisse le temps à l'équipement de se synchroniser),
 // et sauvegarde périodique de secours
+// Base utilisée si description.ext ne définit pas db_mode
+#define DEFAULT_DB_MODE "Main"
+
 #define SAVE_DELAY 3
 #define SAVE_INTERVAL 300

@@ -24,19 +24,39 @@ function db(array $config): PDO
 }
 
 /**
- * Récupère le profil d'un joueur dans la table players (écrite par le serveur Arma via extDB3).
- * Retourne null si le joueur n'a pas encore de profil.
+ * Bases (db_mode) dans lesquelles le joueur a un profil : "Main" en premier, puis les campagnes.
+ *
+ * @return string[]
  */
-function fetchPlayer(array $config, string $uid): ?array
+function fetchPlayerModes(array $config, string $uid): array
+{
+    if (!IniDbi::isValidUid($uid)) {
+        throw new InvalidArgumentException('SteamID64 invalide');
+    }
+    $stmt = db($config)->prepare(
+        "SELECT db_mode FROM player_data WHERE steam_id = ? ORDER BY db_mode = 'Main' DESC, updated_at DESC"
+    );
+    $stmt->execute([$uid]);
+    return array_map('strval', $stmt->fetchAll(PDO::FETCH_COLUMN));
+}
+
+/**
+ * Récupère le profil d'un joueur (écrit par le serveur Arma via extDB3) :
+ * résumé dans players, équipement et spécialités de la base $mode dans player_data.
+ * Retourne null si le joueur n'a pas de données dans cette base.
+ */
+function fetchPlayer(array $config, string $uid, string $mode = 'Main'): ?array
 {
     if (!IniDbi::isValidUid($uid)) {
         throw new InvalidArgumentException('SteamID64 invalide');
     }
 
     $stmt = db($config)->prepare(
-        'SELECT steam_id, name, loadout, is_medic, is_engineer, is_eod, updated_at FROM players WHERE steam_id = ?'
+        'SELECT p.steam_id, p.name, d.loadout, d.is_medic, d.is_engineer, d.is_eod, d.updated_at
+         FROM players p JOIN player_data d ON d.steam_id = p.steam_id
+         WHERE p.steam_id = ? AND d.db_mode = ?'
     );
-    $stmt->execute([$uid]);
+    $stmt->execute([$uid, $mode]);
     $row = $stmt->fetch();
     if (!$row) {
         return null;
@@ -45,6 +65,7 @@ function fetchPlayer(array $config, string $uid): ?array
     $loadout = IniDbi::parseValue((string) ($row['loadout'] ?? '[]'));
 
     return [
+        'mode'       => $mode,
         'steamId'    => (string) $row['steam_id'],
         'name'       => (string) $row['name'],
         'isMedic'    => (bool) $row['is_medic'],

@@ -22,6 +22,10 @@ onLoadMission = %MISSION_DESCRIPTION%;
 %RESPAWN_BUTTON_TIMER% = %RESPAWN_BUTTON_TIMER_VALUE%;
 %CLONE_PHASE% = %CLONE_PHASE_VALUE%;
 
+// Player database: "Main" shares loadouts with the regular missions.
+// Use your campaign name (letters, digits, _ or -) to keep a separate loadout for that campaign.
+db_mode = "Main";
+
 // Vehicle and supply definitions
 %TERRESTRIAL_VEHICLES%[] = {
 	"AR_Vehicles_Hunter_Base",

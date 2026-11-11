@@ -28,17 +28,20 @@ if (_uid isEqualTo "") exitWith {
 	WARNING_1("[DATABASE] No UID for %1",_player);
 };
 
-["getPlayer", [_uid], {
+["getPlayer", [GVAR(dbMode), _uid], {
 	params ["_rows", "_args"];
 	_args params ["_player", "_uid"];
 
-	if (_rows isEqualTo []) then {
-		// First connection: create the profile from the current unit
-		INFO_1("[DATABASE] Creating new player profile for %1",_uid);
+	// No row: unknown player. hasData = 0: known player, but nothing yet in this db_mode (new campaign).
+	// In both cases the current unit (mission loadout) becomes the profile for this db_mode.
+	private _hasData = _rows isNotEqualTo [] && {((_rows select 0) param [5, 0]) > 0};
+
+	if (_hasData) then {
+		INFO_2("[DATABASE] Loading profile of %1 (%2)",_uid,GVAR(dbMode));
+		[_player, _rows select 0] call FUNC(applyPlayerData);
+	} else {
+		INFO_2("[DATABASE] Creating profile of %1 (%2)",_uid,GVAR(dbMode));
 		GVAR(loadedUIDs) set [_uid, true];
 		[_player, _uid] call FUNC(savePlayer);
-	} else {
-		INFO_1("[DATABASE] Loading existing player profile for %1",_uid);
-		[_player, _rows select 0] call FUNC(applyPlayerData);
 	};
 }, [_player, _uid]] call FUNC(query);

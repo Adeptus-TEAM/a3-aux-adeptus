@@ -6,6 +6,7 @@ Page PHP qui affiche à chaque joueur **son propre** profil, tel que le serveur 
 - Lecture seule, avec le compte MySQL `site` qui n'a que le droit `SELECT`.
 - Un joueur ne peut voir que le profil lié à son compte Steam. Le SteamID vient de la session, jamais de l'URL.
 - Les données sont à jour quelques secondes après chaque changement en jeu.
+- Si le joueur a aussi un profil de campagne (`db_mode`), un onglet par campagne apparaît à côté de « Principal ».
 
 ## Contenu
 
@@ -35,7 +36,8 @@ Prérequis : PHP 8.1 ou plus récent avec `pdo_mysql` (et cURL recommandé), en 
 ```php
 require '/chemin/vers/profil-web/src/bootstrap.php';
 startSession();
-$player = fetchPlayer($config, $_SESSION['steam_id']); // tableau, ou null si pas de profil
+$modes  = fetchPlayerModes($config, $_SESSION['steam_id']);          // ['Main', 'Operation-Umbara', ...]
+$player = fetchPlayer($config, $_SESSION['steam_id'], 'Main');      // tableau, ou null si pas de profil
 ```
 
 Si le site a déjà une connexion Steam, mettez le SteamID64 du joueur dans `$_SESSION['steam_id']` au lieu de passer par `login.php`.

@@ -10,6 +10,18 @@ ADDON = true;
 
 if (!isDedicated) exitWith {};
 
+// Base de la mission (description.ext : db_mode = "MaCampagne";). "Main" par défaut.
+// Un nom invalide désactive la sauvegarde plutôt que d'écrire par erreur dans "Main".
+GVAR(dbMode) = getMissionConfigValue ["db_mode", DEFAULT_DB_MODE];
+if !(GVAR(dbMode) isEqualType "" && {GVAR(dbMode) regexMatch "^[A-Za-z0-9_-]{1,32}$"}) exitWith {
+	ERROR_1("[DATABASE] Invalid db_mode in description.ext: %1 (letters, digits, _ or -, 32 max). Player data will not be saved.",GVAR(dbMode));
+};
+// "main", "MAIN"... -> "Main", pour que le site retrouve toujours la base principale sous ce nom
+if (GVAR(dbMode) == DEFAULT_DB_MODE) then {
+	GVAR(dbMode) = DEFAULT_DB_MODE;
+};
+INFO_1("[DATABASE] db_mode: %1",GVAR(dbMode));
+
 // Connexion à MySQL via extDB3
 if !([] call FUNC(init)) exitWith {};
 

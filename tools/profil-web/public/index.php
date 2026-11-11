@@ -8,12 +8,19 @@ header('Cache-Control: no-store');
 $uid = $_SESSION['steam_id'] ?? null;
 $player = null;
 $error = null;
+$modes = [];
+$mode = 'Main';
 
 if ($uid !== null) {
     try {
-        $player = fetchPlayer($config, $uid); // Toujours le SteamID de la session, jamais un paramètre d'URL
+        // Toujours le SteamID de la session, jamais un paramètre d'URL.
+        // Seule la base (Main ou une campagne) se choisit dans l'URL, parmi celles du joueur.
+        $modes = fetchPlayerModes($config, $uid);
+        $requested = (string) ($_GET['mode'] ?? '');
+        $mode = in_array($requested, $modes, true) ? $requested : ($modes[0] ?? 'Main');
+        $player = $modes ? fetchPlayer($config, $uid, $mode) : null;
     } catch (Throwable $ex) {
-        error_log('[inidbi-web] ' . $ex->getMessage());
+        error_log('[profil-web] ' . $ex->getMessage());
         $error = 'Impossible de lire les données du serveur pour le moment.';
     }
 }
@@ -89,6 +96,15 @@ function renderContainer(string $label, ?array $c): void
         </section>
 
     <?php else: ?>
+        <?php if (count($modes) > 1): ?>
+            <nav class="tabs" aria-label="Base de données">
+                <?php foreach ($modes as $m): ?>
+                    <a href="?mode=<?= e(rawurlencode($m)) ?>" class="<?= $m === $mode ? 'active' : '' ?>"
+                       <?= $m === $mode ? 'aria-current="page"' : '' ?>><?= e($m === 'Main' ? 'Principal' : $m) ?></a>
+                <?php endforeach; ?>
+            </nav>
+        <?php endif; ?>
+
         <section class="card">
             <h2><?= e($player['name'] ?: 'Soldat inconnu') ?></h2>
             <p class="muted">SteamID64 <code><?= e($player['steamId']) ?></code>

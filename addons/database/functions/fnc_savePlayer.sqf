@@ -37,9 +37,11 @@ private _fnc_toFlag = {
 // ":" is extDB3's separator and '"' would break the SQF string returned by getPlayer
 private _name = ((name _player) regexReplace ["[:""]", ""]) select [0, 64];
 
+// Updates the player summary (players) and this db_mode's data (player_data) in one call
 [
 	"savePlayer",
 	[
+		GVAR(dbMode),
 		_uid,
 		_name,
 		str getUnitLoadout _player,

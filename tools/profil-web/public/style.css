@@ -36,6 +36,13 @@ code { font-family: ui-monospace, Consolas, monospace; font-size: .9em; word-bre
 }
 .button.secondary { background: transparent; border: 1px solid var(--border); color: var(--text); padding: 6px 12px; }
 
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.tabs a {
+    padding: 6px 14px; border-radius: 6px; border: 1px solid var(--border);
+    color: var(--text); text-decoration: none;
+}
+.tabs a.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
 .traits { display: flex; flex-wrap: wrap; gap: 8px; }
 .trait { padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border); font-size: .9rem; }
 .trait.on { background: var(--ok); border-color: var(--ok); color: #fff; }

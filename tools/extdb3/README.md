@@ -12,6 +12,29 @@ Uniquement sur le serveur dédié, une fois le profil du joueur chargé :
 
 Les requêtes sont asynchrones : le serveur n'attend jamais MySQL.
 
+## Campagnes : `db_mode`
+
+Chaque joueur a un profil par **base**. Le mission maker choisit la base dans le `description.ext` :
+
+```cpp
+db_mode = "Main";              // Par défaut : équipement partagé avec toutes les missions normales
+db_mode = "Operation-Umbara";  // Campagne : équipement propre, gardé d'une mission à l'autre de la campagne
+```
+
+- Sans `db_mode`, la base est `Main`.
+- Une campagne démarre vide : à sa première mission, chaque joueur garde l'équipement donné par la mission, qui devient son profil de campagne. Son profil `Main` n'est pas touché.
+- Nom autorisé : lettres, chiffres, `_` et `-`, 32 caractères au maximum. Un nom invalide désactive la sauvegarde pour la mission, et le RPT l'indique. On évite ainsi d'écrire par erreur dans `Main`.
+- Le générateur de `description.ext` (missions builder) ajoute `db_mode = "Main";`.
+
+Où sont rangées les données :
+
+| Table | Contenu | Lignes |
+|---|---|---|
+| `players` | Résumé du joueur, indépendant de `db_mode` : nom, première connexion, dernière connexion | **Une seule par `steam_id`** : le site peut y chercher un joueur par `steam_id` |
+| `player_data` | Ce qui change selon `db_mode` : équipement et spécialités | Une par `db_mode` et par joueur (clé `db_mode` + `steam_id`) |
+
+Une campagne n'ajoute donc jamais de ligne dans `players`, seulement dans `player_data`. Créer une campagne ne demande aucune manipulation dans MySQL, et le compte `arma` n'a pas besoin du droit de créer des tables.
+
 ## Installation sur le serveur Arma
 
 1. **MySQL ou MariaDB** : exécuter [schema.sql](schema.sql) après avoir changé les mots de passe. Il crée la table `players` et deux comptes : `arma` (lecture et écriture, pour le serveur) et `site` (lecture seule, pour la page web). Restreignez l'hôte `'%'` à l'IP réelle de chaque machine.
