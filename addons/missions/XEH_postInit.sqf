@@ -20,6 +20,13 @@ if (hasInterface) then {
 	["InitializePlayer",[_unit]] call BIS_fnc_dynamicGroups;
 };
 
+// Flip event, raised by the flip hold action and executed where the vehicle is local
+[QGVAR(flipVehicle), {
+	params ["_vehicle"];
+	_vehicle setVectorUp [0, 0, 1];
+	_vehicle setPosATL ((getPosATL _vehicle) vectorAdd [0, 0, 1.5]);
+}] call CBA_fnc_addEventHandler;
+
 [
 "AllVehicles",
 "init",
