@@ -46,8 +46,8 @@
             <French>Ce mod contient des armures et des matériaux destinés au serveur Adeptus Républica.</French>
         </Key>
         <Key ID="str_ar_main_url">
-            <English>https://www.adeptusrepublica.com</English>
-            <French>https://www.adeptusrepublica.com</French>
+            <English>https://adeptus-team.eu</English>
+            <French>https://adeptus-team.eu</French>
         </Key>
     </Package>
 </Project>
