@@ -69,3 +69,7 @@ executable = "arma3_x64"
 file_patching = false
 binarize = true
 rapify = true
+
+[hemtt.publish]
+changelog = "CHANGELOG.md"
+description = "DESCRIPTION.md"

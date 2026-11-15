@@ -1,0 +1,1 @@
+https://github.com/Adeptus-TEAM/a3-aux-adeptus/releases/tag/1.4.3
