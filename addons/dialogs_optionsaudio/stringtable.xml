@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="AR Dialogs (Options Audio)">
+    <Package name="function">
+        <Key ID="str_ar_dialogs_optionsaudio_sliderenvvolume">
+            <English>Volume of environment sounds (wind, rain, ambient life).</English>
+            <French>Volume des sons d'environnement (vent, pluie, ambiance).</French>
+        </Key>
+        <Key ID="str_ar_dialogs_optionsaudio_textenvvolume">
+            <English>ENVIRONMENT:</English>
+            <French>ENVIRONNEMENT :</French>
+        </Key>
+    </Package>
+</Project>
