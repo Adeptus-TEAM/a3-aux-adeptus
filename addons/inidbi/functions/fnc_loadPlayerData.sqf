@@ -30,12 +30,11 @@ if (isNil "_inidbi") exitWith {
 	createHashMap
 };
 
-// Third element = default value returned by iniDBi when the key is missing (otherwise it returns false)
-private _playerName = ["Read", ["GameData", "Name", ""]] call _inidbi;
-private _playerLoadout = ["Read", ["GameData", "Loadout", []]] call _inidbi;
-private _isMedic = ["Read", ["GameData", "isMedic", false]] call _inidbi;
-private _isEngineer = ["Read", ["GameData", "isEngineer", false]] call _inidbi;
-private _isEOD = ["Read", ["GameData", "isEOD", false]] call _inidbi;
+private _playerName = ["Read", ["GameData", "Name"]] call _inidbi;
+private _playerLoadout = ["Read", ["GameData", "Loadout"]] call _inidbi;
+private _isMedic = ["Read", ["GameData", "isMedic"]] call _inidbi;
+private _isEngineer = ["Read", ["GameData", "isEngineer"]] call _inidbi;
+private _isEOD = ["Read", ["GameData", "isEOD"]] call _inidbi;
 
 private _data = createHashMapFromArray [
 	["Name", _playerName],
@@ -45,6 +44,11 @@ private _data = createHashMapFromArray [
 	["isEngineer", _isEngineer],
 	["isEOD", _isEOD]
 ];
+
+if (isNil "_data") exitWith {
+	ERROR_1("[INIDBI] Failed to load player data for %1",_UID);
+	createHashMap
+};
 
 _player setVariable [QGVAR(playerData),_data,true]; // Store the player data in the variable AR_IniDBi_playerData
 
