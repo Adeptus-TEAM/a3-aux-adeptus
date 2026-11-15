@@ -23,4 +23,9 @@ TRACE_1("ar_dialogs_garage_fnc_openInterface",_this);
 
 uiNamespace setVariable [QGVAR(garageObject), _terminal];
 
-createDialog "RscGarage";
+private _ok = createDialog "RscGarage";
+
+if (!(_ok))exitWith{
+	WARNING("The garage dialog couldn't be created");
+	false;
+};

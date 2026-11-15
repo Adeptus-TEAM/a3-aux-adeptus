@@ -48,7 +48,7 @@ if (!isDedicated) exitWith {
 			INFO_1("[INIDBI] Loading existing player profile for %1",_UID);
 			// Load the player data from the INIDBI instance
 			private _data = [_player] call FUNC(loadPlayerData);
-			if (isNil "_data") exitWith {
+			if (_data isEqualTo createHashMap) exitWith {
 				ERROR_1("[INIDBI] Failed to load player data for %1",_UID);
 				false
 			};
@@ -64,6 +64,7 @@ if (!isDedicated) exitWith {
 				ERROR_1("[INIDBI] Failed to create player data for %1",_UID);
 				false
 			};
+			GVAR(loadedUIDs) set [_UID, true]; // New profile: saving is allowed right away
 			INFO_1("[INIDBI] %1 profile has been initialized",_UID);
 			true
 		};
