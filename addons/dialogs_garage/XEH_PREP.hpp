@@ -1,5 +1,7 @@
 PREP(deleteVehicle);
 PREP(getTerminalData);
+PREP(getVehiclesInArea);
+PREP(moduleGarageSpawn);
 PREP(onLoad);
 PREP(openInterface);
 PREP(pylonsVehicle);
@@ -7,4 +9,5 @@ PREP(rearmVehicle);
 PREP(spawnVehicle);
 PREP(typeSelection);
 PREP(updateDisplayVehicle);
+PREP(updateTypeButtons);
 PREP(updateVehicleList);

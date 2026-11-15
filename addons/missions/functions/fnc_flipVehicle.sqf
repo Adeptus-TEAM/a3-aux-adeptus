@@ -24,6 +24,9 @@ if(isNull _vehicle) exitWith {
 	WARNING("fnc_flipVehicle: No vehicle provided");
 	false;
 };
+
+// The hold action is only useful for players, and "AllVehicles" also matches every soldier
+if (!hasInterface || {_vehicle isKindOf "CAManBase"}) exitWith {false};
 /*
  1 : Test if the vehicles is alive.
  2 : Test if the player doing the holdAction has a distance of 8 meters maximum
@@ -50,10 +53,9 @@ private _canBeFlipped = "(alive _target) &&
 	{}, // CodeStart
 	{}, // CodeProgress
 	{	
-	params ["_target", "_caller", "_actionId", "_arguments"];
-    _target setVectorUp [0, 0, 1];
-	_target setPosATL ((getPosATL _target) vectorAdd [0,0,1.5]);
-	
+	params ["_target"];
+	// setVectorUp needs a local vehicle: run the flip on the machine that owns it
+	[QGVAR(flipVehicle), [_target], _target] call CBA_fnc_targetEvent;
 }, // CodeCompleted
 	{}, // CodeInterrupted
 	[], // Arguments

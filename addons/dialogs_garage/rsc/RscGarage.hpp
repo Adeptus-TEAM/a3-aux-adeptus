@@ -192,6 +192,7 @@ class RscGarage
 		};
 		class TerrestrialVehicleTypeButton : RscButton
 		{
+			idc = 1010;
             style = ST_LEFT;
 			x = X_COORD(0.596875);
 			y = Y_COORD(0.45833334);
@@ -207,6 +208,7 @@ class RscGarage
 		};
 		class AerialVehicleTypeButton : TerrestrialVehicleTypeButton
 		{
+			idc = 1011;
 			x = X_COORD(0.596875);
 			y = Y_COORD(0.5);
 			w = W_COORD(0.109375);
@@ -216,7 +218,7 @@ class RscGarage
 		};
 		class SupplyVehicleTypeButton : TerrestrialVehicleTypeButton
 		{
-
+			idc = 1012;
 			x = X_COORD(0.596875);
 			y = Y_COORD(0.54166667);
 			w = W_COORD(0.109375);

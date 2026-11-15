@@ -18,4 +18,4 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 
 class RscButton;
-#include "rsc/RscDisplayDynamicGroups.hpp"
+#include "rsc\RscDisplayDynamicGroups.hpp"

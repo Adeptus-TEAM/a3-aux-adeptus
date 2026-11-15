@@ -1,13 +1,14 @@
 #include "..\script_component.hpp"
 /*
  * Authors: Adeptus TEAM
- * Description :; This function retrieves the position, direction, and area size for spawning vehicles from the terminal object in the garage dialog. It accesses the terminal and spawn objects from the uiNamespace, checks their validity, and returns the necessary data for vehicle spawning.
+ * Description: Retrieves the spawn position, direction and area of the garage
+ *              from the garage module linked to the currently opened terminal.
  *
  * Arguments:
  * <NONE>
  *
  * Return Value:
- * [spawnObjectPosition, spawnObjectDirection, spawnObjectAreaSize] <ARRAY>
+ * [spawnPosATL, spawnDir, sizeA, sizeB, isRectangle, height, spawnPosASL] <ARRAY> - [] on error
  *
  * Example:
  * 0 call ar_dialogs_garage_fnc_getTerminalData
@@ -18,27 +19,34 @@
 params [];
 TRACE_1("fnc_getTerminalData",_this);
 
-
-// Get the terminal object from the uiNamespace.
+// Terminal currently in use (set by openInterface).
 private _terminal = uiNamespace getVariable [QGVAR(garageObject), objNull];
-if(isNull _terminal) exitWith {
+if (isNull _terminal) exitWith {
 	WARNING("Invalid terminal object");
 	[]
 };
 
-// Get the terminal's object where vehicles will be spawned from.
-private _spawnObject = call compile (_terminal getVariable [QEGVAR(objects,garageSpawnObject), "objNull"]);
-if(isNull _spawnObject) exitWith {
-	WARNING("Invalid spawn object");
+// Garage module linked to the terminal (set by fnc_moduleGarageSpawn).
+private _module = _terminal getVariable [QGVAR(garageModule), objNull];
+if (isNull _module) exitWith {
+	WARNING_1("Terminal %1 is not linked to any garage module",_terminal);
 	[]
 };
 
-// Get the position, direction and area size for spawning vehicles.
-private _pos = getPosATL _spawnObject;
-private _dir = getDir _spawnObject;
-private _areaSize = parseNumber str (_terminal getVariable [QEGVAR(objects,garageAreaSize), 0]);
+// Position and direction: taken from the module.
+private _pos = getPosATL _module;
+private _dir = getDir _module;
 
-// Return the terminal data as an array.
-[_pos, _dir, _areaSize]
+// Area: as set on the module in the editor.
+// objectArea = [halfWidth, halfLength, angle, isRectangle, height]
+private _objectArea = _module getVariable ["objectArea", []];
+if (_objectArea isEqualTo []) then {
+	WARNING_1("Garage module %1 has no area, using default size",_module);
+	_objectArea = [10, 10, _dir, true, 5];
+};
+_objectArea params ["_sizeA", "_sizeB", "", "_isRectangle", "_height"];
 
+// Never allow an unlimited height (-1), it would catch aircraft flying over the garage.
+if (_height < 0) then { _height = 5 };
 
+[_pos, _dir, _sizeA, _sizeB, _isRectangle, _height, getPosASL _module]
