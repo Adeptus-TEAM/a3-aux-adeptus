@@ -16,7 +16,6 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-#include "CfgVehicles.hpp"
 
 class RscButton;
 class RscPicture;
